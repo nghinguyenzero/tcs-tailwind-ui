@@ -86,37 +86,37 @@
 
 /* Visual styles */
 .accordion {
-  background-color: #2F3535;
-  color: #2F3535;
-  border: 2px solid;
-  border-radius: 0.5rem;
+  /* background-color: #2F3535;
+  color: #2F3535; */
+  /* border: 2px solid;
+  border-radius: 0.5rem; */
   overflow: hidden;
 }
 .tab__label,
 .tab__close {
   display: flex;
   color: white;
-  background: #2F3535;
   cursor: pointer;
 }
 .tab__label {
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 .tab__label::after {
   content: url("./../images/svg/Plus.svg");
   width: 1em;
   height: 1em;
+  margin: 0 4px;
   text-align: center;
   transform: rotate(90deg);
   transition: all 0.35s;
 }
-.tab input:checked + .tab__label::after {
+/* .tab input:checked + .tab__label::after {
   transform: rotate(270deg);
-}
+} */
 .tab__content p {
   margin: 0;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 .tab__close {
   justify-content: flex-end;
@@ -135,3 +135,21 @@
     transform: rotate(90deg) translate(-.25rem);
   }
 }
+
+
+/* https://pagedone.io/docs/carousel */
+/* CSS Code */
+.swiper-wrapper {
+  width: 100%;
+  height: max-content !important;
+  padding-bottom: 64px !important;
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+  position: relative;
+  }
+  .swiper-pagination-bullet {
+  background: #4F46E5;
+  }
+  .swiper-pagination-bullet-active {
+  background: #4F46E5 !important;
+  }
