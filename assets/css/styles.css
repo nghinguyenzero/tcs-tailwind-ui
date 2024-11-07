@@ -148,8 +148,12 @@
   position: relative;
   }
   .swiper-pagination-bullet {
-  background: #4F46E5;
+    background: #008664;
+    width: 1rem;
+    height: 1rem;
   }
   .swiper-pagination-bullet-active {
-  background: #4F46E5 !important;
+    background: #008664 !important;
+    width: 1rem;
+    height: 1rem;
   }
