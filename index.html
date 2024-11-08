@@ -16,19 +16,21 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- ==== WOW JS ==== -->
   <script src="assets/js/wow.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+
   <script>
     new WOW().init();
   </script>
 </head>
 
 <body>
-  <!-- ====== Navbar Start -->
-  <div class="ud-header absolute left-0 top-0 z-40 flex w-full items-center bg-transparent bg-white">
+
+  <!-- ====== Header Start -->
+  <header class="ud-header absolute left-0 top-0 z-40 flex w-full items-center bg-transparent bg-white">
     <div class="w-full">
       <div
         class="ud-header-sub flex flex-col items-center w-full text-sm tracking-wide text-center whitespace-nowrap bg-zinc-100 text-zinc-800 max-md:max-w-full max-md:hidden">
-        <div
-          class="flex flex-wrap gap-3 items-start py-2 max-w-full w-[1200px] justify-end px-3 text-base font-semibold">
+        <div class="flex flex-wrap gap-3 items-start py-2 max-w-full w-[1200px] justify-end px-3 text-base font-normal">
           <div>最新公告</div>
           <div>服務據點</div>
           <div>永續發展專區</div>
@@ -47,7 +49,6 @@
               </a>
             </div>
             <div class="flex w-full items-center justify-end px-4">
-              <!-- <div> -->
               <button id="navbarToggler"
                 class="absolute left-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 md:hidden">
                 <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -60,121 +61,105 @@
                 class="absolute left-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark-2 lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:px-4 lg:py-0 lg:shadow-none dark:lg:bg-transparent xl:px-6">
                 <ul class="blcok lg:flex 2xl:ml-20 justify-end">
                   <li class="submenu-item group relative">
-                    <a href="javascript:void(0)" class="relative mx-8 flex items-center justify-between py-2 text-lg font-bold group-hover:text-green-800 text-dark
+                    <a href="javascript:void(0)" class="font-medium relative mx-8 flex items-center justify-between py-2 text-lg group-hover:text-green-800 text-dark
                       lg:ml-4 lg:mr-0 lg:inline-flex lg:py-6 lg:pl-0 lg:pr-4 lg:group-hover:opacity-70">
                       交易平台
-                      <svg class="ml-1 fill-current" width="16" height="20" viewBox="0 0 16 20" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z" />
-                      </svg>
                     </a>
                     <div
                       class="submenu relative left-0 top-full hidden w-[250px] rounded-sm bg-white p-4 transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark-2 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full">
                       <a href="#"
-                        class="block rounded px-4 py-[10px] text-base font-bold text-body-color hover:text-green-800">
+                        class="block rounded px-4 py-[10px] text-base font-medium text-body-color hover:text-green-800">
                         交易相關
                       </a>
                       <a href="#"
-                        class="block rounded px-4 py-[10px] text-base font-bold text-body-color hover:text-green-800">
+                        class="block rounded px-4 py-[10px] text-base font-medium text-body-color hover:text-green-800">
                         電子憑證
                       </a>
                       <a href="#"
-                        class="block rounded px-4 py-[10px] text-base font-bold text-body-color hover:text-green-800">
+                        class="block rounded px-4 py-[10px] text-base font-medium text-body-color hover:text-green-800">
                         文件下載服務
                       </a>
                     </div>
                   </li>
                   <li class="group relative">
-                    <a href="#about" class="ud-menu-scroll mx-8 flex py-2 text-lg font-bold text-dark group-hover:text-green-800
+                    <a href="#about" class="ud-menu-scroll mx-8 flex py-2 text-lg font-medium text-dark group-hover:text-green-800
                   
                       lg:ml-4 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:group-hover:opacity-70">
                       定期定額
                     </a>
                   </li>
+
                   <li class="submenu-item group relative">
-                    <a href="javascript:void(0)" class="relative mx-8 flex items-center justify-between py-2 text-lg font-bold text-dark group-hover:text-green-800 
+                    <a href="javascript:void(0)" class="relative mx-8 flex items-center justify-between py-2 text-lg  font-medium text-dark group-hover:text-green-800 
                       lg:ml-4 lg:mr-0 lg:inline-flex lg:py-6 lg:pl-0 lg:pr-4">
-                      客戶服務<!-- customer service -->
-                      <svg class="ml-1 fill-current" width="16" height="20" viewBox="0 0 16 20" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z" />
-                      </svg>
+                      客戶服務
                     </a>
                     <div
                       class="submenu relative left-0 top-full hidden w-[250px] rounded-sm bg-white p-4 transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark-2 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full">
                       <a href="#"
-                        class="block rounded px-4 py-[10px] text-base font-bold text-body-color hover:text-green-800">
+                        class="block rounded px-4 py-[10px] text-base font-medium text-body-color hover:text-green-800">
                         新手上路
                       </a>
                       <a href="#"
-                        class="block rounded px-4 py-[10px] text-base font-bold text-body-color hover:text-green-800 ">
+                        class="block rounded px-4 py-[10px] text-base font-medium text-body-color hover:text-green-800 ">
                         線上申請
                       </a>
                       <a href="#"
-                        class="block rounded px-4 py-[10px] text-base font-bold text-body-color hover:text-green-800 ">
+                        class="block rounded px-4 py-[10px] text-base font-medium text-body-color hover:text-green-800 ">
                         訂閱中心
                       </a>
-                      <a href="#" class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-green-800">
+                      <a href="#"
+                        class="block rounded px-4 py-[10px] text-sm font-medium text-body-color hover:text-green-800">
                         影音專區
                       </a>
                       <a href="#"
-                        class="block rounded px-4 py-[10px] text-base font-bold text-body-color hover:text-green-800">
+                        class="block rounded px-4 py-[10px] text-base font-medium text-body-color hover:text-green-800">
                         常見問題
                       </a>
                     </div>
                   </li>
 
+
                   <li class="submenu-item group relative">
-                    <a href="javascript:void(0)" class="relative mx-8 flex items-center justify-between py-2 text-lg font-bold text-dark group-hover:text-green-800 
+                    <a href="javascript:void(0)" class="relative mx-8 flex items-center justify-between py-2 text-lg  font-medium text-dark group-hover:text-green-800 
                       lg:ml-4 lg:mr-0 lg:inline-flex lg:py-6 lg:pl-0 lg:pr-4">
-                      投資訊息<!-- investment news -->
-                      <svg class="ml-1 fill-current" width="16" height="20" viewBox="0 0 16 20" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z" />
-                      </svg>
+                      投資訊息
                     </a>
                     <div
                       class="submenu relative left-0 top-full hidden w-[250px] rounded-sm bg-white p-4 transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark-2 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full">
                       <a href="#"
-                        class="block rounded px-4 py-[10px] text-base font-bold text-body-color hover:text-green-800 dark:text-dark-6 dark:hover:text-green-800">
+                        class="block rounded px-4 py-[10px] text-base  font-medium text-body-color hover:text-green-800 dark:text-dark-6 dark:hover:text-green-800">
                         台股
                       </a>
                       <a href="#"
-                        class="block rounded px-4 py-[10px] text-base font-bold text-body-color hover:text-green-800 dark:text-dark-6 dark:hover:text-green-800">
+                        class="block rounded px-4 py-[10px] text-base  font-medium text-body-color hover:text-green-800 dark:text-dark-6 dark:hover:text-green-800">
                         基金
                       </a>
                     </div>
                   </li>
                   <li class="group relative">
-                    <a href="#contact" class="ud-menu-scroll mx-8 flex py-2 text-lg font-bold text-dark group-hover:text-green-800 
+                    <a href="#contact" class="ud-menu-scroll mx-8 flex py-2 text-lg font-medium text-dark group-hover:text-green-800 
                       lg:ml-4 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6">
                       研究報告
                     </a>
                   </li>
                 </ul>
               </nav>
-              <!-- </div> -->
               <div class="flex items-center justify-end max-sm:pr-0 max-sm:py-1 my-4 ">
-                <!-- <div class="flex"> -->
                 <a href="signup.html"
                   class="signUpBtn min-w-[90px] bg-[#008664] rounded-full px-3 py-2 text-base font-medium text-white duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark">
                   開戶專區
                 </a>
-                <!-- </div> -->
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- ====== Navbar End -->
+  </header>
+  <!-- ====== Header End -->
 
-  <!-- ====== HTML Start-->
-  <!-- <div class="container"> -->
+  <!-- ====== Banner Start -->
   <div class="w-full sm:relative">
     <div class="swiper default-carousel swiper-container relative">
       <div class="swiper-wrapper">
@@ -183,7 +168,7 @@
             class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center relative
             bg-[url('./assets/images/banner.png')] max-sm:bg-[url('./assets/images/Banner-Group-165.png')] max-sm:h-[600px] bg-cover bg-center">
             <div
-              class="flex justify-left content-left flex-col absolute top-1/3 left-[14%] max-sm:top-[25px] max-sm:left-[25%]">
+              class="flex justify-left content-left flex-col absolute top-1/3 left-[14%] max-sm:top-[25px] max-sm:left-[25%] items-center">
               <div class="">
                 <h4 class="mb-5 text-3xl font-extrabold">
                   投資無限可能
@@ -254,174 +239,36 @@
           </div>
         </div>
       </div>
-      <div class="swiper-pagination !bottom-24 !-right-36 sm:!absolute sm:!left-1/3"></div>
+      <div class="swiper-pagination !bottom-[10%] !-right-[30%] sm:!absolute sm:!left-1/3"></div>
     </div>
   </div>
-  <!-- </div> -->
-  <!-- ====== HTML End-->
+  <!-- ====== Banner End -->
 
 
-  <!-- ====== 404 Section Start -->
-
-  <!-- ======  latest News Start -->
-  <div class="container">
-    <div class="flex bg-[url('./assets/images/svg/Frame_228.svg')]">
-      <div class="flex flex-col items-center px-5 pt-8 pb-12 mt-12 w-full max-md:mt-10 max-md:max-w-full">
-        <div class="flex flex-wrap gap-6 items-start max-w-full w-[1200px]">
-          <div
-            class="flex relative flex-col flex-1 shrink items-start font-medium whitespace-nowrap basis-0 min-w-[240px] max-md:max-w-full">
-            <div class="flex z-0 flex-col max-w-full text-3xl tracking-wider text-zinc-800 w-[166px]">
-              <div class="flex gap-1 items-center max-lg:-mt-14 max-lg:mb-14">
-                <img loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/760c122f995a0da0a8ebd716a929d59d243d376982c81ac19bb089053ca61969?apiKey=6ca75136718c454791d2fe542e2ed631&amp;"
-                  class="object-contain shrink-0 self-stretch my-auto w-8 aspect-square">
-                <div class="self-stretch my-auto font-bold">最新消息</div>
-              </div>
-            </div>
-            <div class="flex z-0 flex-col self-stretch mt-8 w-full max-md:max-w-full">
-              <div
-                class="flex overflow-hidden flex-col px-8 py-6 w-full bg-white rounded-lg shadow-[0px_1px_8px_rgba(150,194,178,0.12)] max-md:px-5 max-md:max-w-full">
-                <div class="flex flex-col w-full text-zinc-800 max-md:max-w-full">
-                  <div class="flex flex-col w-full max-md:max-w-full">
-                    <div class="flex gap-3 items-center self-start">
-                      <div
-                        class="overflow-hidden font-bold gap-2.5 self-stretch px-4 py-1 my-auto text-sm tracking-wide bg-emerald-100 rounded-2xl w-[89px]">
-                        公告事項
-                      </div>
-                      <div class="font-bold self-stretch my-auto text-base tracking-wide w-[86px]">
-                        2024.05.13
-                      </div>
-                    </div>
-                    <div class="mt-1 text-base font-bold tracking-wide max-md:max-w-full">
-                      自113年5月1日起，本公司定期定額投資標的異動。...
-                    </div>
-                  </div>
-                  <div class="mt-4 w-full border border-solid border-neutral-100 min-h-[1px] max-md:max-w-full"></div>
-                  <div class="flex flex-col mt-4 w-full max-md:max-w-full">
-                    <div class="flex gap-3 items-center self-start">
-                      <div
-                        class="overflow-hidden font-bold gap-2.5 self-stretch px-4 py-1 my-auto text-sm tracking-wide bg-pink-100 rounded-2xl w-[89px]">
-                        優惠活動
-                      </div>
-                      <div class="self-stretch my-auto text-base tracking-wide w-[86px]">
-                        2024.05.13
-                      </div>
-                    </div>
-                    <div class="mt-1 text-base font-bold tracking-wide max-md:max-w-full">
-                      合庫金證點線上輕鬆貸..
-                    </div>
-                  </div>
-                  <div class="mt-4 w-full border border-solid border-neutral-100 min-h-[1px] max-md:max-w-full"></div>
-                  <div class="flex flex-col mt-4 w-full max-md:max-w-full">
-                    <div class="flex gap-3 items-center self-start">
-                      <div
-                        class="overflow-hidden font-bold gap-2.5 self-stretch px-4 py-1 my-auto text-sm tracking-wide bg-blue-100 rounded-2xl w-[89px]">
-                        期貨公告
-                      </div>
-                      <div class="self-stretch font-bold my-auto text-base tracking-wide w-[86px]">
-                        2024.05.13
-                      </div>
-                    </div>
-                    <div class="mt-1 text-base font-bold tracking-wide max-md:max-w-full">
-                      客製化小型臺指期貨宣導專區...
-                    </div>
-                  </div>
-                  <div class="mt-4 w-full border border-solid border-neutral-100 min-h-[1px] max-md:max-w-full"></div>
-                  <div class="flex flex-col mt-4 w-full max-md:max-w-full">
-                    <div class="flex gap-3 items-center self-start">
-                      <div
-                        class="overflow-hidden font-bold gap-2.5 self-stretch px-4 py-1 my-auto text-sm tracking-wide bg-emerald-100 rounded-2xl w-[89px]">
-                        公告事項
-                      </div>
-                      <div class="self-stretch font-bold my-auto text-base tracking-wide w-[86px]">
-                        2024.05.13
-                      </div>
-                    </div>
-                    <div class="mt-1 text-base font-bold tracking-wide max-md:max-w-full">
-                      再度提醒投資人勿信不明來電、不實簡訊、社群連結或網站等...
-                    </div>
-                  </div>
-                  <div class="mt-4 w-full border border-solid border-neutral-100 min-h-[1px] max-md:max-w-full"></div>
-                  <div class="flex flex-col mt-4 w-full max-md:max-w-full">
-                    <div class="flex gap-3 items-center self-start">
-                      <div
-                        class="overflow-hidden font-bold gap-2.5 self-stretch px-4 py-1 my-auto text-sm tracking-wide bg-emerald-100 rounded-2xl w-[89px]">
-                        公告事項
-                      </div>
-                      <div class="self-stretch font-bold my-auto text-base tracking-wide w-[86px]">
-                        2024.05.13
-                      </div>
-                    </div>
-                    <div class="mt-1 text-base font-bold tracking-wide max-md:max-w-full">
-                      本公司已於12月6日完成加入「失智友善組織」及「失智友善天使」。...
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="flex flex-col items-end pt-1 mt-3 w-full text-base text-right text-emerald-700 max-md:max-w-full">
-                  <div class="flex gap-2 justify-center items-center px-1 rounded-2xl">
-                    <div class="self-stretch my-auto font-bold">更多公告消息</div>
-                    <img loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/159ae8a22987dc68473eb276fd5c6d2dd3207e3d99bad1b2d056c0bd567bfa33?apiKey=6ca75136718c454791d2fe542e2ed631&amp;"
-                      class="object-contain shrink-0 self-stretch my-auto w-2 aspect-[0.53]">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="flex absolute top-0 left-2/3 z-0 gap-5 items-start text-lg tracking-wide -translate-x-2/4 text-zinc-800 translate-y-[0%]">
-              <div class="flex flex-col rounded-none w-[186px]">
-                <div class="overflow-hidden font-bold gap-2.5 self-stretch px-14 py-4 bg-emerald-200 rounded-3xl max-md:px-5">
-                  公告訊息
-                </div>
-                <img loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/753d4b5c800af8e4ea0c425c48f1c4b1f88fd40abb122f091091c4b28989c99b?apiKey=6ca75136718c454791d2fe542e2ed631&amp;"
-                  class="object-contain self-center w-3.5 aspect-[1.17]">
-              </div>
-              <div
-                class="overflow-hidden font-bold gap-2.5 self-stretch px-14 py-4 bg-white rounded-3xl border-2 border-emerald-200 border-solid max-md:px-5">
-                即時新聞
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-col pt-20 min-w-[240px] w-[264px] max-md:m-auto">
-            <div
-              class="flex flex-col justify-center px-3 py-4 w-full bg-white rounded-lg shadow-[0px_1px_8px_rgba(174,231,217,0.12)]">
-              <img loading="lazy"
-                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/e75dc28584ab873963c04f2feed711bd306d82b2e2e5a974fc66bb008d6da647?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/e75dc28584ab873963c04f2feed711bd306d82b2e2e5a974fc66bb008d6da647?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/e75dc28584ab873963c04f2feed711bd306d82b2e2e5a974fc66bb008d6da647?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/e75dc28584ab873963c04f2feed711bd306d82b2e2e5a974fc66bb008d6da647?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/e75dc28584ab873963c04f2feed711bd306d82b2e2e5a974fc66bb008d6da647?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/e75dc28584ab873963c04f2feed711bd306d82b2e2e5a974fc66bb008d6da647?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/e75dc28584ab873963c04f2feed711bd306d82b2e2e5a974fc66bb008d6da647?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/e75dc28584ab873963c04f2feed711bd306d82b2e2e5a974fc66bb008d6da647?apiKey=6ca75136718c454791d2fe542e2ed631&amp;"
-                class="object-contain w-full aspect-[1.18]">
-            </div>
-            <div
-              class="flex flex-col justify-center px-3 py-4 mt-5 w-full bg-white rounded-lg shadow-[0px_1px_8px_rgba(174,231,217,0.12)]">
-              <img loading="lazy"
-                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/89e9090a1d8e325363e4f5975e110cc2eb7ddce9ec9bc330c75adbf2066339ba?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/89e9090a1d8e325363e4f5975e110cc2eb7ddce9ec9bc330c75adbf2066339ba?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/89e9090a1d8e325363e4f5975e110cc2eb7ddce9ec9bc330c75adbf2066339ba?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/89e9090a1d8e325363e4f5975e110cc2eb7ddce9ec9bc330c75adbf2066339ba?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/89e9090a1d8e325363e4f5975e110cc2eb7ddce9ec9bc330c75adbf2066339ba?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/89e9090a1d8e325363e4f5975e110cc2eb7ddce9ec9bc330c75adbf2066339ba?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/89e9090a1d8e325363e4f5975e110cc2eb7ddce9ec9bc330c75adbf2066339ba?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/89e9090a1d8e325363e4f5975e110cc2eb7ddce9ec9bc330c75adbf2066339ba?apiKey=6ca75136718c454791d2fe542e2ed631&amp;"
-                class="object-contain w-full aspect-[1.19]">
-            </div>
-          </div>
-        </div>
+  <!-- ======  Services Start -->
+  <section class="key-services py-4">
+    <div class="container">
+      <div class="grid grid-cols-2 sm:grid-cols-3 sm:grid-rows-2 grid-rows-2 gap-4">
+        <a href="#"
+          class="customer-service relative block text-white sm:col-span-1 sm:row-span-2 col-span-1 row-span-1">
+          <img src="./assets/images/Open-an-account.png" class="absolute inset-0 w-full h-full object-fill">
+        </a>
+        <a href="#"
+          class="regular-investment relative block text-white sm:col-span-1 sm:row-span-2 col-span-1 row-span-1">
+          <img src="./assets/images/Regular-quota.png" class="h-full w-full object-cover object-center">
+        </a>
+        <a href="#" class="online-account relative block text-white sm:col-span-1 sm:row-span-1 col-span-1 row-span-1">
+          <img src="./assets/images/newbie.png" class="h-full w-full object-fill">
+        </a>
+        <a href="#"
+          class="sustainable-development relative block text-white sm:col-span-1 sm:row-span-1 col-span-1 row-span-1">
+          <img src="./assets/images/newbie_1.png" class="absolute inset-0 w-full h-full object-fill">
+        </a>
       </div>
     </div>
+  </section>
+  <!-- ======  Services End -->
 
-  </div>
-  <!-- ======  latest News End -->
-
-  <div class="container">
-    <div class="p-4 grid grid-cols-2 sm:grid-cols-3 sm:grid-rows-2 grid-rows-2 gap-4">
-      <a href="#" class="relative block text-white sm:col-span-1 sm:row-span-2 col-span-1 row-span-1">
-        <img src="./assets/images/Open-an-account.png" class="absolute inset-0 w-full h-full object-fill">
-      </a>
-      <a href="#" class="relative block text-white sm:col-span-1 sm:row-span-2 col-span-1 row-span-1">
-        <img src="./assets/images/Regular-quota.png" class="h-full w-full object-cover object-center">
-      </a>
-      <a href="#" class="relative block text-white sm:col-span-1 sm:row-span-1 col-span-1 row-span-1">
-        <img src="./assets/images/newbie.png" class="h-full w-full object-fill">
-      </a>
-      <a href="#" class="relative block text-white sm:col-span-1 sm:row-span-1 col-span-1 row-span-1">
-        <img src="./assets/images/newbie_1.png" class="absolute inset-0 w-full h-full object-fill">
-      </a>
-    </div>
-  </div>
-  <!-- ====== 404 Section End -->
   <!-- ====== Features Section Start -->
   <section class="py-4">
     <div class="container">
@@ -508,15 +355,161 @@
   </section>
   <!-- ====== Features Section End -->
 
-  <!-- ====== CTA Section Start -->
 
-  <!-- ====== CTA Section End -->
 
-  <section id="about" class="bg-gray-1 pb-8 dark:bg-dark-2">
-    <div class="container">
-      <div class="flex flex-col items-center self-center pt-14 pb-12 w-full px-6 max-sx:max-w-full">
-        <div class="flex flex-wrap gap-10 justify-between items-center w-full">
-          <div class="flex flex-col self-stretch min-w-[240px] w-[480px] m-auto max-sx:max-w-full">
+  <!-- ======   News Start -->
+  <section class="news">
+    <div class="flex bg-[url('./assets/images/svg/Frame_228.svg')]">
+      <div class="flex flex-col items-center px-5 pt-8 pb-12 mt-12 w-full max-md:mt-10 max-md:max-w-full">
+        <div class="flex flex-wrap gap-6 items-start max-w-full w-[1200px]">
+          <div
+            class="flex relative flex-col flex-1 shrink items-start font-medium whitespace-nowrap basis-0 min-w-[240px] max-md:max-w-full">
+            <div class="flex z-0 flex-col max-w-full text-3xl tracking-wider text-zinc-800 w-[166px]">
+              <div class="flex gap-1 items-center max-lg:-mt-14 max-lg:mb-14">
+                <img loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/760c122f995a0da0a8ebd716a929d59d243d376982c81ac19bb089053ca61969?apiKey=6ca75136718c454791d2fe542e2ed631&amp;"
+                  class="object-contain shrink-0 self-stretch my-auto w-8 aspect-square">
+                <div class="self-stretch my-auto font-bold">最新消息</div>
+              </div>
+            </div>
+            <div class="flex z-0 flex-col self-stretch mt-8 w-full max-md:max-w-full">
+              <div
+                class="flex overflow-hidden flex-col px-8 py-6 w-full bg-white rounded-lg shadow-[0px_1px_8px_rgba(150,194,178,0.12)] max-md:px-5 max-md:max-w-full">
+                <div class="flex flex-col w-full text-zinc-800 max-md:max-w-full">
+                  <div class="flex flex-col w-full max-md:max-w-full">
+                    <div class="flex gap-3 items-center self-start">
+                      <div
+                        class="overflow-hidden font-normal gap-2.5 self-stretch px-4 py-1 my-auto text-sm tracking-wide bg-emerald-100 rounded-2xl w-[89px]">
+                        公告事項
+                      </div>
+                      <div class="font-normal self-stretch my-auto text-base tracking-wide w-[86px]">
+                        2024.05.13
+                      </div>
+                    </div>
+                    <div class="mt-1 text-base font-normal tracking-wide max-md:max-w-full">
+                      自113年5月1日起，本公司定期定額投資標的異動。...
+                    </div>
+                  </div>
+                  <div class="mt-4 w-full border border-solid border-neutral-100 min-h-[1px] max-md:max-w-full"></div>
+                  <div class="flex flex-col mt-4 w-full max-md:max-w-full">
+                    <div class="flex gap-3 items-center self-start">
+                      <div
+                        class="overflow-hidden font-normal gap-2.5 self-stretch px-4 py-1 my-auto text-sm tracking-wide bg-pink-100 rounded-2xl w-[89px]">
+                        優惠活動
+                      </div>
+                      <div class="self-stretch my-auto text-base tracking-wide w-[86px]">
+                        2024.05.13
+                      </div>
+                    </div>
+                    <div class="mt-1 text-base font-normal tracking-wide max-md:max-w-full">
+                      合庫金證點線上輕鬆貸..
+                    </div>
+                  </div>
+                  <div class="mt-4 w-full border border-solid border-neutral-100 min-h-[1px] max-md:max-w-full"></div>
+                  <div class="flex flex-col mt-4 w-full max-md:max-w-full">
+                    <div class="flex gap-3 items-center self-start">
+                      <div
+                        class="overflow-hidden font-normal gap-2.5 self-stretch px-4 py-1 my-auto text-sm tracking-wide bg-blue-100 rounded-2xl w-[89px]">
+                        期貨公告
+                      </div>
+                      <div class="self-stretch font-normal my-auto text-base tracking-wide w-[86px]">
+                        2024.05.13
+                      </div>
+                    </div>
+                    <div class="mt-1 text-base font-normal tracking-wide max-md:max-w-full">
+                      客製化小型臺指期貨宣導專區...
+                    </div>
+                  </div>
+                  <div class="mt-4 w-full border border-solid border-neutral-100 min-h-[1px] max-md:max-w-full"></div>
+                  <div class="flex flex-col mt-4 w-full max-md:max-w-full">
+                    <div class="flex gap-3 items-center self-start">
+                      <div
+                        class="overflow-hidden font-normal gap-2.5 self-stretch px-4 py-1 my-auto text-sm tracking-wide bg-emerald-100 rounded-2xl w-[89px]">
+                        公告事項
+                      </div>
+                      <div class="self-stretch font-normal my-auto text-base tracking-wide w-[86px]">
+                        2024.05.13
+                      </div>
+                    </div>
+                    <div class="mt-1 text-base font-normal tracking-wide max-md:max-w-full">
+                      再度提醒投資人勿信不明來電、不實簡訊、社群連結或網站等...
+                    </div>
+                  </div>
+                  <div class="mt-4 w-full border border-solid border-neutral-100 min-h-[1px] max-md:max-w-full"></div>
+                  <div class="flex flex-col mt-4 w-full max-md:max-w-full">
+                    <div class="flex gap-3 items-center self-start">
+                      <div
+                        class="overflow-hidden font-normal gap-2.5 self-stretch px-4 py-1 my-auto text-sm tracking-wide bg-emerald-100 rounded-2xl w-[89px]">
+                        公告事項
+                      </div>
+                      <div class="self-stretch font-normal my-auto text-base tracking-wide w-[86px]">
+                        2024.05.13
+                      </div>
+                    </div>
+                    <div class="mt-1 text-base font-normal tracking-wide max-md:max-w-full">
+                      本公司已於12月6日完成加入「失智友善組織」及「失智友善天使」。...
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col items-end pt-1 mt-3 w-full text-base text-right text-emerald-700 max-md:max-w-full">
+                  <div class="flex gap-2 justify-center items-center px-1 rounded-2xl">
+                    <div class="self-stretch my-auto font-normal">更多公告消息</div>
+                    <img loading="lazy"
+                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/159ae8a22987dc68473eb276fd5c6d2dd3207e3d99bad1b2d056c0bd567bfa33?apiKey=6ca75136718c454791d2fe542e2ed631&amp;"
+                      class="object-contain shrink-0 self-stretch my-auto w-2 aspect-[0.53]">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex absolute top-0 left-2/3 max-md:left-1/2 z-0 gap-5 items-start text-lg tracking-wide -translate-x-2/4 text-zinc-800 translate-y-[0%]">
+              <div class="flex flex-col rounded-none w-[186px]">
+                <div
+                  class="overflow-hidden font-bold gap-2.5 self-stretch px-14 py-4 bg-emerald-200 rounded-3xl max-md:px-5">
+                  公告訊息
+                </div>
+                <img loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/753d4b5c800af8e4ea0c425c48f1c4b1f88fd40abb122f091091c4b28989c99b?apiKey=6ca75136718c454791d2fe542e2ed631&amp;"
+                  class="object-contain self-center w-3.5 aspect-[1.17]">
+              </div>
+              <div
+                class="overflow-hidden font-bold gap-2.5 self-stretch px-14 py-4 bg-white rounded-3xl border-2 border-emerald-200 border-solid max-md:px-5">
+                即時新聞
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col pt-20 min-w-[240px] w-[264px] max-md:m-auto">
+            <div
+              class="flex flex-col justify-center px-3 py-4 w-full bg-white rounded-lg shadow-[0px_1px_8px_rgba(174,231,217,0.12)]">
+              <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/e75dc28584ab873963c04f2feed711bd306d82b2e2e5a974fc66bb008d6da647?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/e75dc28584ab873963c04f2feed711bd306d82b2e2e5a974fc66bb008d6da647?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/e75dc28584ab873963c04f2feed711bd306d82b2e2e5a974fc66bb008d6da647?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/e75dc28584ab873963c04f2feed711bd306d82b2e2e5a974fc66bb008d6da647?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/e75dc28584ab873963c04f2feed711bd306d82b2e2e5a974fc66bb008d6da647?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/e75dc28584ab873963c04f2feed711bd306d82b2e2e5a974fc66bb008d6da647?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/e75dc28584ab873963c04f2feed711bd306d82b2e2e5a974fc66bb008d6da647?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/e75dc28584ab873963c04f2feed711bd306d82b2e2e5a974fc66bb008d6da647?apiKey=6ca75136718c454791d2fe542e2ed631&amp;"
+                class="object-contain w-full aspect-[1.18]">
+            </div>
+            <div
+              class="flex flex-col justify-center px-3 py-4 mt-5 w-full bg-white rounded-lg shadow-[0px_1px_8px_rgba(174,231,217,0.12)]">
+              <img loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/89e9090a1d8e325363e4f5975e110cc2eb7ddce9ec9bc330c75adbf2066339ba?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/89e9090a1d8e325363e4f5975e110cc2eb7ddce9ec9bc330c75adbf2066339ba?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/89e9090a1d8e325363e4f5975e110cc2eb7ddce9ec9bc330c75adbf2066339ba?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/89e9090a1d8e325363e4f5975e110cc2eb7ddce9ec9bc330c75adbf2066339ba?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/89e9090a1d8e325363e4f5975e110cc2eb7ddce9ec9bc330c75adbf2066339ba?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/89e9090a1d8e325363e4f5975e110cc2eb7ddce9ec9bc330c75adbf2066339ba?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/89e9090a1d8e325363e4f5975e110cc2eb7ddce9ec9bc330c75adbf2066339ba?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/89e9090a1d8e325363e4f5975e110cc2eb7ddce9ec9bc330c75adbf2066339ba?apiKey=6ca75136718c454791d2fe542e2ed631&amp;"
+                class="object-contain w-full aspect-[1.19]">
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  </div>
+  <!-- ======  News End -->
+
+
+
+
+  <!-- ====== Platforms Start -->
+    <!-- <div id="platforms" class="bg-gray-1 pb-8 dark:bg-dark-2 w-full"> -->
+  <div class="container">
+
+
+      <div class="flex flex-col items-center self-center pt-14 pb-12 w-full px-2 max-sx:max-w-full">
+        <div class="flex flex-wrap gap-10 justify-between items-center w-full ">
+          <div class="flex flex-col self-stretch h-80 pb-10 max-lg:w-[200px] max-xl:w-[300px] mt-16  w-[400px] m-auto max-sx:max-w-full">
             <div class="text-3xl font-bold tracking-wider text-zinc-800 max-md:max-w-full">
               合作金庫證券-金庫e證券
             </div>
@@ -526,59 +519,64 @@
             <div class="flex gap-3 items-center self-center pt-4 mt-4">
               <img loading="lazy"
                 srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/3ec62d9394b7932f953242b5f2ca64b7ccecb92085e616beba0d0258875bdc85?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/3ec62d9394b7932f953242b5f2ca64b7ccecb92085e616beba0d0258875bdc85?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/3ec62d9394b7932f953242b5f2ca64b7ccecb92085e616beba0d0258875bdc85?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/3ec62d9394b7932f953242b5f2ca64b7ccecb92085e616beba0d0258875bdc85?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/3ec62d9394b7932f953242b5f2ca64b7ccecb92085e616beba0d0258875bdc85?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/3ec62d9394b7932f953242b5f2ca64b7ccecb92085e616beba0d0258875bdc85?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/3ec62d9394b7932f953242b5f2ca64b7ccecb92085e616beba0d0258875bdc85?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/3ec62d9394b7932f953242b5f2ca64b7ccecb92085e616beba0d0258875bdc85?apiKey=6ca75136718c454791d2fe542e2ed631&amp;"
-                class="object-contain shrink-0 self-stretch my-auto aspect-[3.33] w-[200px] max-sm:w-36">
+                class="object-contain shrink-0 self-stretch my-auto aspect-[3.33] w-[200px] max-sm:w-24">
               <img loading="lazy"
                 srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/59dfb669bb57e3973e9aff15eb4f03e0b98702983f898f329a978168c637ce87?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/59dfb669bb57e3973e9aff15eb4f03e0b98702983f898f329a978168c637ce87?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/59dfb669bb57e3973e9aff15eb4f03e0b98702983f898f329a978168c637ce87?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/59dfb669bb57e3973e9aff15eb4f03e0b98702983f898f329a978168c637ce87?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/59dfb669bb57e3973e9aff15eb4f03e0b98702983f898f329a978168c637ce87?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/59dfb669bb57e3973e9aff15eb4f03e0b98702983f898f329a978168c637ce87?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/59dfb669bb57e3973e9aff15eb4f03e0b98702983f898f329a978168c637ce87?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/59dfb669bb57e3973e9aff15eb4f03e0b98702983f898f329a978168c637ce87?apiKey=6ca75136718c454791d2fe542e2ed631&amp;"
-                class="object-contain shrink-0 self-stretch my-auto aspect-[3.33] w-[200px] max-sm:w-36">
+                class="object-contain shrink-0 self-stretch my-auto aspect-[3.33] w-[200px] max-sm:w-24">
             </div>
           </div>
-          <div class="relative self-stretch aspect-[2.17] min-w-[240px] w-[664px] max-md:max-w-full m-auto">
+          <div class="relative self-stretch aspect-[2.17]  max-lg:w-[400px] max-xl:w-[400px] max-sm:[w-250] w-[600px] h-80 max-md:max-w-full m-auto">
             <div class="swiper centered-slide-carousel swiper-container relative ">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <div class="rounded-2xl h-96 max-sm:h-48 flex justify-center items-center">
+                  <div class="rounded-2xl h-80 max-sm:h-48 mb-8 flex justify-center items-center">
                     <img src="./assets/images/Group.png" class="object-contain self-stretch my-auto  m-auto">
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="rounded-2xl h-96 max-sm:h-48 flex justify-center items-center">
+                  <div class="rounded-2xl h-80 max-sm:h-48 flex justify-center items-center">
                     <img src="./assets/images/Group.png" class="object-contain self-stretch my-auto  m-auto">
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="rounded-2xl h-96 max-sm:h-48 flex justify-center items-center">
+                  <div class="rounded-2xl h-80 max-sm:h-48 flex justify-center items-center">
                     <img src="./assets/images/Group.png" class="object-contain self-stretch my-auto  m-auto">
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="rounded-2xl h-96 max-sm:h-48 flex justify-center items-center">
+                  <div class="rounded-2xl h-80 max-sm:h-48 flex justify-center items-center">
                     <img src="./assets/images/Group.png" class="object-contain self-stretch my-auto  m-auto">
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="rounded-2xl h-96 max-sm:h-48 flex justify-center items-center">
+                  <div class="rounded-2xl h-80 max-sm:h-48 flex justify-center items-center">
                     <img src="./assets/images/Group.png" class="object-contain self-stretch my-auto  m-auto">
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="rounded-2xl h-96 max-sm:h-48 flex justify-center items-center">
+                  <div class="rounded-2xl h-80 max-sm:h-48 flex justify-center items-center">
                     <img src="./assets/images/Group.png" class="object-contain self-stretch my-auto  m-auto">
                   </div>
                 </div>
               </div>
-              <div class="swiper-pagination sm:!absolute sm:!-left-1/3"></div>
+              <div class="swiper-pagination sm:!absolute sm:!-left-1/4"></div>
             </div>
           </div>
         </div>
       </div>
+
     </div>
-  </section>
+  <!-- </div> -->
+  <!-- ====== Platforms End -->
+
+
+
   <div class="bg-[#2F3535] w-full">
     <div class="container ">
       <div class="accordion w-full">
         <div class="tab">
           <input type="checkbox" name="accordion-1" id="cb1">
-          <label for="cb1" class="tab__label">
+          <label for="cb1" class="tab__label relative">
             <span class="hidden max-sm:block">
               集團成員
             </span>
@@ -586,8 +584,10 @@
               合庫金控 &nbsp; 合作金庫銀行 &nbsp; 合作金庫人壽 &nbsp; 合庫資產管理 &nbsp; 合作金庫票券 &nbsp; 合作金庫創投 &nbsp; 合作金庫投信 &nbsp; 合作金庫投顧
               &nbsp; 元大期貨
             </span>
+            <span class="absolute right-8 top-3">更多相關連結</span>
           </label>
-          <div class="tab__content">
+         
+          <div class="tab__content"> 
             <p class="text-white">台灣證券交易所&nbsp; 證券櫃檯買賣中心&nbsp; 台灣期貨交易所&nbsp; 證券暨期貨市場基金會&nbsp; 金管會證期局&nbsp; 公開資訊觀測站</p>
           </div>
         </div>
@@ -749,6 +749,7 @@
   </footer>
 
   <!-- ====== Footer End -->
+
 
   <!-- ====== Back To Top Start -->
   <a href="javascript:void(0)"
