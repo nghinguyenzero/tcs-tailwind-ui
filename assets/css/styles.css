@@ -174,3 +174,13 @@ body{ font-family: "Montserrat","Noto Sans TC", sans-serif; letter-spacing: 0.5p
     border-radius: 1rem !important;
   }
   
+  #profile-tab[aria-selected="false"] + img {
+    display: none;
+  }
+
+  #dashboard-tab[aria-selected="false"] + img {
+    display: none;
+  }
+
+
+  
