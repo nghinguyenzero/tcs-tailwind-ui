@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+
+
+body{ font-family: "Montserrat","Noto Sans TC", sans-serif; letter-spacing: 0.5px;} 
 
 .container {
   width: 100%;
@@ -108,7 +117,7 @@
   height: 1em;
   margin: 0 4px;
   text-align: center;
-  transform: rotate(90deg);
+  /* transform: rotate(90deg); */
   transition: all 0.35s;
 }
 /* .tab input:checked + .tab__label::after {
@@ -136,24 +145,32 @@
   }
 }
 
+.tab input:checked + .tab__label::after {
+  content: url("./../images/svg/Group_187.svg"); /* Change icon when checked */
+  /* transform: rotate(270deg); */
+}
+
 
 /* https://pagedone.io/docs/carousel */
 /* CSS Code */
 .swiper-wrapper {
   width: 100%;
   height: max-content !important;
-  padding-bottom: 64px !important;
+  /* padding-bottom: 64px !important; */
   -webkit-transition-timing-function: linear !important;
   transition-timing-function: linear !important;
   position: relative;
   }
+
   .swiper-pagination-bullet {
     background: #008664;
-    width: 1rem;
-    height: 1rem;
+    width: 12px;
+    height: 12px;
   }
   .swiper-pagination-bullet-active {
     background: #008664 !important;
-    width: 1rem;
-    height: 1rem;
+    height: 12px;
+    width: 2.4rem;
+    border-radius: 1rem !important;
   }
+  
