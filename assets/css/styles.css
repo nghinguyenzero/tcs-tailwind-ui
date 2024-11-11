@@ -14,6 +14,7 @@ body{ font-family: "Montserrat","Noto Sans TC", sans-serif; letter-spacing: 0.5p
   margin-left: auto;
   padding-right: 16px;
   padding-left: 16px;
+  max-width: 1200px;
 }
 
 @media (min-width: 540px){
@@ -40,11 +41,11 @@ body{ font-family: "Montserrat","Noto Sans TC", sans-serif; letter-spacing: 0.5p
   }
 }
 
-@media (min-width: 1320px){
+/* @media (min-width: 1320px){
   .container{
     max-width: 1320px;
   }
-}
+} */
 
 .sticky .signUpBtn{
   --tw-bg-opacity: 1;
@@ -133,7 +134,7 @@ body{ font-family: "Montserrat","Noto Sans TC", sans-serif; letter-spacing: 0.5p
   font-size: 0.75rem;
 }
 /* Arrow animation */
-.tab input:not(:checked) + .tab__label:hover::after {
+/* .tab input:not(:checked) + .tab__label:hover::after {
   animation: bounce .5s infinite;
 }
 @keyframes bounce {
@@ -143,7 +144,7 @@ body{ font-family: "Montserrat","Noto Sans TC", sans-serif; letter-spacing: 0.5p
   75% {
     transform: rotate(90deg) translate(-.25rem);
   }
-}
+} */
 
 .tab input:checked + .tab__label::after {
   content: url("./../images/svg/Group_187.svg"); /* Change icon when checked */
