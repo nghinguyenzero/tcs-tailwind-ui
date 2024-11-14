@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    TCS | Taiwan cooperative securities
+  </title>
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/animate.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- ==== WOW JS ==== -->
+  <script src="assets/js/wow.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+
+  <script>
+    new WOW().init();
+  </script>
+</head>
+
+<body>
+
+  <!-- ====== Header Start -->
+  <header class="ud-header absolute left-0 top-0 z-40 flex w-full items-center bg-transparent bg-white">
+    <div class="w-full">
+      <div
+        class="ud-header-sub  flex flex-col items-center w-full text-sm tracking-wide text-center whitespace-nowrap bg-zinc-100 text-zinc-800 max-md:max-w-full max-md:hidden">
+        <div class="container">
+          <div
+            class="flex flex-wrap gap-3 items-start py-2 max-w-full container justify-end px-3 text-base font-normal">
+            <div><a href="latest-announcement.html">最新公告 </a></div>
+            <div><a href="service-base.html"> 服務據點</a></div>
+            <div><a href="sustainable-development-zone.html">永續發展專區</a></div>
+            <div><a href="financial-friendly-services.html">金融友善服務</a></div>
+            <div><a href="about-us.html">關於我們</a></div>
+            <div>EN</div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="w-full">
+          <div class="relative -mx-4 max-md: flex items-center justify-between">
+            <div class="sm:w-[400px] w-[500px] max-w-full px-4">
+              <a href="index.html" class="navbar-logo block w-full max-md:my-4 max-md:!ml-12">
+
+                <img src="assets/images/logo/logo-white.png" alt="logo" class="header-logo w-full" />
+              </a>
+            </div>
+            <div class="flex w-full items-center justify-end px-4">
+              <button id="navbarToggler"
+                class="absolute left-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 md:hidden">
+                <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M24 9.12C24 9.50191 23.8483 9.86817 23.5782 10.1382C23.3082 10.4083 22.9419 10.56 22.56 10.56H1.44C1.05809 10.56 0.691819 10.4083 0.421766 10.1382C0.151714 9.86818 0 9.50191 0 9.12C0 8.73809 0.151714 8.37182 0.421766 8.10177C0.691819 7.83171 1.05809 7.68 1.44 7.68H22.56C22.9419 7.68001 23.3082 7.83173 23.5782 8.10178C23.8483 8.37183 24 8.73809 24 9.12ZM1.44 2.88H22.56C22.9419 2.88 23.3082 2.72829 23.5782 2.45823C23.8483 2.18818 24 1.82191 24 1.44C24 1.05809 23.8483 0.691818 23.5782 0.421766C23.3082 0.151714 22.9419 0 22.56 0H1.44C1.05809 0 0.691819 0.151714 0.421766 0.421766C0.151714 0.691818 0 1.05809 0 1.44C0 1.82191 0.151714 2.18818 0.421766 2.45823C0.691819 2.72829 1.05809 2.88 1.44 2.88ZM22.56 15.36H1.44C1.05809 15.36 0.691819 15.5117 0.421766 15.7818C0.151714 16.0518 0 16.4181 0 16.8C0 17.1819 0.151714 17.5482 0.421766 17.8182C0.691819 18.0883 1.05809 18.24 1.44 18.24H22.56C22.9419 18.24 23.3082 18.0883 23.5782 17.8182C23.8483 17.5482 24 17.1819 24 16.8C24 16.4181 23.8483 16.0518 23.5782 15.7818C23.3082 15.5117 22.9419 15.36 22.56 15.36Z"
+                    fill="#008061" />
+                </svg>
+              </button>
+              <nav id="navbarCollapse"
+                class="absolute left-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark-2 lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:px-4 lg:py-0 lg:shadow-none dark:lg:bg-transparent xl:px-6">
+                <ul class="blcok lg:flex 2xl:ml-20 justify-end">
+                  <li class="submenu-item group relative">
+                    <a href="javascript:void(0)" class="font-medium relative mx-8 flex items-center justify-between py-2 text-lg group-hover:text-green-800 text-dark
+                      lg:ml-4 lg:mr-0 lg:inline-flex lg:py-6 lg:pl-0 lg:pr-4 lg:group-hover:opacity-70">
+                      交易平台
+                    </a>
+                    <div
+                      class="submenu relative left-0 top-full hidden w-[250px] rounded-sm bg-white p-4 transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark-2 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full">
+                      <a href="trading-platform.html"
+                        class="block rounded px-4 py-[10px] text-base font-medium text-body-color hover:text-green-800">
+                        交易相關
+                      </a>
+                      <a href="trading-platform.html"
+                        class="block rounded px-4 py-[10px] text-base font-medium text-body-color hover:text-green-800">
+                        電子憑證
+                      </a>
+                      <a href="trading-platform.html"
+                        class="block rounded px-4 py-[10px] text-base font-medium text-body-color hover:text-green-800">
+                        文件下載服務
+                      </a>
+                    </div>
+                  </li>
+                  <li class="group relative">
+                    <a href="sustainable-development-zone.html" class="ud-menu-scroll mx-8 flex py-2 text-lg font-medium text-dark group-hover:text-green-800
+                  
+                      lg:ml-4 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:group-hover:opacity-70">
+                      定期定額
+                    </a>
+                  </li>
+
+                  <li class="submenu-item group relative">
+                    <a href="javascript:void(0)" href="sustainable-development-zone.html" class="relative mx-8 flex items-center justify-between py-2 text-lg  font-medium text-dark group-hover:text-green-800 
+                      lg:ml-4 lg:mr-0 lg:inline-flex lg:py-6 lg:pl-0 lg:pr-4">
+                      客戶服務
+                    </a>
+                    <div
+                      class="submenu relative left-0 top-full hidden w-[250px] rounded-sm bg-white p-4 transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark-2 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full">
+                      <a href="sustainable-development-zone.html"
+                        class="block rounded px-4 py-[10px] text-base font-medium text-body-color hover:text-green-800">
+                        新手上路
+                      </a>
+                      <a href="sustainable-development-zone.html"
+                        class="block rounded px-4 py-[10px] text-base font-medium text-body-color hover:text-green-800 ">
+                        線上申請
+                      </a>
+                      <a href="sustainable-development-zone.html"
+                        class="block rounded px-4 py-[10px] text-base font-medium text-body-color hover:text-green-800 ">
+                        訂閱中心
+                      </a>
+                      <a href="sustainable-development-zone.html"
+                        class="block rounded px-4 py-[10px] text-sm font-medium text-body-color hover:text-green-800">
+                        影音專區
+                      </a>
+                      <a href="sustainable-development-zone.html"
+                        class="block rounded px-4 py-[10px] text-base font-medium text-body-color hover:text-green-800">
+                        常見問題
+                      </a>
+                    </div>
+                  </li>
+
+
+                  <li class="submenu-item group relative">
+                    <a href="javascript:void(0)" class="relative mx-8 flex items-center justify-between py-2 text-lg  font-medium text-dark group-hover:text-green-800 
+                      lg:ml-4 lg:mr-0 lg:inline-flex lg:py-6 lg:pl-0 lg:pr-4">
+                      投資訊息
+                    </a>
+                    <div
+                      class="submenu relative left-0 top-full hidden w-[250px] rounded-sm bg-white p-4 transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark-2 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full">
+                      <a href="#"
+                        class="block rounded px-4 py-[10px] text-base  font-medium text-body-color hover:text-green-800 dark:text-dark-6 dark:hover:text-green-800">
+                        台股
+                      </a>
+                      <a href="#"
+                        class="block rounded px-4 py-[10px] text-base  font-medium text-body-color hover:text-green-800 dark:text-dark-6 dark:hover:text-green-800">
+                        基金
+                      </a>
+                    </div>
+                  </li>
+                  <li class="group relative">
+                    <a href="#contact" class="ud-menu-scroll mx-8 flex py-2 text-lg font-medium text-dark group-hover:text-green-800 
+                      lg:ml-4 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6">
+                      研究報告
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="flex items-center justify-end max-sm:pr-0 max-sm:py-1 my-4 ">
+                <a href="signup.html"
+                  class="signUpBtn min-w-[90px] bg-[#008664] rounded-full px-3 py-2 text-base font-medium text-white duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark">
+                  開戶專區
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ====== Header End -->
+
+  <section class="flex overflow-hidden flex-col bg-white bg-[url('assets/images/c-banner-bg.png')] bg-cover">
+    <div class="flex relative flex-col w-full whitespace-nowrap min-h-[198px] max-md:max-w-full">
+      <div class="container flex relative flex-col items-start self-center w-full max-md:max-w-full">
+        <nav aria-label="Breadcrumb"
+          class="flex gap-2 items-center px-1 py-4 text-base tracking-wide text-[#2A2A2A] text-opacity-60">
+          <img loading="lazy" src="assets/images/svg/home-icon.svg" alt=""
+            class="object-contain shrink-0 self-stretch my-auto aspect-[0.95] w-[18px]" />
+          <img loading="lazy" src="assets/images/svg/turn-right.svg" alt=""
+            class="object-contain shrink-0 self-stretch my-auto w-5 aspect-square" />
+          <span>關於我們</span>
+        </nav>
+        <h1 class="flex gap-2 items-center pt-4 pb-3 mt-2 text-3xl font-medium tracking-widest text-[#2A2A2A]">
+          <img loading="lazy" src="assets/images/logo.png" alt=""
+            class="object-contain shrink-0 self-stretch my-auto w-8 aspect-square" />
+          <span>關於我們</span>
+        </h1>
+      </div>
+    </div>
+    <div class="border-b border-gray-200  container " style="background-image: url('assets/images/svg/bg-1.svg')">
+      <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-styled-tab"
+        data-tabs-toggle="#default-styled-tab-content"
+        data-tabs-active-classes="text-purple-600 hover:text-purple-600 dark:text-purple-500 dark:hover:text-purple-500 border-purple-600 dark:border-purple-500"
+        data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 "
+        role="tablist">
+        <li class="me-2" role="presentation">
+          <button id="about-heku-securities-styled-tab" data-tabs-target="#styled-about-heku-securities" type="button"
+            role="tab" aria-controls="about-heku-securities" aria-selected="false"
+            class="inline-block p-4 border-b-2 rounded-t-lg aria-selected:text-[#008061] aria-selected:border-[#FDC885] text-lg">
+            關於合庫證券
+          </button>
+        </li>
+
+        <li class="me-2" role="presentation">
+          <button id="business-services-styled-tab" data-tabs-target="#styled-business-services" type="button"
+            role="tab" aria-controls="business-services" aria-selected="false"
+            class="inline-block p-4 border-b-2 rounded-t-lg aria-selected:text-[#008061] aria-selected:border-[#FDC885] text-lg hover:text-gray-600 hover:border-gray-300 ">
+            業務服務
+          </button>
+        </li>
+
+        <li class="me-2" role="presentation">
+          <button id="reporting-channel-styled-tab" data-tabs-target="#styled-reporting-channel" type="button"
+            role="tab" aria-controls="reporting-channel" aria-selected="false"
+            class="inline-block p-4 border-b-2 rounded-t-lg aria-selected:text-[#008061] aria-selected:border-[#FDC885]  text-lg hover:text-gray-600 hover:border-gray-300 ">
+            檢舉管道
+          </button>
+        </li>
+
+
+
+      </ul>
+    </div>
+  </section>
+
+  <div id="default-styled-tab-content_ relative">
+    <img loading="lazy" src="assets/images/svg/logo-wt.svg" alt=""
+      class="object-contain absolute z-0 rounded-none aspect-[1.32] h-[150px] left-[-60px] top-[500px] max-sm:hidden">
+    <div class="container">
+
+      <div aria-labelledby="about-heku-securities-tab" class="hidden p-4  rounded-lg" id="styled-about-heku-securities"
+        role="tabpanel" data-tabs-toggle="#default-styled-tab-content_">
+
+        <!-- ooooooooooooooooooooooooooooooooooo -->
+
+        <div class="mb-4">
+          <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-tab"
+            data-tabs-toggle="#default-tab-content" role="tablist">
+            <li class="me-2" role="presentation">
+              <button id="company-history-tab" data-tabs-target="#company-history" type="button" role="tab"
+                aria-controls="company-history" aria-selected="false" class="gap-2.5 self-stretch px-6 py-3 my-auto bg-white rounded-xl 
+              aria-selected:bg-[#EFFAF7] aria-selected:border aria-selected:text-[#2A2A2A] aria-selected:border-[#008061] 
+              border-solid text-[#2A2A2A] max-md:px-5">
+              公司沿革
+            </button>
+            </li>
+            <li class="me-2" role="presentation">
+              <button id="organizational-chart-tab" data-tabs-target="#organizational-chart" aria-controls="organizational-chart"
+                class="gap-2.5 self-stretch px-6 py-3 my-auto bg-white rounded-xl border border-[#008061] border-solid text-[#2A2A2A] max-md:px-5
+              aria-selected:bg-[#EFFAF7] aria-selected:border aria-selected:text-[#2A2A2A] aria-selected:border-[#008061]" type="button" role="tab" aria-selected="false">
+              組織圖
+              </button>
+            </li>
+
+            <li class="me-2" role="presentation">
+              <button id="corporate-governance-tab" data-tabs-target="#corporate-governance" aria-controls="corporate-governance"
+                class="gap-2.5 self-stretch px-6 py-3 my-auto bg-white rounded-xl border border-[#008061] border-solid text-[#2A2A2A] max-md:px-5
+              aria-selected:bg-[#EFFAF7] aria-selected:border aria-selected:text-[#2A2A2A] aria-selected:border-[#008061] " type="button" role="tab" aria-selected="false">
+                公司治理
+              </button>
+            </li>
+            <li role="presentation">
+              <button id="credit-rating-tab" data-tabs-target="#credit-rating" aria-controls="credit-rating"
+                class="gap-2.5 self-stretch px-6 py-3 my-auto bg-white rounded-xl border border-[#008061] border-solid text-[#2A2A2A] max-md:px-5
+              aria-selected:bg-[#EFFAF7] aria-selected:border aria-selected:text-[#2A2A2A] aria-selected:border-[#008061]" type="button" role="tab" aria-selected="false">
+                信用評等
+              </button>
+            </li>
+
+            <li role="presentation">
+              <button id="integrity-management-tab" data-tabs-target="#integrity-management" aria-controls="integrity-management"
+                class="gap-2.5 self-stretch px-6 py-3 my-auto bg-white rounded-xl border border-[#008061] border-solid text-[#2A2A2A] max-md:px-5
+              aria-selected:bg-[#EFFAF7] aria-selected:border aria-selected:text-[#2A2A2A] aria-selected:border-[#008061]" type="button" role="tab" aria-selected="false">
+              誠信經營
+              </button>
+            </li>
+
+            <li role="presentation">
+              <button id="subsidiary-profile-tab" data-tabs-target="#subsidiary-profile" aria-controls="subsidiary-profile"
+                class="gap-2.5 self-stretch px-6 py-3 my-auto bg-white rounded-xl border border-[#008061] border-solid text-[#2A2A2A] max-md:px-5
+              aria-selected:bg-[#EFFAF7] aria-selected:border aria-selected:text-[#2A2A2A] aria-selected:border-[#008061]" type="button" role="tab" aria-selected="false">
+              子公司簡介
+              </button>
+            </li>
+
+          </ul>
+        </div>
+        <div id="default-tab-content">
+
+          <div id="company-history" aria-labelledby="company-history-tab" class="hidden p-4 rounded-lg bg-gray-5"
+            role="tabpanel">
+            <section class="flex flex-col pt-4 pb-6 text-base tracking-wide whitespace-nowrap rounded-lg">
+
+              <p class="mt-3 text-[#2A2A2A] max-md:max-w-full">
+                民國50年台灣證券交易所設立，合庫銀行為配合政策、積極擔任民間投資之橋樑，於51年開辦證券經紀業務，以擴大證券經紀規模服務投資大眾，53年至96年增設10處營業據點，並於證券分公司開辦期貨交易輔助人業務。
+              </p>
+              <h2 class="mt-3 text-lg font-medium tracking-wide text-[#008061]">合庫證券總、分公司設立時程如下</h2>
+              <ul class="flex flex-col mt-3 w-full max-md:max-w-full">
+                <li
+                  class="flex flex-wrap gap-3 items-center w-full rounded-lg bg-neutral-100 bg-opacity-60 max-md:max-w-full">
+                  <span
+                    class="gap-2.5 self-stretch px-2 my-auto font-medium rounded-lg text-[#2A2A2A] w-[88px]">民國51年</span>
+                  <span
+                    class="flex-1 shrink self-stretch my-auto basis-4 text-[#2A2A2A] text-opacity-80 max-md:max-w-full">設立台北證券總公司開辦證券經紀業務</span>
+                </li>
+                <li class="flex flex-wrap gap-3 items-center w-full max-md:max-w-full">
+                  <span
+                    class="gap-2.5 self-stretch px-2 my-auto font-medium rounded-lg text-[#2A2A2A] w-[88px]">民國53年</span>
+                  <span
+                    class="flex-1 shrink self-stretch my-auto basis-4 text-[#2A2A2A] text-opacity-80 max-md:max-w-full">增設高雄及台南分公司</span>
+                </li>
+                <li
+                  class="flex flex-wrap gap-3 items-center w-full rounded-lg bg-neutral-100 bg-opacity-60 max-md:max-w-full">
+                  <span
+                    class="gap-2.5 self-stretch px-2 my-auto font-medium rounded-lg text-[#2A2A2A] w-[88px]">民國64年</span>
+                  <span
+                    class="flex-1 shrink self-stretch my-auto basis-4 text-[#2A2A2A] text-opacity-80 max-md:max-w-full">增設台中分公司</span>
+                </li>
+                <li class="flex flex-wrap gap-3 items-center w-full max-md:max-w-full">
+                  <span
+                    class="gap-2.5 self-stretch px-2 my-auto font-medium rounded-lg text-[#2A2A2A] w-[88px]">民國67年</span>
+                  <span
+                    class="flex-1 shrink self-stretch my-auto basis-4 text-[#2A2A2A] text-opacity-80 max-md:max-w-full">增設嘉義分公司</span>
+                </li>
+                <li
+                  class="flex flex-wrap gap-3 items-center w-full rounded-lg bg-neutral-100 bg-opacity-60 max-md:max-w-full">
+                  <span
+                    class="gap-2.5 self-stretch px-2 my-auto font-medium rounded-lg text-[#2A2A2A] w-[88px]">民國77年</span>
+                  <span
+                    class="flex-1 shrink self-stretch my-auto basis-4 text-[#2A2A2A] text-opacity-80 max-md:max-w-full">開辦代銷基金業務</span>
+                </li>
+                <li class="flex flex-wrap gap-3 items-center w-full max-md:max-w-full">
+                  <span
+                    class="gap-2.5 self-stretch px-2 my-auto font-medium rounded-lg text-[#2A2A2A] w-[88px]">民國78年</span>
+                  <span
+                    class="flex-1 shrink self-stretch my-auto basis-4 text-[#2A2A2A] text-opacity-80 max-md:max-w-full">開辦證券承銷業務</span>
+                </li>
+                <li
+                  class="flex flex-wrap gap-3 items-center w-full rounded-lg bg-neutral-100 bg-opacity-60 max-md:max-w-full">
+                  <span
+                    class="gap-2.5 self-stretch px-2 my-auto font-medium rounded-lg text-[#2A2A2A] w-[88px]">民國81年</span>
+                  <span
+                    class="flex-1 shrink self-stretch my-auto basis-4 text-[#2A2A2A] text-opacity-80 max-md:max-w-full">自辦證券融資融券業務</span>
+                </li>
+                <li class="flex flex-wrap gap-3 items-center w-full max-md:max-w-full">
+                  <span
+                    class="gap-2.5 self-stretch px-2 my-auto font-medium rounded-lg text-[#2A2A2A] w-[88px]">民國88年</span>
+                  <span
+                    class="flex-1 shrink self-stretch my-auto basis-4 text-[#2A2A2A] text-opacity-80 max-md:max-w-full">增設基隆及南興分公司</span>
+                </li>
+                <li
+                  class="flex flex-wrap gap-3 items-center w-full rounded-lg bg-neutral-100 bg-opacity-60 max-md:max-w-full">
+                  <span
+                    class="gap-2.5 self-stretch px-2 my-auto font-medium rounded-lg text-[#2A2A2A] w-[88px]">民國89年</span>
+                  <span
+                    class="flex-1 shrink self-stretch my-auto basis-4 text-[#2A2A2A] text-opacity-80 max-md:max-w-full">全面開辦證券電子式下單，含網路及語音</span>
+                </li>
+                <li class="flex flex-wrap gap-3 items-center w-full max-md:max-w-full">
+                  <span
+                    class="gap-2.5 self-stretch px-2 my-auto font-medium rounded-lg text-[#2A2A2A] w-[88px]">民國91年</span>
+                  <span
+                    class="flex-1 shrink self-stretch my-auto basis-4 text-[#2A2A2A] text-opacity-80 max-md:max-w-full">證券總公司及基隆、台中、高雄等分公司開辦期貨交易輔助人業務</span>
+                </li>
+                <li
+                  class="flex flex-wrap gap-3 items-center w-full rounded-lg bg-neutral-100 bg-opacity-60 max-md:max-w-full">
+                  <span
+                    class="gap-2.5 self-stretch px-2 my-auto font-medium rounded-lg text-[#2A2A2A] w-[88px]">民國92年</span>
+                  <span
+                    class="flex-1 shrink self-stretch my-auto basis-4 text-[#2A2A2A] text-opacity-80 max-md:max-w-full">嘉義、台南、南興等分公司開辦期貨交易輔助人業務</span>
+                </li>
+                <li class="flex flex-wrap gap-3 items-center w-full max-md:max-w-full">
+                  <span
+                    class="gap-2.5 self-stretch px-2 my-auto font-medium rounded-lg text-[#2A2A2A] w-[88px]">民國93年</span>
+                  <span
+                    class="flex-1 shrink self-stretch my-auto basis-4 text-[#2A2A2A] text-opacity-80 max-md:max-w-full">與國泰期貨商簽約合作開辦期貨交易輔助人業務</span>
+                </li>
+                <li
+                  class="flex flex-wrap gap-3 items-center w-full rounded-lg bg-neutral-100 bg-opacity-60 max-md:max-w-full">
+                  <span
+                    class="gap-2.5 self-stretch px-2 my-auto font-medium rounded-lg text-[#2A2A2A] w-[88px]">民國95年</span>
+                  <span
+                    class="flex-1 shrink self-stretch my-auto basis-4 text-[#2A2A2A] text-opacity-80 max-md:max-w-full">與農民銀行合併，原農民銀行自強、東桃園、港都等三家分公司併入增設營業據點；正式成立證券部，分設企劃科、管理科、會計科</span>
+                </li>
+                <li class="flex flex-wrap gap-3 items-center w-full max-md:max-w-full">
+                  <span
+                    class="gap-2.5 self-stretch px-2 my-auto font-medium rounded-lg text-[#2A2A2A] w-[88px]">民國96年</span>
+                  <span
+                    class="flex-1 shrink self-stretch my-auto basis-4 text-[#2A2A2A] text-opacity-80 max-md:max-w-full">增設鹿港分公司</span>
+                </li>
+                <li
+                  class="flex flex-wrap gap-3 items-center w-full rounded-lg bg-neutral-100 bg-opacity-60 max-md:max-w-full">
+                  <span
+                    class="gap-2.5 self-stretch px-2 my-auto font-medium rounded-lg text-[#2A2A2A] w-[88px]">民國98年</span>
+                  <span
+                    class="flex-1 shrink self-stretch my-auto basis-4 text-[#2A2A2A] text-opacity-80 max-md:max-w-full">鹿港、東桃園、自強及港都分公司開辦期貨交易輔助人業務</span>
+                </li>
+                <li class="flex flex-wrap gap-3 items-center w-full max-md:max-w-full">
+                  <span
+                    class="gap-2.5 self-stretch pr-1 pl-2 my-auto font-medium rounded-lg text-[#2A2A2A] w-[88px]">民國100年</span>
+                  <img src="assets/images/svg/I.svg" alt=""
+                    class="object-contain shrink-0 self-stretch my-auto w-0 rounded-none" />
+                  <span
+                    class="flex-1 shrink self-stretch my-auto basis-[11px] text-[#2A2A2A] text-opacity-80 max-md:max-w-full">民國100年12月1日合作金庫金控成立後，合作金庫銀行證券部門於100年12月2日正式分割成立合作金庫證券總公司及13家分公司，提供客戶更完善、更專業的服務；增設竹塹分公司</span>
+                </li>
+                <li
+                  class="flex flex-wrap gap-3 items-center w-full rounded-lg bg-neutral-100 bg-opacity-60 max-md:max-w-full">
+                  <span
+                    class="gap-2.5 self-stretch pr-1 pl-2 my-auto font-medium rounded-lg text-[#2A2A2A] w-[88px]">民國101年</span>
+                  <span
+                    class="flex-1 shrink self-stretch my-auto basis-[11px] text-[#2A2A2A] text-opacity-80 max-md:max-w-full">增設彰化分公司及鳳松分公司；南興分公司併入台南分公司；鹿港分公司併入彰化分公司</span>
+                </li>
+              </ul>
+            </section>
+          </div>
+
+          <div class="hidden p-4 rounded-lg bg-gray-50" id="organizational-chart" role="tabpanel" aria-labelledby="organizational-chart">
+            <div>organizational-chart</div>
+          </div>
+
+          <div class="hidden p-4 rounded-lg bg-gray-50" id="corporate-governance" role="tabpanel" aria-labelledby="corporate-governance-tab">
+            <div>corporate-governance</div>
+          </div>
+
+          <div class="hidden p-4 rounded-lg bg-gray-50" id="credit-rating" role="tabpanel" aria-labelledby="credit-rating-tab">
+            <div>credit-rating</div>
+          </div>
+
+          <div class="hidden p-4 rounded-lg bg-gray-50" id="integrity-management" role="tabpanel" aria-labelledby="integrity-management-tab">
+            <div>integrity-management</div>
+          </div>
+          <div class="hidden p-4 rounded-lg bg-gray-50" id="subsidiary-profile" role="tabpanel" aria-labelledby="subsidiary-profile-tab">
+            <div>subsidiary-profile</div>
+          </div>
+        </div>
+        <!-- ooooooooooooooooooooooooooooooooooo -->
+
+      </div>
+
+      <div aria-labelledby="business-services-tab" class="hidden p-4 rounded-lg" id="styled-business-services"
+        role="tabpanel">
+        <div>business-services-tab</div>
+      </div>
+
+
+      <div aria-labelledby="reporting-channel-tab" class="hidden p-4 rounded-lg" id="styled-reporting-channel"
+        role="tabpanel">
+        <div>reporting-channel-tab</div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ====== Footer Start -->
+  <footer class="footer-desktop max-sm:hidden wow fadeInUp relative z-10 bg-[#383C3B]" data-wow-delay=".15s">
+
+    <div class="py-8 border-t border-gray-400">
+      <div class="container">
+        <div class="-mx-4 flex flex-wrap">
+          <div class="px-4 max-md:w-full w-9/12">
+            <div class="flex flex-col flex-1 shrink basis-0 max-md:max-w-full">
+              <div class="pb-2 w-full text-sm tracking-wide text-white max-md:max-w-full">
+                公平待客專區｜金融機構間資料共享業務暨共同行銷專區｜投資人資通安全手冊｜隱私權保護聲明｜個人資料保護政策聲明
+                <br>
+                個人資料保護聲明｜電子化金融服務｜投資人個人資料查詢｜機構投資人盡職治理｜客服暨客訴信箱｜電子交易無法運作應對措施｜網站導覽
+              </div>
+              <div
+                class="mt-3 w-full border border-solid border-zinc-100 border-opacity-10 min-h-[1px] max-md:max-w-full">
+              </div>
+              <div class="flex flex-col self-start pt-2 mt-3 text-base tracking-wide max-md:max-w-full">
+                <div class="flex flex-wrap gap-2 items-start max-md:max-w-full">
+                  <div class="flex gap-2 items-center text-orange-200">
+                    <div class="self-stretch my-auto">客服中心暨客戶申訴專線</div>
+                    <div class="self-stretch my-auto">(02)2752-5050</div>
+                  </div>
+                  <div class="flex gap-2 items-start text-white">
+                    <div>反詐騙諮詢專線</div>
+                    <div>(02)2752-5050</div>
+                  </div>
+                </div>
+                <div class="flex flex-wrap gap-2 items-start mt-2 max-md:max-w-full">
+                  <div class="flex gap-2 items-start text-orange-200">
+                    <div>高齡服務專線</div>
+                    <div>(02)8772-8585</div>
+                  </div>
+                  <div class="flex gap-2 items-start text-white whitespace-nowrap ">
+                    <div>語音下單電話</div>
+                    <div>4050-8989(手機請加02)</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="max-md:w-full px-4 w-3/12">
+            <div class="flex flex-col">
+              <div class="flex flex-col text-sm tracking-wide text-white">
+                <div class="flex gap-2 items-start">
+                  <div>營業人名稱</div>
+                  <div>合作金庫證券股份有限公司</div>
+                </div>
+                <div class="flex gap-2 items-start self-start mt-2">
+                  <div>統一編號</div>
+                  <div>53021481</div>
+                </div>
+              </div>
+              <div class="flex flex-col mt-2 max-w-full w-[145px]">
+                <img loading="lazy" src="assets/images/dp_1.png" class="object-contain w-full aspect-[2.59]">
+              </div>
+              <div class="mt-2 text-sm tracking-wide text-white text-opacity-80">
+                ©合作金庫證劵版權所有
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <footer class="footer-mobile flex flex-col sm:hidden ">
+    <section class="flex flex-col px-4 pt-3 pb-4 w-full bg-neutral-700">
+      <div class="flex flex-col justify-center pt-1 pb-2 w-full">
+        <nav class="text-sm tracking-wide text-white">
+          <a href="#" class="hover:underline">公平待客專區</a>｜
+          <a href="#" class="hover:underline">金融機構間資料共享業務暨共同行銷專區</a>｜
+          <a href="#" class="hover:underline">投資人資通安全手冊</a>｜
+          <a href="#" class="hover:underline">隱私權保護聲明</a>｜
+          <a href="#" class="hover:underline">個人資料保護政策聲明</a>｜
+          <a href="#" class="hover:underline">個人資料保護聲明</a>｜
+          <a href="#" class="hover:underline">電子化金融服務</a>｜
+          <a href="#" class="hover:underline">投資人個人資料查詢</a>｜
+          <a href="#" class="hover:underline">機構投資人盡職治理</a>｜
+          <a href="#" class="hover:underline">客服暨客訴信箱</a>｜
+          <a href="#" class="hover:underline">電子交易無法運作應對措施</a>｜
+          <a href="#" class="hover:underline">網站導覽</a>
+        </nav>
+        <div class="flex flex-col py-4 mt-2.5 w-full text-base tracking-wide text-orange-200 max-w-[340px]">
+          <div class="flex gap-2 items-center w-full whitespace-nowrap">
+            <span>客服中心暨客戶申訴專線</span>
+            <a href="tel:0227525050" class="hover:underline">(02)2752-5050</a>
+          </div>
+          <div class="flex gap-2 items-start mt-2 w-full">
+            <span>高齡服務專線</span>
+            <a href="tel:0287728585" class="hover:underline">(02)8772-8585</a>
+          </div>
+          <div class="flex gap-2 items-start mt-2 w-full text-white">
+            <span>反詐騙諮詢專線</span>
+            <a href="tel:0227525050" class="hover:underline">(02)2752-5050</a>
+          </div>
+          <div class="flex gap-2 items-start mt-2 w-full text-white whitespace-nowrap">
+            <span>語音下單電話</span>
+            <a href="tel:40508989" class="hover:underline">4050-8989(手機請加02)</a>
+          </div>
+        </div>
+        <div class="flex flex-col self-start mt-2.5 text-sm tracking-wide text-white whitespace-nowrap">
+          <div class="flex gap-2 items-start">
+            <span>營業人名稱</span>
+            <span>合作金庫證券股份有限公司</span>
+          </div>
+          <div class="flex gap-2 items-start self-start mt-2">
+            <span>統一編號</span>
+            <span>53021481</span>
+          </div>
+        </div>
+        <div class="flex flex-col mt-2.5 max-w-full w-[145px]">
+          <img loading="lazy" src="assets/images/dp_1.png" alt="Company logo"
+            class="object-contain w-full aspect-[2.59]" />
+        </div>
+      </div>
+      <hr class="mt-3 w-full border border-solid border-zinc-100 border-opacity-10" />
+      <p class="self-start mt-3 text-sm tracking-wide text-center text-white">©合作金庫證劵版權所有</p>
+    </section>
+  </footer>
+
+  <!-- ====== Footer End -->
+
+  <!-- ====== Back To Top Start -->
+  <a href="javascript:void(0)"
+    class="back-to-top fixed bottom-8 left-auto right-8 z-[999] hidden w-16 h-16 items-center justify-center rounded-full bg-primary text-white transition duration-300 ease-in-out hover:bg-dark">
+    <!-- <span class="mt-[6px] h-3 w-3 rotate-45 border-l border-t border-white"></span> -->
+    <img src="./assets/images/svg/top.svg" alt="tailgrids" class="w-16 h-16" />
+  </a>
+  <!-- ====== Back To Top End -->
+
+
+
+  <!-- ====== All Scripts -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    // ==== for menu scroll
+    const pageLink = document.querySelectorAll(".ud-menu-scroll");
+
+    pageLink.forEach((elem) => {
+      elem.addEventListener("click", (e) => {
+        e.preventDefault();
+        document.querySelector(elem.getAttribute("href")).scrollIntoView({
+          behavior: "smooth",
+          offsetTop: 1 - 60,
+        });
+      });
+    });
+
+    // section menu active
+    function onScroll(event) {
+      const sections = document.querySelectorAll(".ud-menu-scroll");
+      const scrollPos =
+        window.pageYOffset ||
+        document.documentElement.scrollTop ||
+        document.body.scrollTop;
+
+      for (let i = 0; i < sections.length; i++) {
+        const currLink = sections[i];
+        const val = currLink.getAttribute("href");
+        const refElement = document.querySelector(val);
+        const scrollTopMinus = scrollPos + 73;
+        if (
+          refElement.offsetTop <= scrollTopMinus &&
+          refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
+        ) {
+          document
+            .querySelector(".ud-menu-scroll")
+            .classList.remove("active");
+          currLink.classList.add("active");
+        } else {
+          currLink.classList.remove("active");
+        }
+      }
+    }
+
+    window.document.addEventListener("scroll", onScroll);
+
+    // Testimonial
+    const testimonialSwiper = new Swiper(".testimonial-carousel", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+
+      // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1280: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
+    });
+  </script>
+
+  <!--JAVASCRIPT CODE-->
+  <script>
+    var swiper = new Swiper(".default-carousel", {
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    var swiper = new Swiper(".centered-slide-carousel", {
+      centeredSlides: true,
+      paginationClickable: true,
+      loop: true,
+      spaceBetween: 0,
+      slidesPerView: 4,
+      slideToClickedSlide: true,
+      pagination: {
+        el: ".centered-slide-carousel .swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        1920: {
+          slidesPerView: 4,
+          spaceBetween: 30
+        },
+        1028: {
+          slidesPerView: 4,
+          spaceBetween: 10
+        },
+        990: {
+          slidesPerView: 1,
+          spaceBetween: 0
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>

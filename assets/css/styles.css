@@ -189,5 +189,15 @@ body{ font-family: "Montserrat","Noto Sans TC", sans-serif; letter-spacing: 0.5p
     display: none;
   }
 
-
-  
+  .list-article::-webkit-scrollbar {
+    width: 0.2rem;
+    margin-left: 2rem;
+    height: 2rem;
+  }
+   
+  .list-article::-webkit-scrollbar-track {
+  }
+   
+  .list-article::-webkit-scrollbar-thumb {
+    background-color: #CCCCCC;
+  }
