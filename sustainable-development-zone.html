@@ -239,7 +239,7 @@
   <!-- ====== Trading floor Start -->
 
   <div id="default-styled-tab-content_" class="container">
-    <div aria-labelledby="sustainable-development-zone-tab" class="hidden p-4 rounded-lg bg-gray-50"
+    <div aria-labelledby="sustainable-development-zone-tab" class="hidden p-4 rounded-lg"
       id="styled-sustainable-development-zone" role="tabpanel" data-tabs-toggle="#default-styled-tab-content_">
       <!-- ooooooooooooooooooooooooooooooooooo -->
 
@@ -247,14 +247,20 @@
         <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-tab"
           data-tabs-toggle="#default-tab-content" role="tablist">
           <li class="me-2" role="presentation">
-            <button id="sustainable-policy-commitment-tab" data-tabs-target="#sustainable-policy-commitment"
+
+            <button id="sustainable-policy-commitment-tab" data-tabs-target="#sustainable-policy-commitment" type="button" role="tab" aria-controls="sustainable-policy-commitment" aria-selected="true" 
+            class="gap-2.5 self-stretch px-6 py-3 my-auto bg-[#2A2A2A] bg-opacity-[4%] text-[#2A2A2A] text-opacity-[80%] rounded-xl aria-selected:bg-[#EFFAF7] aria-selected:border aria-selected:text-[#2A2A2A] aria-selected:border-[#008061] border-solid
+            max-md:px-5 ">
+            永續政策承諾</button>
+
+            <!-- <button id="sustainable-policy-commitment-tab" data-tabs-target="#sustainable-policy-commitment"
               type="button" role="tab" aria-controls="sustainable-policy-commitment" aria-selected="false"
-              class="gap-2.5 self-stretch px-6 py-3 my-auto bg-white rounded-xl border border-emerald-700 border-solid text-zinc-800 max-md:px-5">永續政策承諾</button>
+              class="gap-2.5 self-stretch px-6 py-3 my-auto bg-white rounded-xl border border-emerald-700 text-zinc-800 max-md:px-5 aria-selected:bg-[#EFFAF7] aria-selected:border aria-selected:text-[#2A2A2A] aria-selected:border-[#008061] border-solid">永續政策承諾</button> -->
 
           </li>
           <li class="me-2" role="presentation">
             <button
-              class="gap-2.5 self-stretch px-6 py-3 my-auto bg-white rounded-xl border border-emerald-700 border-solid text-zinc-800 max-md:px-5"
+              class="gap-2.5 self-stretch px-6 py-3 my-auto bg-[#2A2A2A] bg-opacity-[4%] text-[#2A2A2A] text-opacity-[80%] rounded-xl border border-emerald-700 max-md:px-5 aria-selected:bg-[#EFFAF7] aria-selected:border aria-selected:text-[#2A2A2A] aria-selected:border-[#008061] border-solid"
               id="sustainable-strategy-vision-tab" data-tabs-target="#sustainable-strategy-vision" type="button"
               role="tab" aria-controls="sustainable-strategy-vision" aria-selected="false">永續策略與願景</button>
           </li>
@@ -273,124 +279,78 @@
               </a>
               ，本公司關注各項永續經營議題，對各利害關係人承諾如下
             </p>
-            <table
-              class="mt-3 w-full border border-solid border-stone-300 max-w-[1200px] text-zinc-800 max-md:max-w-full">
-              <thead>
-                <tr
-                  class="flex flex-wrap items-start w-full font-medium leading-none text-center text-white whitespace-nowrap max-md:max-w-full">
-                  <th
-                    class="gap-2.5 self-stretch px-3 py-6 bg-emerald-700 shadow-[0px_1px_0px_rgba(204,204,204,1)] w-[120px]">
-                    利害關係人</th>
-                  <th
-                    class="flex-1 shrink gap-2.5 self-stretch px-3 py-6 bg-emerald-700 shadow-[0px_1px_0px_rgba(204,204,204,1)] w-[180px]">
-                    永續經營議題</th>
-                  <th
-                    class="flex-1 shrink gap-2.5 self-stretch px-3 py-6 bg-emerald-700 min-w-[240px] shadow-[0px_1px_0px_rgba(204,204,204,1)] max-md:max-w-full">
-                    本公司承諾</th>
+            <table class="w-full divide-y divide-slate-200 mt-4">
+              <thead class="bg-[#008061] text-white">
+                <tr>
+                  <th class="px-4 py-2 text-start">利害關係人</th>
+                  <th class="px-4 py-2 text-start">永續經營議題</th>
+                  <th class="px-4 py-2 text-start">永續經營議題</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr class="flex flex-wrap w-full whitespace-nowrap max-md:max-w-full">
-                  <td
-                    class="grow shrink gap-2.5 self-stretch p-3 w-24 h-full leading-none text-center bg-white shadow-[0px_1px_0px_rgba(204,204,204,1)]">
-                    客戶</td>
-                  <td
-                    class="flex-1 grow shrink gap-2.5 self-stretch p-3 h-full leading-5 bg-white shadow-[0px_1px_0px_rgba(204,204,204,1)] w-[156px]">
-                    持續提供多元、創新商品及優質服務，推動普惠金融，提升客戶滿意度，確保商品及服務資訊之透明性及安全性，並落實公平待客原則，以公平合理之方式對待之。</td>
-                  <td
-                    class="flex flex-col grow shrink justify-center self-start p-3 tracking-wide bg-white min-w-[240px] shadow-[0px_1px_0px_rgba(204,204,204,1)] w-[876px] max-md:max-w-full">
-                    <ol class="list-decimal pl-5">
-                      <li>秉持以人為本，促進社會公眾福祉之理念，推出符合不同族群需要之多元金融商品及服務，使社會中的各階層和群體都能享有公平、合理之金融服務或資源，落實普惠金融。</li>
-                      <li>制定且公開消費者權益政策，建立消費者申訴及爭議處理機制，設置申訴管道於時限內妥適處理，並回覆提出申訴之客戶或消費者處理結果。</li>
-                      <li>
-                        禁止銷售或提供具爭議性之商品與服務，並詳實揭露商品或服務資訊，遵守行銷推廣相關法規及自律規範，刊登、播放廣告及進行業務招攬或營業促銷活動時，確保內容之真實，不得有虛偽、詐欺、隱匿或其他足致他人誤信之情事。
-                      </li>
-                      <li>對於客戶資料採取嚴密之保護措施，嚴禁對外洩漏。</li>
-                      <li>本於公平合理、平等互惠及誠信原則，與客戶訂定提供商品或服務契約，瞭解客戶資料以確保該商品或服務對客戶之適合度，並應充分說明該商品、服務及契約之重要內容及揭露風險。</li>
-                      <li>接受客戶委任或委託提供商品、服務者，應依法規或契約約定，遵循盡職治理守則，盡善良管理人之注意及忠實義務。</li>
-                      <li>提供商品或服務之人員，應具備法規所定之專業資格或取得專業證照；業務人員之酬金制度應衡平考量客戶或消費者權益，避免過度強調業績目標之達成，而有損害客戶或消費者之行為。</li>
-                    </ol>
-                  </td>
+              <tbody class="divide-y divide-slate-200 bg-white text-slate-800">
+                <tr class="hover:bg-slate-100 cursor-pointer odd:bg-white even:bg-[#AEE7D9] even:bg-opacity-20">
+                  <td class="px-4 py-2">客戶</td>
+                  <td class="px-4 py-2">持續提供多元、創新商品及優質服務，推動普惠金融，提升客戶滿意度，確保商品及服務資訊之透明性及安全性，並落實公平待客原則，以公平合理之方式對待之</td>
+                  <td class="px-4 py-2"><ol class="list-decimal pl-5">
+                    <li>秉持以人為本，促進社會公眾福祉之理念，推出符合不同族群需要之多元金融商品及服務，使社會中的各階層和群體都能享有公平、合理之金融服務或資源，落實普惠金融。</li>
+                    <li>制定且公開消費者權益政策，建立消費者申訴及爭議處理機制，設置申訴管道於時限內妥適處理，並回覆提出申訴之客戶或消費者處理結果。</li>
+                    <li>
+                      禁止銷售或提供具爭議性之商品與服務，並詳實揭露商品或服務資訊，遵守行銷推廣相關法規及自律規範，刊登、播放廣告及進行業務招攬或營業促銷活動時，確保內容之真實，不得有虛偽、詐欺、隱匿或其他足致他人誤信之情事。
+                    </li>
+                    <li>對於客戶資料採取嚴密之保護措施，嚴禁對外洩漏。</li>
+                    <li>本於公平合理、平等互惠及誠信原則，與客戶訂定提供商品或服務契約，瞭解客戶資料以確保該商品或服務對客戶之適合度，並應充分說明該商品、服務及契約之重要內容及揭露風險。</li>
+                    <li>接受客戶委任或委託提供商品、服務者，應依法規或契約約定，遵循盡職治理守則，盡善良管理人之注意及忠實義務。</li>
+                    <li>提供商品或服務之人員，應具備法規所定之專業資格或取得專業證照；業務人員之酬金制度應衡平考量客戶或消費者權益，避免過度強調業績目標之達成，而有損害客戶或消費者之行為。</li>
+                  </ol></td>
                 </tr>
-                <tr class="flex flex-wrap whitespace-nowrap max-md:max-w-full">
-                  <td
-                    class="gap-2.5 self-stretch p-3 h-full leading-none text-center bg-emerald-200 bg-opacity-20 shadow-[0px_1px_0px_rgba(204,204,204,1)] w-[120px]">
-                    員工</td>
-                  <td
-                    class="flex-1 shrink gap-2.5 self-stretch p-3 h-full leading-5 text-center bg-emerald-200 bg-opacity-20 shadow-[0px_1px_0px_rgba(204,204,204,1)] w-[180px]">
-                    提供誠信、開放及團隊合作之工作環境，建立人力資源招募、留任與薪酬福利之激勵制度，鼓勵員工發揮最大潛力，並保障勞動人權，使員工享有公平合理之對待。</td>
-                  <td
-                    class="flex flex-col justify-center self-start p-3 tracking-wide bg-emerald-200 bg-opacity-20 min-w-[240px] shadow-[0px_1px_0px_rgba(204,204,204,1)] w-[900px] max-md:max-w-full">
+                <tr class="hover:bg-slate-100 cursor-pointer odd:bg-white even:bg-[#AEE7D9] even:bg-opacity-20">
+                  <td class="px-4 py-2">員工</td>
+                  <td class="px-4 py-2">提供誠信、開放及團隊合作之工作環境，建立人力資源招募、留任與薪酬福利之激勵制度，鼓勵員工發揮最大潛力，並保障勞動人權，使員工享有公平合理之對待。</td>
+                  <td class="px-4 py-2">                    
                     <ol class="list-decimal pl-5">
-                      <li>創造多元包容與平等的就業環境。</li>
-                      <li>落實性騷擾防治措施。</li>
-                      <li>促進勞資溝通，鼓勵員工與管理階層間對話。</li>
-                      <li>提供良好及公平的工作環境，不強迫勞動、不歧視，並與工會及勞工維繫良好勞資關係。</li>
-                      <li>提升員工專業與知識，重視其職涯發展及規劃，並禁止雇用童工。</li>
-                      <li>重視員工安全、衛生及健康管理，推動健康活動，並提供免費健康檢查。</li>
-                      <li>提供員工完善的薪酬制度及福利措施，並適當反映經營績效。</li>
-                      <li>建立人權盡職調查及風險減緩機制，以防範危害員工權益之情事，並提供有效及適當之申訴機制。</li>
-                    </ol>
-                  </td>
+                    <li>創造多元包容與平等的就業環境。</li>
+                    <li>落實性騷擾防治措施。</li>
+                    <li>促進勞資溝通，鼓勵員工與管理階層間對話。</li>
+                    <li>提供良好及公平的工作環境，不強迫勞動、不歧視，並與工會及勞工維繫良好勞資關係。</li>
+                    <li>提升員工專業與知識，重視其職涯發展及規劃，並禁止雇用童工。</li>
+                    <li>重視員工安全、衛生及健康管理，推動健康活動，並提供免費健康檢查。</li>
+                    <li>提供員工完善的薪酬制度及福利措施，並適當反映經營績效。</li>
+                    <li>建立人權盡職調查及風險減緩機制，以防範危害員工權益之情事，並提供有效及適當之申訴機制。</li>
+                  </ol></td>
                 </tr>
-                <tr class="flex flex-wrap max-md:max-w-full">
-                  <td
-                    class="gap-2.5 self-stretch p-3 h-full leading-none text-center whitespace-nowrap bg-white shadow-[0px_1px_0px_rgba(204,204,204,1)] w-[120px]">
-                    股東</td>
-                  <td
-                    class="flex-1 shrink gap-2.5 self-stretch p-3 h-full leading-5 bg-white shadow-[0px_1px_0px_rgba(204,204,204,1)] w-[180px]">
-                    致力提升資訊揭露之時效及品質，建立有效之公司治理制度， 為股東創造最大價值</td>
-                  <td
-                    class="flex flex-col justify-center p-3 tracking-wide bg-white min-w-[240px] shadow-[0px_1px_0px_rgba(204,204,204,1)] w-[900px] max-md:max-w-full">
+                <tr class="hover:bg-slate-100 cursor-pointer odd:bg-white even:bg-[#AEE7D9] even:bg-opacity-20">
+                  <td class="px-4 py-2">股東</td>
+                  <td class="px-4 py-2">致力提升資訊揭露之時效及品質，建立有效之公司治理制度， 為股東創造最大價值</td>
+                  <td class="px-4 py-2">                    
                     <ol class="list-decimal pl-5">
-                      <li>定期檢討與改善經營成果，持續提升營運管理績效。</li>
-                      <li>強化與集團兄弟公司間共同行銷，發揮整體綜效。</li>
-                      <li>及時允當揭露營運活動及經營績效相關之財務及 ESG 資訊， 忠實履行資訊公開透明之義務。</li>
-                    </ol>
-                  </td>
+                    <li>定期檢討與改善經營成果，持續提升營運管理績效。</li>
+                    <li>強化與集團兄弟公司間共同行銷，發揮整體綜效。</li>
+                    <li>及時允當揭露營運活動及經營績效相關之財務及 ESG 資訊， 忠實履行資訊公開透明之義務。</li>
+                  </ol></td>
                 </tr>
-                <tr class="flex flex-wrap w-full whitespace-nowrap max-md:max-w-full">
-                  <td
-                    class="gap-2.5 self-stretch p-3 h-full leading-none text-center bg-emerald-200 bg-opacity-20 shadow-[0px_1px_0px_rgba(204,204,204,1)] w-[120px]">
-                    社區參與</td>
-                  <td
-                    class="flex-1 shrink gap-2.5 self-stretch p-3 h-full leading-5 bg-emerald-200 bg-opacity-20 shadow-[0px_1px_0px_rgba(204,204,204,1)] w-[180px]">
-                    關注公司營運對當地社區之影響，運用公司資源促進社區發展及社會安定。</td>
-                  <td
-                    class="flex flex-col flex-1 shrink justify-center self-start p-3 tracking-wide basis-0 bg-emerald-200 bg-opacity-20 min-w-[240px] shadow-[0px_1px_0px_rgba(204,204,204,1)] max-md:max-w-full">
-                    <ol class="list-decimal pl-5">
-                      <li>與政府機關、學術單位、民間組織或團體合作提供金融、理財等課程，提升社區金融知識。</li>
-                      <li>鼓勵員工投入社區公益活動，協助社區持續發展。</li>
-                      <li>支持當地供應商，發展當地經濟，適當聘用當地之人力。</li>
-                      <li>設立及撤離營運據點，應評估對當地社區潛在之經濟、社會、文化及環境之負面衝擊。</li>
-                    </ol>
-                  </td>
+                <tr class="hover:bg-slate-100 cursor-pointer odd:bg-white even:bg-[#AEE7D9] even:bg-opacity-20">
+                  <td class="px-4 py-2">社區參與</td>
+                  <td class="px-4 py-2">關注公司營運對當地社區之影響，運用公司資源促進社區發展及社會安定</td>
+                  <td class="px-4 py-2">                    <ol class="list-decimal pl-5">
+                    <li>與政府機關、學術單位、民間組織或團體合作提供金融、理財等課程，提升社區金融知識。</li>
+                    <li>鼓勵員工投入社區公益活動，協助社區持續發展。</li>
+                    <li>支持當地供應商，發展當地經濟，適當聘用當地之人力。</li>
+                    <li>設立及撤離營運據點，應評估對當地社區潛在之經濟、社會、文化及環境之負面衝擊。</li>
+                  </ol></td>
                 </tr>
-                <tr class="flex flex-wrap w-full whitespace-nowrap max-md:max-w-full">
-                  <td
-                    class="gap-2.5 self-stretch px-3 leading-none text-center bg-white h-[122px] shadow-[0px_1px_0px_rgba(204,204,204,1)] w-[120px]">
-                    社會公益</td>
-                  <td
-                    class="flex-1 shrink gap-2.5 self-start p-3 leading-5 bg-white shadow-[0px_1px_0px_rgba(204,204,204,1)]">
-                    整合集團資源，結合員工、地區共同關懷弱勢族群，投入社會公益活動，建立社會公民意識。</td>
-                  <td
-                    class="flex flex-col justify-center p-3 tracking-wide bg-white min-w-[240px] shadow-[0px_1px_0px_rgba(204,204,204,1)] w-[900px] max-md:max-w-full">
-                    <ol class="list-decimal pl-5">
-                      <li>積極與國內公益或社福團體合作，推動扶助方案或提供社會救助。</li>
-                      <li>積極與政府機關合作，推廣防範詐騙措施，提供相關金融常識宣導課程，避免民眾財產損失。</li>
-                      <li>積極贊助或推廣各項學術藝文活動、座談會及研討會等。</li>
-                    </ol>
-                  </td>
+                <tr class="hover:bg-slate-100 cursor-pointer odd:bg-white even:bg-[#AEE7D9] even:bg-opacity-20">
+                  <td class="px-4 py-2">社會公益</td>
+                  <td class="px-4 py-2">整合集團資源，結合員工、地區共同關懷弱勢族群，投入社會公益活動，建立社會公民意識。</td>
+                  <td class="px-4 py-2">                    <ol class="list-decimal pl-5">
+                    <li>積極與國內公益或社福團體合作，推動扶助方案或提供社會救助。</li>
+                    <li>積極與政府機關合作，推廣防範詐騙措施，提供相關金融常識宣導課程，避免民眾財產損失。</li>
+                    <li>積極贊助或推廣各項學術藝文活動、座談會及研討會等。</li>
+                  </ol></td>
                 </tr>
-                <tr class="flex flex-wrap max-md:max-w-full">
-                  <td
-                    class="gap-2.5 self-start px-3 py-20 leading-none text-center whitespace-nowrap bg-emerald-200 bg-opacity-20 min-h-[188px] shadow-[0px_1px_0px_rgba(204,204,204,1)] w-[120px]">
-                    發展永續環境</td>
-                  <td
-                    class="flex-1 shrink gap-2.5 self-stretch px-3 leading-5 whitespace-nowrap bg-emerald-200 bg-opacity-20 h-[184px] shadow-[0px_1px_0px_rgba(204,204,204,1)] w-[180px]">
-                    為確保環境與社會之永續發展，本公司以促進環境保護、維護生物多樣性與降低營運對氣候變遷之衝擊為責任。</td>
-                  <td
-                    class="flex flex-col justify-center p-3 tracking-wide bg-emerald-200 bg-opacity-20 min-w-[240px] shadow-[0px_1px_0px_rgba(204,204,204,1)] w-[900px] max-md:max-w-full">
+                <tr class="hover:bg-slate-100 cursor-pointer odd:bg-white even:bg-[#AEE7D9] even:bg-opacity-20">
+                  <td class="px-4 py-2">發展永續環境</td>
+                  <td class="px-4 py-2">為確保環境與社會之永續發展，本公司以促進環境保護、維護生物多樣性與降低營運對氣候變遷之衝擊為責任。</td>
+                  <td class="px-4 py-2">                    
                     <ol class="list-decimal pl-5">
                       <li>營運時節省油、電、水及其他能源之耗用，採購節能標章設備，提高資源使用效率。</li>
                       <li>減少溫室氣體排放量及排放強度，設定減碳目標及策略。</li>
@@ -400,15 +360,10 @@
                     </ol>
                   </td>
                 </tr>
-                <tr class="flex flex-wrap w-full max-md:max-w-full">
-                  <td
-                    class="gap-2.5 self-stretch p-3 h-full leading-none text-center whitespace-nowrap bg-white shadow-[0px_1px_0px_rgba(204,204,204,1)] w-[120px]">
-                    商品及服務</td>
-                  <td
-                    class="flex-1 shrink gap-2.5 self-stretch p-3 h-full leading-5 bg-white shadow-[0px_1px_0px_rgba(204,204,204,1)]">
-                    關注國內外永續金融發展趨勢，將 ESG 議題融入投資及承銷等核心業務之發展策略及作業流程，推動永續金融相關業務，促進產業升級轉型。</td>
-                  <td
-                    class="flex flex-col justify-center p-3 tracking-wide bg-white min-w-[240px] shadow-[0px_1px_0px_rgba(204,204,204,1)] w-[900px] max-md:max-w-full">
+                <tr class="hover:bg-slate-100 cursor-pointer odd:bg-white even:bg-[#AEE7D9] even:bg-opacity-20">
+                  <td class="px-4 py-2">商品及服務</td>
+                  <td class="px-4 py-2">關注國內外永續金融發展趨勢，將 ESG 議題融入投資及承銷等核心業務之發展策略及作業流程，推動永續金融相關業務，促進產業升級轉型。</td>
+                  <td class="px-4 py-2">                    
                     <ol class="list-decimal pl-5">
                       <li>
                         支持永續金融發展，簽署或遵循合庫金控「永續經營政策」第三條之相關標準或指引，掌握氣候變遷風險與機會，並落實於風險管理政策及投資等決策過程中，鼓勵與關注客戶或其他往來對象遵循本集團對環境面及社會面之要求，減少對環境與社會之不利影響。
@@ -419,15 +374,11 @@
                     </ol>
                   </td>
                 </tr>
-                <tr class="flex flex-wrap whitespace-nowrap max-md:max-w-full">
-                  <td
-                    class="gap-2.5 self-stretch p-3 h-full leading-none text-center bg-emerald-200 bg-opacity-20 shadow-[0px_1px_0px_rgba(204,204,204,1)] w-[120px]">
-                    誠信經營</td>
-                  <td
-                    class="flex-1 shrink gap-2.5 self-stretch p-3 h-full leading-5 bg-emerald-200 bg-opacity-20 shadow-[0px_1px_0px_rgba(204,204,204,1)] w-[180px]">
-                    建立誠信經營之企業文化，落實公司治理以達永續經營。</td>
-                  <td
-                    class="flex flex-col justify-center p-3 tracking-wide bg-emerald-200 bg-opacity-20 min-w-[240px] shadow-[0px_1px_0px_rgba(204,204,204,1)] w-[900px] max-md:max-w-full">
+
+                <tr class="hover:bg-slate-100 cursor-pointer odd:bg-white even:bg-[#AEE7D9] even:bg-opacity-20">
+                  <td class="px-4 py-2">誠信經營</td>
+                  <td class="px-4 py-2">建立誠信經營之企業文化，落實公司治理以達永續經營。</td>
+                  <td class="px-4 py-2">                    
                     <ol class="list-decimal pl-5">
                       <li>本於廉潔、透明及負責之經營理念，制定以誠信為基礎之政策，並建立良好之公司治理與風險管理機制。</li>
                       <li>嚴厲禁止任何貪污、賄賂、敲詐勒索、挪用公款、提供政治獻金、提供或收受不當利益及不當慈善捐贈或贊助之行為。</li>
@@ -442,6 +393,7 @@
                 </tr>
               </tbody>
             </table>
+
           </section>
         </div>
 
