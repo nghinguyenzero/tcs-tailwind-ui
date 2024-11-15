@@ -201,3 +201,53 @@ body{ font-family: "Montserrat","Noto Sans TC", sans-serif; letter-spacing: 0.5p
   .list-article::-webkit-scrollbar-thumb {
     background-color: #CCCCCC;
   }
+
+/* Áp dụng cho tất cả các accordion */
+[id^="accordion-arrow-icon-heading"] > button > summary > #plus {
+  display: block;
+}
+
+[id^="accordion-arrow-icon-heading"] > button[aria-expanded="true"] > summary > #plus {
+  display: none;
+}
+
+[id^="accordion-arrow-icon-heading"] > button > summary > #minus {
+  display: none;
+}
+
+[id^="accordion-arrow-icon-heading"] > button[aria-expanded="true"] > summary > #minus {
+  display: block;
+}
+  /* #accordion-arrow-icon-heading-1 > button > summary > #plus {
+    display: block; 
+  }
+
+  #accordion-arrow-icon-heading-1 > button[aria-expanded="true"] > summary >  #plus {
+    display: none; 
+  }
+
+  #accordion-arrow-icon-heading-1 > button > summary > #minus {
+    display: none; 
+  }
+  
+  #accordion-arrow-icon-heading-1 > button[aria-expanded="true"] > summary > #minus {
+    display: block; 
+  }
+  
+
+  #accordion-arrow-icon-heading-2 > button > summary > #plus {
+    display: block; 
+  }
+
+  #accordion-arrow-icon-heading-2 > button[aria-expanded="true"] > summary >  #plus {
+    display: none; 
+  }
+
+  #accordion-arrow-icon-heading-2 > button > summary > #minus {
+    display: none; 
+  }
+  
+  #accordion-arrow-icon-heading-2 > button[aria-expanded="true"] > summary > #minus {
+    display: block; 
+  } */
+  
