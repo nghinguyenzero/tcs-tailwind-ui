@@ -12,8 +12,7 @@
   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/animate.css" />
   <link rel="stylesheet" href="assets/css/styles.css" />
-  <link rel="stylesheet" href="assets/css/main.css" />
-
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
 
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- ==== WOW JS ==== -->
@@ -166,8 +165,6 @@
 
   <section class="flex overflow-hidden flex-col bg-white bg-[url('assets/images/c-banner-bg.png')] bg-cover">
     <div class="flex relative flex-col w-full whitespace-nowrap min-h-[198px] max-md:max-w-full">
-      <!-- <img loading="lazy" src="assets/images/c-banner-bg.png" alt="Background image"
-        class="object-cover absolute inset-0 size-full" /> -->
       <div class="container flex relative flex-col items-start self-center w-full max-md:max-w-full">
         <nav aria-label="Breadcrumb"
           class="flex gap-2 items-center px-1 py-4 text-base tracking-wide text-[#2A2A2A] text-opacity-60">
@@ -175,15 +172,12 @@
             class="object-contain shrink-0 self-stretch my-auto aspect-[0.95] w-[18px]" />
           <img loading="lazy" src="assets/images/svg/turn-right.svg" alt=""
             class="object-contain shrink-0 self-stretch my-auto w-5 aspect-square" />
-          <span>客戶服務</span>
-          <img loading="lazy" src="assets/images/svg/turn-right.svg" alt=""
-            class="object-contain shrink-0 self-stretch my-auto w-5 aspect-square" />
-          <span>常見問題</span>
+          <span>開戶專區</span>
         </nav>
         <h1 class="flex gap-2 items-center pt-4 pb-3 mt-2 text-3xl font-medium tracking-widest text-[#2A2A2A]">
-          <img loading="lazy" src="assets/images/svg/service-icon.svg" alt=""
+          <img loading="lazy" src="assets/images/svg/hand.svg" alt=""
             class="object-contain shrink-0 self-stretch my-auto w-8 aspect-square" />
-          <span>常見問題</span>
+          <span>開戶專區</span>
         </h1>
       </div>
     </div>
@@ -194,319 +188,352 @@
         data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 "
         role="tablist">
         <li class="me-2" role="presentation">
-          <button id="transaction-related-styled-tab" data-tabs-target="#styled-transaction-related" type="button"
-            role="tab" aria-controls="transaction-related" aria-selected="false"
+          <button id="open-an-account-online-styled-tab" data-tabs-target="#styled-open-an-account-online" type="button"
+            role="tab" aria-controls="open-an-account-online" aria-selected="false"
             class="inline-block p-4 border-b-2 rounded-t-lg aria-selected:text-[#008061] aria-selected:border-[#FDC885] text-lg">
-            交易相關
+            線上開戶
           </button>
         </li>
 
         <li class="me-2" role="presentation">
-          <button id="software-related-styled-tab" data-tabs-target="#styled-software-related" type="button" role="tab"
-            aria-controls="software-related" aria-selected="false"
+          <button id="online-accountopening-e-service-styled-tab" data-tabs-target="#styled-online-accountopening-e-service" type="button"
+            role="tab" aria-controls="online-accountopening-e-service" aria-selected="false"
             class="inline-block p-4 border-b-2 rounded-t-lg aria-selected:text-[#008061] aria-selected:border-[#FDC885] text-lg hover:text-gray-600 hover:border-gray-300 ">
-            軟體相關
+            臨櫃開戶e服務
           </button>
         </li>
 
         <li class="me-2" role="presentation">
-          <button id="operation-related-styled-tab" data-tabs-target="#styled-operation-related" type="button"
-            role="tab" aria-controls="operation-related" aria-selected="false"
+          <button id="appointment-open-an-account-styled-tab" data-tabs-target="#styled-appointment-open-an-account" type="button"
+            role="tab" aria-controls="appointment-open-an-account" aria-selected="false"
             class="inline-block p-4 border-b-2 rounded-t-lg aria-selected:text-[#008061] aria-selected:border-[#FDC885]  text-lg hover:text-gray-600 hover:border-gray-300 ">
-            操作相關
+            預約開戶
+          </button>
+        </li>
+        <li class="me-2" role="presentation">
+          <button id="reservation-service-styled-tab" data-tabs-target="#styled-reservation-service" type="button"
+            role="tab" aria-controls="reservation-service" aria-selected="false"
+            class="inline-block p-4 border-b-2 rounded-t-lg aria-selected:text-[#008061] aria-selected:border-[#FDC885]  text-lg hover:text-gray-600 hover:border-gray-300 ">
+            預約服務
           </button>
         </li>
 
-        <li class="me-2" role="presentation">
-          <button id="account-opening-related-styled-tab" data-tabs-target="#styled-account-opening-related"
-            type="button" role="tab" aria-controls="account-opening-related" aria-selected="false"
-            class="inline-block p-4 border-b-2 rounded-t-lg aria-selected:text-[#008061] aria-selected:border-[#FDC885]  text-lg hover:text-gray-600 hover:border-gray-300 ">
-            開戶相關</button>
-        </li>
-
-        <li class="me-2" role="presentation">
-          <button id="qixian-styled-tab" data-tabs-target="#styled-qixian" type="button" role="tab"
-            aria-controls="qixian" aria-selected="false"
-            class="inline-block p-4 border-b-2 rounded-t-lg aria-selected:text-[#008061] aria-selected:border-[#FDC885]  text-lg hover:text-gray-600 hover:border-gray-300 ">
-            其他</button>
-        </li>
       </ul>
     </div>
   </section>
 
-  <!-- ====== Trading floor Start -->
   <div id="default-styled-tab-content_ relative">
     <img loading="lazy" src="assets/images/svg/logo-wt.svg" alt=""
       class="object-contain absolute z-0 rounded-none aspect-[1.32] h-[150px] left-[-60px] top-[500px] max-sm:hidden">
     <div class="container">
-      <div aria-labelledby="transaction-related-tab" class="hidden rounded-lg p-4" id="styled-transaction-related"
+
+      <div aria-labelledby="open-an-account-online-tab" class="hidden p-4  rounded-lg" id="styled-open-an-account-online"
         role="tabpanel" data-tabs-toggle="#default-styled-tab-content_">
+
         <!-- ooooooooooooooooooooooooooooooooooo -->
 
         <div class="mb-4">
           <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-tab"
             data-tabs-toggle="#default-tab-content" role="tablist">
             <li class="me-2" role="presentation">
-              <button id="tips-for-newbies-tab" data-tabs-target="#tips-for-newbies" type="button" role="tab"
-                aria-controls="tips-for-newbies" aria-selected="false" class="gap-2.5 self-stretch px-6 py-3 my-auto bg-white rounded-xl 
+              <button id="open-new-securities-account-tab" data-tabs-target="#open-new-securities-account" type="button" role="tab"
+                aria-controls="open-new-securities-account" aria-selected="false" class="gap-2.5 self-stretch px-6 py-3 my-auto bg-white rounded-xl 
               aria-selected:bg-[#EFFAF7] aria-selected:border aria-selected:text-[#2A2A2A] aria-selected:border-[#008061] 
               border-solid text-[#2A2A2A] max-md:px-5">
-                新手須知
-              </button>
+              新開證券戶/複委託戶
+            </button>
             </li>
             <li class="me-2" role="presentation">
-              <button
+              <button id="re-opening-entrustment-of-old-accounts-tab" data-tabs-target="#re-opening-entrustment-of-old-accounts" aria-controls="re-opening-entrustment-of-old-accounts"
                 class="gap-2.5 self-stretch px-6 py-3 my-auto bg-white rounded-xl border border-[#008061] border-solid text-[#2A2A2A] max-md:px-5
-              aria-selected:bg-[#EFFAF7] aria-selected:border aria-selected:text-[#2A2A2A] aria-selected:border-[#008061]"
-                id="electronic-ordering-tab" data-tabs-target="#electronic-ordering" type="button" role="tab"
-                aria-controls="electronic-ordering" aria-selected="false">
-                電子下單
+              aria-selected:bg-[#EFFAF7] aria-selected:border aria-selected:text-[#2A2A2A] aria-selected:border-[#008061]" type="button" role="tab" aria-selected="false">
+              舊戶加開複委託
               </button>
             </li>
+
             <li class="me-2" role="presentation">
-              <button
+              <button id="add-new-user-from-old-account-tab" data-tabs-target="#add-new-user-from-old-account" aria-controls="add-new-user-from-old-account"
                 class="gap-2.5 self-stretch px-6 py-3 my-auto bg-white rounded-xl border border-[#008061] border-solid text-[#2A2A2A] max-md:px-5
-              aria-selected:bg-[#EFFAF7] aria-selected:border aria-selected:text-[#2A2A2A] aria-selected:border-[#008061] "
-                id="regular-quota-tab" data-tabs-target="#regular-quota" type="button" role="tab"
-                aria-controls="regular-quota" aria-selected="false">
-                定期定額
-              </button>
-            </li>
-            <li role="presentation">
-              <button
-                class="gap-2.5 self-stretch px-6 py-3 my-auto bg-white rounded-xl border border-[#008061] border-solid text-[#2A2A2A] max-md:px-5
-              aria-selected:bg-[#EFFAF7] aria-selected:border aria-selected:text-[#2A2A2A] aria-selected:border-[#008061]"
-                id="open-a-new-securities-account-tab" data-tabs-target="#open-a-new-securities-account" type="button"
-                role="tab" aria-controls="open-a-new-securities-account" aria-selected="false">
-                新開證券戶
-              </button>
-            </li>
-            <li role="presentation">
-              <button
-                class="gap-2.5 self-stretch px-6 py-3 my-auto bg-white rounded-xl border border-[#008061] border-solid text-[#2A2A2A] max-md:px-5
-              aria-selected:bg-[#EFFAF7] aria-selected:border aria-selected:text-[#2A2A2A] aria-selected:border-[#008061]"
-                id="add-new-user-from-old-account-tab" data-tabs-target="#add-new-user-from-old-account" type="button"
-                role="tab" aria-controls="add-new-user-from-old-account" aria-selected="false">
-                舊戶加開信用戶
+              aria-selected:bg-[#EFFAF7] aria-selected:border aria-selected:text-[#2A2A2A] aria-selected:border-[#008061] " type="button" role="tab" aria-selected="false">
+              舊戶加開信用戶
               </button>
             </li>
           </ul>
         </div>
         <div id="default-tab-content">
 
-          <div class="hidden p-4 rounded-lg bg-gray-5" id="tips-for-newbies" role="tabpanel"
-            aria-labelledby="tips-for-newbies-tab">
-
-
-
-
-
-
-            <section class="flex overflow-hidden flex-col bg-white">
-
-              <main class="flex flex-wrap gap-10 w-full max-md:max-w-full">
-                <div class="flex flex-wrap flex-auto gap-5 text-base tracking-wide ">
-                  <!-- <img loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/ad4f59f3424542db03fbeadd76e7dfe9a52b9fd9c40b43fbf331d4458ff2a99b?placeholderIfAbsent=true&apiKey=6ca75136718c454791d2fe542e2ed631"
-                    alt="Decorative Image"
-                    class="object-contain shrink-0 self-start mt-36 aspect-[0.53] w-[99px] max-md:mt-10" /> -->
-                  <section class="flex flex-col grow shrink-0 pt-4 pb-6 rounded-lg basis-0 w-fit max-md:max-w-full">
-                    <nav
-                      class="flex flex-wrap gap-2 items-center w-full font-medium text-center text-zinc-800 text-opacity-80 max-md:max-w-full">
-                      <a href="#" class="nav-link active">新手須知</a>
-                      <a href="#" class="nav-link">電子下單</a>
-                      <a href="#" class="nav-link">定期定額</a>
-                      <a href="#" class="nav-link">新開證券戶</a>
-                      <a href="#" class="nav-link">舊戶加開信用戶</a>
-                    </nav>
-                    <div class="flex flex-col mt-3 w-full max-md:max-w-full">
-                      <div id="accordion-arrow-icon" data-accordion="open" class="">
-                        <div class="border border-gray-200 rounded-xl  w-full mb-2">
-                          <h2 id="accordion-arrow-icon-heading-1">
-                            <button type="button"
-                              class="flex items-center justify-between w-full p-5 font-medium gap-3 rounded-xl !bg-white !text-[#2A2A2A]"
-                              data-accordion-target="#accordion-arrow-icon-body-1" aria-expanded="false"
-                              aria-controls="accordion-arrow-icon-body-1">
-                              <summary class="flex flex-wrap gap-2 items-center w-full max-md:max-w-full cursor-pointer">
-                                <span
-                                  class="self-stretch my-auto w-8 h-8 bg-[#AEE7D9] rounded-2xl min-h-[32px] flex items-center justify-center">Q</span>
-                                <span
-                                  class="flex-1 shrink self-stretch my-auto font-medium basis-0 max-md:max-w-full text-left">年輕人投資入門及防範詐騙</span>
-                                <img id="plus" data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="false" loading="lazy"
-                                  src="assets/images/svg/plus_1.svg" alt=""
-                                  class="object-contain shrink-0 self-stretch my-auto w-4 aspect-square" />
-          
-                                  <img id="minus" data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="false" loading="lazy"
-                                  src="assets/images/svg/minus.svg" alt=""
-                                  class="object-contain shrink-0 self-stretch my-auto w-4 aspect-square" />
-                                </svg>
-                              </summary>
-                            </button>
-                          </h2>
-                          <div id="accordion-arrow-icon-body-1" class="rounded-xl hidden" aria-labelledby="accordion-arrow-icon-heading-1">
-                            <div class="p-5 text-[#2A2A2A] text-opacity-80">
-                              <span class="">
-                              因您已經申請完成，信件中的連結「取得電子交易首次登入密碼函」已經失效，請至官網/客戶服務/線上申請/密碼專區，
-                              因您已經申請完成，信件中的連結「取得電子交易首次登入密碼函」已經失效，請至官網/客戶服務/線上申請/密碼專區，
-                              因您已經申請完成，信件中的連結「取得電子交易首次登入密碼函」已經失效，請至官網/客戶服務/線上申請/密碼專區，
-
-                              </span>
-                            </div>
-                          </div>
-                        </div>
+          <div id="open-new-securities-account" aria-labelledby="open-new-securities-account-tab" class="hidden p-4 rounded-lg bg-gray-5"
+            role="tabpanel">
+            <section class="flex flex-col justify-center pt-4 pb-16 bg-white rounded-lg">
+              <div class="flex flex-wrap gap-2 mt-5 w-full text-zinc-800 max-md:max-w-full">
+                <article class="flex flex-col flex-1 shrink px-3 py-6 rounded-xl basis-0 bg-emerald-200 bg-opacity-20 min-w-[240px] max-md:max-w-full">
+                  <h2 class="self-center text-lg font-medium tracking-wide text-center">
+                    適用開戶對象
+                  </h2>
+                  <div class="flex flex-wrap gap-3 items-start mt-1 w-full text-base tracking-wide max-md:max-w-full max-md:justify-center">
+                    <img loading="lazy" 
+                    src="assets/images/svg/applicable-account.svg"                    
+                    alt="" class="object-contain shrink-0 rounded-none aspect-square w-[104px]" />
+                    <div class="flex flex-col flex-1 shrink basis-0 min-w-[240px] max-md:max-w-full">
+                      <div class="flex gap-1 justify-center items-start w-full max-md:max-w-full">
+                        <span>1.</span>
+                        <p class="flex-1 shrink basis-0 max-md:max-w-full">
+                          已成年之本國自然人。
+                        </p>
                       </div>
-          
-                      <div id="accordion-arrow-icon" data-accordion="open" class="">
-                        <div class="border border-gray-200 rounded-xl  w-full mb-2">
-                          <h2 id="accordion-arrow-icon-heading-2">
-                            <button type="button"
-                              class="flex items-center justify-between w-full p-5 font-medium gap-3 rounded-xl !bg-white !text-[#2A2A2A]"
-                              data-accordion-target="#accordion-arrow-icon-body-2" aria-expanded="false"
-                              aria-controls="accordion-arrow-icon-body-2">
-                              <summary class="flex flex-wrap gap-2 items-center w-full max-md:max-w-full cursor-pointer">
-                                <span
-                                  class="self-stretch my-auto w-8 h-8 bg-[#AEE7D9] rounded-2xl min-h-[32px] flex items-center justify-center">Q</span>
-                                <span
-                                  class="flex-1 shrink self-stretch my-auto font-medium basis-0 max-md:max-w-full text-left">年輕人投資入門及防範詐騙</span>
-                                <img id="plus" data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="false" loading="lazy"
-                                  src="assets/images/svg/plus_1.svg" alt=""
-                                  class="object-contain shrink-0 self-stretch my-auto w-4 aspect-square" />
-          
-                                  <img id="minus" data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="false" loading="lazy"
-                                  src="assets/images/svg/minus.svg" alt=""
-                                  class="object-contain shrink-0 self-stretch my-auto w-4 aspect-square" />
-                                </svg>
-                              </summary>
-                            </button>
-                          </h2>
-                          <div id="accordion-arrow-icon-body-2" class="rounded-xl hidden" aria-labelledby="accordion-arrow-icon-heading-1">
-                            <div class="p-5 text-[#2A2A2A] text-opacity-80">
-                              <p>
-                                因您已經申請完成，信件中的連結「取得電子交易首次登入密碼函」已經失效，請至官網/客戶服務/線上申請/密碼專區，
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div id="accordion-arrow-icon" data-accordion="open" class="">
-                        <div class="border border-gray-200 rounded-xl  w-full mb-2">
-                          <h2 id="accordion-arrow-icon-heading-3">
-                            <button type="button"
-                              class="flex items-center justify-between w-full p-5 font-medium gap-3 rounded-xl !bg-white !text-[#2A2A2A]"
-                              data-accordion-target="#accordion-arrow-icon-body-3" aria-expanded="false"
-                              aria-controls="accordion-arrow-icon-body-3">
-                              <summary class="flex flex-wrap gap-2 items-center w-full max-md:max-w-full cursor-pointer">
-                                <span
-                                  class="self-stretch my-auto w-8 h-8 bg-[#AEE7D9] rounded-2xl min-h-[32px] flex items-center justify-center">Q</span>
-                                <span
-                                  class="flex-1 shrink self-stretch my-auto font-medium basis-0 max-md:max-w-full text-left">年輕人投資入門及防範詐騙</span>
-                                <img id="plus" data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="false" loading="lazy"
-                                  src="assets/images/svg/plus_1.svg" alt=""
-                                  class="object-contain shrink-0 self-stretch my-auto w-4 aspect-square" />
-          
-                                  <img id="minus" data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="false" loading="lazy"
-                                  src="assets/images/svg/minus.svg" alt=""
-                                  class="object-contain shrink-0 self-stretch my-auto w-4 aspect-square" />
-                                </svg>
-                              </summary>
-                            </button>
-                          </h2>
-                          <div id="accordion-arrow-icon-body-3" class="rounded-xl hidden" aria-labelledby="accordion-arrow-icon-heading-3">
-                            <div class="p-5 text-[#2A2A2A] text-opacity-80">
-                              <p>
-                                因您已經申請完成，信件中的連結「取得電子交易首次登入密碼函」已經失效，請至官網/客戶服務/線上申請/密碼專區，
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div id="accordion-arrow-icon" data-accordion="open" class="">
-                        <div class="border border-gray-200 rounded-xl  w-full mb-2">
-                          <h2 id="accordion-arrow-icon-heading-4">
-                            <button type="button"
-                              class="flex items-center justify-between w-full p-5 font-medium gap-3 rounded-xl !bg-white !text-[#2A2A2A]"
-                              data-accordion-target="#accordion-arrow-icon-body-4" aria-expanded="false"
-                              aria-controls="accordion-arrow-icon-body-4">
-                              <summary class="flex flex-wrap gap-2 items-center w-full max-md:max-w-full cursor-pointer">
-                                <span
-                                  class="self-stretch my-auto w-8 h-8 bg-[#AEE7D9] rounded-2xl min-h-[32px] flex items-center justify-center">Q</span>
-                                <span
-                                  class="flex-1 shrink self-stretch my-auto font-medium basis-0 max-md:max-w-full text-left">年輕人投資入門及防範詐騙</span>
-                                <img id="plus" data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="false" loading="lazy"
-                                  src="assets/images/svg/plus_1.svg" alt=""
-                                  class="object-contain shrink-0 self-stretch my-auto w-4 aspect-square" />
-          
-                                  <img id="minus" data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="false" loading="lazy"
-                                  src="assets/images/svg/minus.svg" alt=""
-                                  class="object-contain shrink-0 self-stretch my-auto w-4 aspect-square" />
-                                </svg>
-                              </summary>
-                            </button>
-                          </h2>
-                          <div id="accordion-arrow-icon-body-4" class="rounded-xl hidden" aria-labelledby="accordion-arrow-icon-heading-4">
-                            <div class="p-5 text-[#2A2A2A] text-opacity-80">
-                              <p>
-                                因您已經申請完成，信件中的連結「取得電子交易首次登入密碼函」已經失效，請至官網/客戶服務/線上申請/密碼專區，
-                              </p>
-                            </div>
-                          </div>
-                        </div>
+                      <div class="flex gap-1 justify-center items-start mt-1 w-full max-md:max-w-full">
+                        <span>2.</span>
+                        <p class="flex-1 shrink basis-0 max-md:max-w-full">
+                          不具有臺灣以外之其他國家公民或稅務居民身分。
+                        </p>
                       </div>
                     </div>
-                  </section>
-                </div>
-              </main>
-
+                  </div>
+                </article>
+                <article class="flex flex-col flex-1 shrink self-start px-3 py-6 rounded-xl basis-0 bg-orange-100 bg-opacity-70 min-w-[240px] max-md:max-w-full">
+                  <h2 class="self-center text-lg font-medium tracking-wide text-center">
+                    準備資料
+                  </h2>
+                  <div class="flex flex-wrap gap-3 items-start mt-1 w-full text-base tracking-wide max-md:max-w-full max-md:justify-center">
+                    <img loading="lazy" 
+                    src="assets/images/svg/infomation.svg"                      
+                    alt="" class="object-contain shrink-0 rounded-none aspect-square w-[104px]" />
+                    <div class="flex flex-col flex-1 shrink basis-0 min-w-[240px] max-md:max-w-full">
+                      <div class="flex gap-1 justify-center items-start w-full max-md:max-w-full">
+                        <span>1.</span>
+                        <p class="flex-1 shrink basis-0 max-md:max-w-full">
+                          身分證。
+                        </p>
+                      </div>
+                      <div class="flex gap-1 justify-center items-start mt-1 w-full max-md:max-w-full">
+                        <span>2.</span>
+                        <p class="flex-1 shrink basis-0 max-md:max-w-full">
+                          駕照或健保卡（第二身分證明文件）。
+                        </p>
+                      </div>
+                      <div class="flex gap-1 justify-center items-start mt-1 w-full max-md:max-w-full">
+                        <span>3.</span>
+                        <p class="flex-1 shrink basis-0 max-md:max-w-full">
+                          合庫銀行外幣存款帳戶及具有網路銀行登入資格。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="flex flex-wrap gap-4 justify-center items-center pt-4 mt-5 w-full text-base font-medium tracking-wide text-center max-md:max-w-full">
+                <button class="flex justify-center items-center self-stretch my-auto text-zinc-800 w-[180px]">
+                  <span class="gap-2.5 self-stretch px-6 py-3 my-auto bg-white rounded-3xl border border-solid border-stone-300 w-[180px] max-md:px-5">
+                    懶人包影片
+                  </span>
+                </button>
+                <button class="flex justify-center items-center self-stretch my-auto text-zinc-800 w-[180px]">
+                  <span class="gap-2.5 self-stretch px-6 py-3 my-auto bg-white rounded-3xl border border-solid border-stone-300 w-[180px] max-md:px-5">
+                    Q&A
+                  </span>
+                </button>
+                <button class="gap-2.5 self-stretch px-6 py-3 my-auto text-white bg-emerald-700 rounded-3xl w-[180px] max-md:px-5">
+                  立即申辦
+                </button>
+              </div>
             </section>
           </div>
 
-          <div class="hidden p-4 rounded-lg bg-gray-50" id="electronic-ordering" role="tabpanel"
-            aria-labelledby="electronic-ordering-tab">
-
+          <div class="hidden p-4 rounded-lg" id="re-opening-entrustment-of-old-accounts" role="tabpanel" aria-labelledby="re-opening-entrustment-of-old-accounts">
+            <section class="flex flex-col justify-center pt-4 pb-16 bg-white rounded-lg">
+              <div class="flex flex-wrap gap-2 mt-5 w-full text-zinc-800 max-md:max-w-full">
+                <article class="flex flex-col flex-1 shrink px-3 py-6 rounded-xl basis-0 bg-emerald-200 bg-opacity-20 min-w-[240px] max-md:max-w-full">
+                  <h2 class="self-center text-lg font-medium tracking-wide text-center">
+                    適用開戶對象
+                  </h2>
+                  <div class="flex flex-wrap gap-3 items-start mt-1 w-full text-base tracking-wide max-md:max-w-full max-md:justify-center">
+                    <img loading="lazy" 
+                    src="assets/images/svg/applicable-account.svg"                    
+                    alt="" class="object-contain shrink-0 rounded-none aspect-square w-[104px]" />
+                    <div class="flex flex-col flex-1 shrink basis-0 min-w-[240px] max-md:max-w-full">
+                      <div class="flex gap-1 justify-center items-start w-full max-md:max-w-full">
+                        <span>1.</span>
+                        <p class="flex-1 shrink basis-0 max-md:max-w-full">
+                          已成年之本國自然人。
+                        </p>
+                      </div>
+                      <div class="flex gap-1 justify-center items-start mt-1 w-full max-md:max-w-full">
+                        <span>2.</span>
+                        <p class="flex-1 shrink basis-0 max-md:max-w-full">
+                          不具有臺灣以外之其他國家公民或稅務居民身分。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class="flex flex-col flex-1 shrink self-start px-3 py-6 rounded-xl basis-0 bg-orange-100 bg-opacity-70 min-w-[240px] max-md:max-w-full">
+                  <h2 class="self-center text-lg font-medium tracking-wide text-center">
+                    準備資料
+                  </h2>
+                  <div class="flex flex-wrap gap-3 items-start mt-1 w-full text-base tracking-wide max-md:max-w-full max-md:justify-center">
+                    <img loading="lazy" 
+                    src="assets/images/svg/infomation.svg"                      
+                    alt="" class="object-contain shrink-0 rounded-none aspect-square w-[104px]" />
+                    <div class="flex flex-col flex-1 shrink basis-0 min-w-[240px] max-md:max-w-full">
+                      <div class="flex gap-1 justify-center items-start w-full max-md:max-w-full">
+                        <span>1.</span>
+                        <p class="flex-1 shrink basis-0 max-md:max-w-full">
+                          身分證。
+                        </p>
+                      </div>
+                      <div class="flex gap-1 justify-center items-start mt-1 w-full max-md:max-w-full">
+                        <span>2.</span>
+                        <p class="flex-1 shrink basis-0 max-md:max-w-full">
+                          駕照或健保卡（第二身分證明文件）。
+                        </p>
+                      </div>
+                      <div class="flex gap-1 justify-center items-start mt-1 w-full max-md:max-w-full">
+                        <span>3.</span>
+                        <p class="flex-1 shrink basis-0 max-md:max-w-full">
+                          合庫銀行外幣存款帳戶及具有網路銀行登入資格。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="flex flex-wrap gap-4 justify-center items-center pt-4 mt-5 w-full text-base font-medium tracking-wide text-center max-md:max-w-full">
+                <button class="flex justify-center items-center self-stretch my-auto text-zinc-800 w-[180px]">
+                  <span class="gap-2.5 self-stretch px-6 py-3 my-auto bg-white rounded-3xl border border-solid border-stone-300 w-[180px] max-md:px-5">
+                    Q&A
+                  </span>
+                </button>
+                <button class="gap-2.5 self-stretch px-6 py-3 my-auto text-white bg-emerald-700 rounded-3xl w-[180px] max-md:px-5">
+                  立即申辦
+                </button>
+              </div>
+            </section>
           </div>
 
-          <div class="hidden p-4 rounded-lg bg-gray-50" id="regular-quota" role="tabpanel"
-            aria-labelledby="regular-quota-tab">
-          </div>
-
-          <div class="hidden p-4 rounded-lg bg-gray-50" id="open-a-new-securities-account" role="tabpanel"
-            aria-labelledby="open-a-new-securities-account-tab">
-
-          </div>
-          <div class="hidden p-4 rounded-lg bg-gray-50" id="add-new-user-from-old-account" role="tabpanel"
-            aria-labelledby="add-new-user-from-old-account-tab">
-
+          <div class="hidden p-4 rounded-lg" id="add-new-user-from-old-account" role="tabpanel" aria-labelledby="add-new-user-from-old-account-tab">
+            <section class="flex flex-wrap gap-10 w-full max-md:max-w-full">
+              <div class="flex flex-wrap flex-auto gap-5">
+                <div class="flex flex-col grow shrink-0 justify-center pt-4 pb-16 rounded-lg basis-0 w-fit max-md:max-w-full">
+                  <div class="flex flex-wrap gap-2 mt-5 w-full max-md:max-w-full">
+                    <section
+                      class="flex flex-col flex-1 shrink px-3 py-6 rounded-xl basis-0 bg-emerald-200 bg-opacity-20 min-w-[240px] max-md:max-w-full">
+                      <h2 class="self-center text-lg font-medium tracking-wide text-center text-zinc-800">適用開戶對象</h2>
+                      <div class="flex flex-wrap gap-3 items-start mt-1 w-full text-base tracking-wide max-md:max-w-full max-md:justify-center">
+                        <img loading="lazy"
+                          src="assets/images/svg/applicable-account.svg"
+                          alt="Illustration for account opening eligibility"
+                          class="object-contain shrink-0 rounded-none aspect-square w-[104px]" />
+                        <div class="flex flex-col flex-1 shrink basis-0 min-w-[240px] max-md:max-w-full">
+                          <h3 class="flex gap-1 justify-center items-start w-full text-zinc-800 max-md:max-w-full">
+                            <span>1.</span>
+                            <span class="flex-1 shrink basis-0 max-md:max-w-full">新申請</span>
+                          </h3>
+                          <ul class="flex flex-col pb-3 pl-5 mt-1 w-full max-md:max-w-full">
+                            <li class="flex gap-1 justify-center items-start w-full text-zinc-800 max-md:max-w-full">
+                              <span>A.</span>
+                              <span class="flex-1 shrink basis-0">本國自然人並年滿20歲。</span>
+                            </li>
+                            <li class="flex gap-1 justify-center items-start mt-1 w-full text-zinc-800 max-md:max-w-full">
+                              <span>B.</span>
+                              <span class="flex-1 shrink basis-0">開戶滿3個月。</span>
+                            </li>
+                            <li class="flex gap-1 justify-center items-start mt-1 w-full max-md:max-w-full">
+                              <span class="text-zinc-800">C.</span>
+                              <div class="flex flex-col flex-1 shrink justify-center w-full basis-0 min-w-[240px]">
+                                <p class="text-zinc-800">近1年內，成交筆數達10筆，累積成交金額達所申請之融資額度50%。</p>
+                                <p
+                                  class="flex-1 shrink gap-2.5 self-stretch p-1 mt-1 w-full rounded-sm bg-emerald-200 bg-opacity-40 text-zinc-800 text-opacity-80">
+                                  例:申請融資額度50萬，累積成交金額須達25萬以上</p>
+                              </div>
+                            </li>
+                          </ul>
+                          <h3 class="flex gap-1 justify-center items-start mt-1 w-full text-zinc-800 max-md:max-w-full">
+                            <span>2.</span>
+                            <span class="flex-1 shrink basis-0 max-md:max-w-full">續約</span>
+                          </h3>
+                          <ul class="flex flex-col pb-3 pl-5 mt-1 w-full text-zinc-800 max-md:max-w-full">
+                            <li class="flex gap-1 justify-center items-start w-full max-md:max-w-full">
+                              <span>A.</span>
+                              <span class="flex-1 shrink basis-0">3年內須有融資融券之交易。</span>
+                            </li>
+                            <li class="flex gap-1 justify-center items-start mt-1 w-full max-md:max-w-full">
+                              <span>B.</span>
+                              <span class="flex-1 shrink basis-0">到期日前30天至到期日前三個營業日可線上續約。</span>
+                            </li>
+                          </ul>
+                          <h3 class="flex gap-1 justify-center items-start mt-1 w-full text-zinc-800 max-md:max-w-full">
+                            <span>3.</span>
+                            <span class="flex-1 shrink basis-0 max-md:max-w-full">變更額度</span>
+                          </h3>
+                          <ul class="flex flex-col pb-3 pl-5 mt-1 w-full text-zinc-800 max-md:max-w-full">
+                            <li class="flex gap-1 justify-center items-start w-full max-md:max-w-full">
+                              <span>A.</span>
+                              <span class="flex-1 shrink basis-0">近1年內，成交筆數達10筆，累積成交金額達所申請之融資額度50%。</span>
+                            </li>
+                          </ul>
+                          <p class="flex gap-1 items-start mt-1 w-full text-zinc-800 text-opacity-80 max-md:max-w-full">
+                            <span>※</span>
+                            <span class="flex-1 shrink basis-0 max-md:max-w-full">法人、線上開戶未臨櫃、授權委託之帳號及已開立不限用途借貸戶請臨櫃申辦。</span>
+                          </p>
+                        </div>
+                      </div>
+                    </section>
+                    <section
+                      class="flex flex-col flex-1 shrink px-3 py-6 rounded-xl basis-0 bg-orange-100 bg-opacity-70 min-w-[240px] text-zinc-800 max-md:max-w-full">
+                      <h2 class="self-center text-lg font-medium tracking-wide text-center">準備資料</h2>
+                      <div class="flex flex-wrap gap-3 items-start mt-1 w-full text-base tracking-wide max-md:max-w-full max-md:justify-center">
+                        <img loading="lazy"
+                          src="assets/images/svg/infomation.svg"                          
+                          alt="Illustration for required documents"
+                          class="object-contain shrink-0 rounded-none aspect-square w-[104px]" />
+                        <div class="flex flex-col flex-1 shrink basis-0 min-w-[240px] max-md:max-w-full">
+                          <ol class="list-decimal pl-5">
+                            <li class="flex gap-1 justify-center items-start w-full max-md:max-w-full">
+                              <span class="flex-1 shrink basis-0 max-md:max-w-full">身分證。</span>
+                            </li>
+                            <li class="flex gap-1 justify-center items-start mt-1 w-full max-md:max-w-full">
+                              <span class="flex-1 shrink basis-0 max-md:max-w-full">駕照或健保卡（第二身分證明文件）。</span>
+                            </li>
+                          </ol>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                  <div
+                    class="flex flex-wrap gap-4 justify-center items-center pt-4 mt-5 w-full text-base font-medium tracking-wide text-center max-md:max-w-full">
+                    <a href="#" class="flex justify-center items-center self-stretch my-auto text-zinc-800 w-[180px]">
+                      <span
+                        class="gap-2.5 self-stretch px-6 py-3 my-auto bg-white rounded-3xl border border-solid border-stone-300 w-[180px] max-md:px-5">Q&A</span>
+                    </a>
+                    <a href="#"
+                      class="gap-2.5 self-stretch px-6 py-3 my-auto text-white bg-emerald-700 rounded-3xl w-[180px] max-md:px-5">立即申辦</a>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
-
         <!-- ooooooooooooooooooooooooooooooooooo -->
+
       </div>
 
-      <div aria-labelledby="software-related-tab" class="hidden p-4 rounded-lg" id="styled-software-related"
+      <div aria-labelledby="online-accountopening-e-service-tab" class="hidden p-4 rounded-lg" id="styled-online-accountopening-e-service"
         role="tabpanel">
-
-
+        <div>online-accountopening-e-service-tab</div>
       </div>
 
 
-      <div aria-labelledby="operation-related-tab" class="hidden p-4 rounded-lg" id="styled-operation-related"
+      <div aria-labelledby="appointment-open-an-account-tab" class="hidden p-4 rounded-lg" id="styled-appointment-open-an-account"
         role="tabpanel">
-
+        <div>appointment-open-an-account-tab</div>
       </div>
-
-      <div aria-labelledby="account-opening-related-tab" class="hidden p-4 rounded-lg bg-gray-50"
-        id="styled-account-opening-related" role="tabpanel">
-      </div>
-
-      <div aria-labelledby="qixian-tab" class="hidden p-4 rounded-lg bg-gray-50 " id="styled-qixian" role="tabpanel">
-      </div>
+      <div aria-labelledby="reservation-service-tab" class="hidden p-4 rounded-lg" id="styled-reservation-service"
+      role="tabpanel">
+      <div>reservation-service</div>
+    </div>
 
     </div>
   </div>
-
-  <!-- ====== Trading floor End -->
 
 
   <!-- ====== Footer Start -->
