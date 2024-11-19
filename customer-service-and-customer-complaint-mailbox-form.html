@@ -163,7 +163,7 @@
   </header>
   <!-- ====== Header End -->
 
-  <section class="flex overflow-hidden flex-col bg-white bg-[url('assets/images/c-banner-bg.png')] bg-cover">
+  <section class="flex overflow-hidden flex-col bg-white bg-[url('assets/images/c-banner-bg.png')] bg-cover relative">
     <div class="flex relative flex-col w-full min-h-[198px] max-md:max-w-full">
       <div class="container flex relative flex-col items-start self-center w-full max-md:max-w-full">
         <nav aria-label="Breadcrumb"
@@ -185,6 +185,8 @@
 
   <!-- ====== Trading floor Start -->
   <div id="default-styled-tab-content_" class="container">
+    <img loading="lazy" src="assets/images/svg/logo-wt.svg" alt="" 
+    class="object-contain absolute z-0 rounded-none aspect-[1.32] h-[150px] left-[-60px] top-[500px] max-sm:hidden">
     <div aria-labelledby="customer-service-and-customer-complaint-mailbox-form-tab" class=" p-4 rounded-lg"
       id="styled-customer-service-and-customer-complaint-mailbox-form" role="tabpanel"
       data-tabs-toggle="#default-styled-tab-content_">
@@ -193,7 +195,7 @@
           <p class="mt-2 text-base tracking-wide text-[#2A2A2A] max-md:max-w-full">親愛的客戶，您好：</p>
           <p class="mt-2 text-base tracking-wide text-[#2A2A2A] max-md:max-w-full">若您有相關意見反應或建議，歡迎您填寫下列表單後送出，客服人員將儘速回覆。
           </p>
-          <p class="mt-2 text-base tracking-wide text-[#2A2A2A] max-md:max-w-full">關於銀行業務(轉帳、掛失等)問題，煩請點選 合庫銀行服務信箱 留言。
+          <p class="mt-2 text-base tracking-wide text-[#2A2A2A] max-md:max-w-full">關於銀行業務(轉帳、掛失等)問題，煩請點選 <a class="underline" href="https://www.tcb-bank.com.tw/about-tcb/info/intro/sevmail/mail-content">合庫銀行服務信箱</a> 留言。
           </p>
           <p class="mt-2 text-base tracking-wide text-[#2A2A2A] max-md:max-w-full">請選擇身分別</p>
         </header>
@@ -214,7 +216,7 @@
 
             </div>
             <button type="button"
-              class="px-3 py-2 my-2 bg-[#AEE7D9] bg-opacity-20 rounded text-center text-[#2A2A2A] w-48">
+              class="px-3 py-2 mt-4 mb-2 bg-[#AEE7D9] bg-opacity-20 rounded text-center text-[#2A2A2A] w-48">
               <span>身分別 | 本公司客戶</span>
             </button>
           </fieldset>
@@ -245,16 +247,16 @@
           </div>
 
           <div class="flex flex-col min-w-[240px] mt-5 w-full">
-            <label for="opinion" class="text-black mb-2">上傳附件</label>
+            <label for="uploadFile" class="text-black mb-2">上傳附件</label>
             <div class="flex items-center space-x-4">
               <!-- File Selection Button -->
               <div class="relative flex items-center">
                 <!-- Invisible File Input -->
-                <input id="opinion" type="file" class="absolute inset-0 opacity-0 z-10 w-full h-full cursor-pointer"
+                <input id="uploadFile" type="file" class="absolute inset-0 opacity-0 z-10 w-full h-full cursor-pointer"
                   required>
                 <!-- Custom Button with Icon -->
                 <button type="button"
-                  class="flex items-center px-3 py-2 bg-[#AEE7D9] rounded-lg   text-[#2A2A2A] text-opacity-60">
+                  class="flex items-center px-3 py-2 bg-[#AEE7D9] rounded-lg text-[#2A2A2A] text-opacity-60 cursor-pointer">
                   <img src="assets/images/svg/file.svg" class="mr-2" />
                   選擇檔案
                 </button>
@@ -266,14 +268,14 @@
 
 
           <div class="flex flex-wrap gap-6 items-start mt-5 text-base tracking-wide max-md:max-w-full">
-            <label for="opinion" class="text-black">如您有相關附件，請您點選瀏覽上傳附件，檔案大小需在 5MB 以內 </label>
+            <label for="comment" class="text-black">如您有相關附件，請您點選瀏覽上傳附件，檔案大小需在 5MB 以內 </label>
           </div>
 
           <div class="flex flex-wrap gap-6 items-start mt-5 text-base tracking-wide max-md:max-w-full">
             <div class="flex flex-col min-w-[240px] w-full">
-              <label for="opinion" class="text-black mb-2">請寫下您寶貴的意見或建議 <span
+              <label for="comment" class="text-black mb-2">請寫下您寶貴的意見或建議 <span
                   class="text-red-500">＊最多500字</span></label>
-              <textarea id="opinion"
+              <textarea id="comment"
                 class="w-full border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 placeholder="請輸入您的意見" rows="4"></textarea>
             </div>
@@ -299,7 +301,31 @@
 
   <!-- ====== Trading floor End -->
 
+ <!-- ====== Application Start -->
+ <div class="bg-[#2F3535] w-full">
+  <div class="container">
+    <div class="accordion w-full">
+      <div class="tab">
+        <input type="checkbox" name="accordion-1" id="cb1">
+        <label for="cb1" class="tab__label relative">
+          <span class="hidden max-lg:block">
+            集團成員
+          </span>
+          <span class="block max-lg:hidden">
+            合庫金控 &nbsp; 合作金庫銀行 &nbsp; 合作金庫人壽 &nbsp; 合庫資產管理 &nbsp; 合作金庫票券 &nbsp; 合作金庫創投 &nbsp; 合作金庫投信 &nbsp; 合作金庫投顧
+            &nbsp; 元大期貨
+          </span>
+          <span class="absolute right-8 top-3">更多相關連結</span>
+        </label>
 
+        <div class="tab__content">
+          <p class="text-white">台灣證券交易所&nbsp; 證券櫃檯買賣中心&nbsp; 台灣期貨交易所&nbsp; 證券暨期貨市場基金會&nbsp; 金管會證期局&nbsp; 公開資訊觀測站</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ====== Application End -->
   <!-- ====== Footer Start -->
   <footer class="footer-desktop max-sm:hidden wow fadeInUp relative z-10 bg-[#383C3B]" data-wow-delay=".15s">
 
@@ -334,7 +360,7 @@
                     <div>高齡服務專線</div>
                     <div>(02)8772-8585</div>
                   </div>
-                  <div class="flex gap-2 items-start text-white ">
+                  <div class="flex gap-2 items-start text-white whitespace-nowrap ">
                     <div>語音下單電話</div>
                     <div>4050-8989(手機請加02)</div>
                   </div>
@@ -355,7 +381,9 @@
                 </div>
               </div>
               <div class="flex flex-col mt-2 max-w-full w-[145px]">
-                <img loading="lazy" src="assets/images/dp_1.png" class="object-contain w-full aspect-[2.59]">
+                <img loading="lazy"
+                  srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/214dd67da9c3e25908697511a312e99a943d24d795286eb221abfdad73cd005d?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/214dd67da9c3e25908697511a312e99a943d24d795286eb221abfdad73cd005d?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/214dd67da9c3e25908697511a312e99a943d24d795286eb221abfdad73cd005d?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/214dd67da9c3e25908697511a312e99a943d24d795286eb221abfdad73cd005d?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/214dd67da9c3e25908697511a312e99a943d24d795286eb221abfdad73cd005d?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/214dd67da9c3e25908697511a312e99a943d24d795286eb221abfdad73cd005d?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/214dd67da9c3e25908697511a312e99a943d24d795286eb221abfdad73cd005d?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/214dd67da9c3e25908697511a312e99a943d24d795286eb221abfdad73cd005d?apiKey=6ca75136718c454791d2fe542e2ed631&amp;"
+                  class="object-contain w-full aspect-[2.59]">
               </div>
               <div class="mt-2 text-sm tracking-wide text-white text-opacity-80">
                 ©合作金庫證劵版權所有
@@ -385,7 +413,7 @@
           <a href="#" class="hover:underline">網站導覽</a>
         </nav>
         <div class="flex flex-col py-4 mt-2.5 w-full text-base tracking-wide text-orange-200 max-w-[340px]">
-          <div class="flex gap-2 items-center w-full">
+          <div class="flex gap-2 items-center w-full whitespace-nowrap">
             <span>客服中心暨客戶申訴專線</span>
             <a href="tel:0227525050" class="hover:underline">(02)2752-5050</a>
           </div>
@@ -397,12 +425,12 @@
             <span>反詐騙諮詢專線</span>
             <a href="tel:0227525050" class="hover:underline">(02)2752-5050</a>
           </div>
-          <div class="flex gap-2 items-start mt-2 w-full text-white">
+          <div class="flex gap-2 items-start mt-2 w-full text-white whitespace-nowrap">
             <span>語音下單電話</span>
             <a href="tel:40508989" class="hover:underline">4050-8989(手機請加02)</a>
           </div>
         </div>
-        <div class="flex flex-col self-start mt-2.5 text-sm tracking-wide text-white">
+        <div class="flex flex-col self-start mt-2.5 text-sm tracking-wide text-white whitespace-nowrap">
           <div class="flex gap-2 items-start">
             <span>營業人名稱</span>
             <span>合作金庫證券股份有限公司</span>
@@ -439,7 +467,7 @@
   <script src="assets/js/swiper-bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script>
-    const input = document.getElementById('opinion');
+    const input = document.getElementById('uploadFile');
     const fileNameDisplay = document.getElementById('file-name');
 
     input.addEventListener('change', (event) => {
@@ -456,16 +484,17 @@
       const idNumber = document.getElementById('idNumber').value.trim();
       const email = document.getElementById('email').value.trim();
       const phone = document.getElementById('phone').value.trim();
-      const opinion = document.getElementById('opinion').value.trim();
-      const fileInput = document.getElementById('opinion').files[0];
+      const uploadFile = document.getElementById('uploadFile').value.trim();
+      const fileInput = document.getElementById('uploadFile').files[0];
 
       let errors = [];
       if (!contactTime) errors.push("請選擇您的身分。");
       if (!idNumber) errors.push("請輸入帳號或身分證字號。");
       if (!email && !phone) errors.push("Email或電話至少填寫一項。");
-      if (opinion.length > 500) errors.push("意見或建議不可超過500字。");
+      if (uploadFile.length > 500) errors.push("意見或建議不可超過500字。");
       if (fileInput && fileInput.size > 5 * 1024 * 1024) errors.push("附件大小需在5MB以內。");
 
+      debugger
       if (errors.length > 0) {
         alert("表單驗證失敗：\n" + errors.join("\n"));
         return;
@@ -476,7 +505,7 @@
         idNumber,
         email,
         phone,
-        opinion,
+        uploadFile,
         fileInput,
         "帳號或身分證字號": idNumber
       };

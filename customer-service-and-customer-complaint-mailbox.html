@@ -162,7 +162,7 @@
   </header>
   <!-- ====== Header End -->
 
-  <section class="flex overflow-hidden flex-col bg-white bg-[url('assets/images/c-banner-bg.png')] bg-cover">
+  <section class="flex overflow-hidden flex-col bg-white bg-[url('assets/images/c-banner-bg.png')] bg-cover relative" >
     <div class="flex relative flex-col w-full min-h-[198px] max-md:max-w-full">
       <div class="container flex relative flex-col items-start self-center w-full max-md:max-w-full">
         <nav aria-label="Breadcrumb"
@@ -184,6 +184,8 @@
 
   <!-- ====== Trading floor Start -->
   <div id="default-styled-tab-content_" class="container">
+    <img loading="lazy" src="assets/images/svg/logo-wt.svg" alt="" 
+    class="object-contain absolute z-0 rounded-none aspect-[1.32] h-[150px] left-[-60px] top-[500px] max-sm:hidden">
     <div aria-labelledby="customer-service-and-customer-complaint-mailbox-tab" class=" p-4 rounded-lg"
       id="styled-customer-service-and-customer-complaint-mailbox" role="tabpanel"
       data-tabs-toggle="#default-styled-tab-content_">
@@ -327,11 +329,11 @@
         <div
           class="flex flex-wrap gap-4 justify-center items-center self-stretch mt-5 w-full text-base font-medium tracking-wide text-center whitespace-nowrap max-md:max-w-full">
           <button type="reset"
-            class="flex justify-center items-center self-stretch my-auto text-[#2A2A2A] w-[345px] gap-2.5 px-6 py-3 bg-white rounded-3xl border border-solid border-stone-300 max-md:px-5">
+            class="flex justify-center items-center self-stretch my-auto text-[#2A2A2A] w-[342px] gap-2.5 px-6 py-3 bg-white rounded-3xl border border-solid border-stone-300 max-md:px-5">
             我不留言，並返回合庫證劵網站首頁
           </button>
           <a href="customer-service-and-customer-complaint-mailbox-form.html" type="submit"
-            class="gap-2.5 self-stretch px-6 py-3 my-auto text-white bg-[#008061] rounded-3xl w-[350px] max-md:px-5">
+            class="gap-2.5 self-stretch px-6 py-3 my-auto text-white bg-[#008061] rounded-3xl w-[355px] max-md:px-5">
             我已同意，瞭解並接受上述事項並進行留言
           </a>
         </div>
@@ -341,7 +343,31 @@
 
   <!-- ====== Trading floor End -->
 
+ <!-- ====== Application Start -->
+ <div class="bg-[#2F3535] w-full">
+  <div class="container">
+    <div class="accordion w-full">
+      <div class="tab">
+        <input type="checkbox" name="accordion-1" id="cb1">
+        <label for="cb1" class="tab__label relative">
+          <span class="hidden max-lg:block">
+            集團成員
+          </span>
+          <span class="block max-lg:hidden">
+            合庫金控 &nbsp; 合作金庫銀行 &nbsp; 合作金庫人壽 &nbsp; 合庫資產管理 &nbsp; 合作金庫票券 &nbsp; 合作金庫創投 &nbsp; 合作金庫投信 &nbsp; 合作金庫投顧
+            &nbsp; 元大期貨
+          </span>
+          <span class="absolute right-8 top-3">更多相關連結</span>
+        </label>
 
+        <div class="tab__content">
+          <p class="text-white">台灣證券交易所&nbsp; 證券櫃檯買賣中心&nbsp; 台灣期貨交易所&nbsp; 證券暨期貨市場基金會&nbsp; 金管會證期局&nbsp; 公開資訊觀測站</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ====== Application End -->
   <!-- ====== Footer Start -->
   <footer class="footer-desktop max-sm:hidden wow fadeInUp relative z-10 bg-[#383C3B]" data-wow-delay=".15s">
 
@@ -376,7 +402,7 @@
                     <div>高齡服務專線</div>
                     <div>(02)8772-8585</div>
                   </div>
-                  <div class="flex gap-2 items-start text-white ">
+                  <div class="flex gap-2 items-start text-white whitespace-nowrap ">
                     <div>語音下單電話</div>
                     <div>4050-8989(手機請加02)</div>
                   </div>
@@ -397,7 +423,9 @@
                 </div>
               </div>
               <div class="flex flex-col mt-2 max-w-full w-[145px]">
-                <img loading="lazy" src="assets/images/dp_1.png" class="object-contain w-full aspect-[2.59]">
+                <img loading="lazy"
+                  srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/214dd67da9c3e25908697511a312e99a943d24d795286eb221abfdad73cd005d?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/214dd67da9c3e25908697511a312e99a943d24d795286eb221abfdad73cd005d?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/214dd67da9c3e25908697511a312e99a943d24d795286eb221abfdad73cd005d?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/214dd67da9c3e25908697511a312e99a943d24d795286eb221abfdad73cd005d?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/214dd67da9c3e25908697511a312e99a943d24d795286eb221abfdad73cd005d?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/214dd67da9c3e25908697511a312e99a943d24d795286eb221abfdad73cd005d?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/214dd67da9c3e25908697511a312e99a943d24d795286eb221abfdad73cd005d?apiKey=6ca75136718c454791d2fe542e2ed631&amp;width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/214dd67da9c3e25908697511a312e99a943d24d795286eb221abfdad73cd005d?apiKey=6ca75136718c454791d2fe542e2ed631&amp;"
+                  class="object-contain w-full aspect-[2.59]">
               </div>
               <div class="mt-2 text-sm tracking-wide text-white text-opacity-80">
                 ©合作金庫證劵版權所有
@@ -427,7 +455,7 @@
           <a href="#" class="hover:underline">網站導覽</a>
         </nav>
         <div class="flex flex-col py-4 mt-2.5 w-full text-base tracking-wide text-orange-200 max-w-[340px]">
-          <div class="flex gap-2 items-center w-full">
+          <div class="flex gap-2 items-center w-full whitespace-nowrap">
             <span>客服中心暨客戶申訴專線</span>
             <a href="tel:0227525050" class="hover:underline">(02)2752-5050</a>
           </div>
@@ -439,12 +467,12 @@
             <span>反詐騙諮詢專線</span>
             <a href="tel:0227525050" class="hover:underline">(02)2752-5050</a>
           </div>
-          <div class="flex gap-2 items-start mt-2 w-full text-white">
+          <div class="flex gap-2 items-start mt-2 w-full text-white whitespace-nowrap">
             <span>語音下單電話</span>
             <a href="tel:40508989" class="hover:underline">4050-8989(手機請加02)</a>
           </div>
         </div>
-        <div class="flex flex-col self-start mt-2.5 text-sm tracking-wide text-white">
+        <div class="flex flex-col self-start mt-2.5 text-sm tracking-wide text-white whitespace-nowrap">
           <div class="flex gap-2 items-start">
             <span>營業人名稱</span>
             <span>合作金庫證券股份有限公司</span>
