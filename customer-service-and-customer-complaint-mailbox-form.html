@@ -450,9 +450,8 @@
 
 
     document.getElementById('feedbackForm').addEventListener('submit', function (e) {
-      e.preventDefault(); // Ngăn chặn form submit mặc định
+      e.preventDefault(); 
 
-      // Lấy giá trị các trường
       const contactTime = document.querySelector('input[name="contactTime"]:checked');
       const idNumber = document.getElementById('idNumber').value.trim();
       const email = document.getElementById('email').value.trim();
@@ -460,7 +459,6 @@
       const opinion = document.getElementById('opinion').value.trim();
       const fileInput = document.getElementById('opinion').files[0];
 
-      // Kiểm tra các điều kiện
       let errors = [];
       if (!contactTime) errors.push("請選擇您的身分。");
       if (!idNumber) errors.push("請輸入帳號或身分證字號。");
@@ -468,13 +466,11 @@
       if (opinion.length > 500) errors.push("意見或建議不可超過500字。");
       if (fileInput && fileInput.size > 5 * 1024 * 1024) errors.push("附件大小需在5MB以內。");
 
-      // Hiển thị thông báo nếu có lỗi
       if (errors.length > 0) {
         alert("表單驗證失敗：\n" + errors.join("\n"));
         return;
       }
 
-      // Nếu thành công, hiển thị dữ liệu đã nhập
       const formData = {
         contactTime,
         idNumber,
