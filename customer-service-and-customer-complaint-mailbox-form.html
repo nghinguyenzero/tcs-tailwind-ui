@@ -36,7 +36,7 @@
             <div><a href="latest-announcement.html">最新公告 </a></div>
             <div><a href="service-base.html"> 服務據點</a></div>
             <div><a href="customer-service-and-customer-complaint-mailbox-form.html">永續發展專區</a></div>
-            <div><a href="financial-friendly-services.html">金融友善服務</a></div>
+            <div><a href="#">金融友善服務</a></div>
             <div><a href="about-us.html">關於我們</a></div>
             <div>EN</div>
           </div>
@@ -93,32 +93,33 @@
                   </li>
 
                   <li class="submenu-item group relative">
-                    <a href="javascript:void(0)" href="customer-service.html" class="relative mx-8 flex items-center justify-between py-2 text-lg  font-medium text-dark group-hover:text-green-800 
+                    <a href="javascript:void(0)" href="#" class="relative mx-8 flex items-center justify-between py-2 text-lg  font-medium text-dark group-hover:text-green-800 
                       lg:ml-4 lg:mr-0 lg:inline-flex lg:py-6 lg:pl-0 lg:pr-4">
                       客戶服務
                     </a>
                     <div
                       class="submenu relative left-0 top-full hidden w-[250px] rounded-sm bg-white p-4 transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark-2 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full">
-                      <a href="customer-service.html"
+                      <a href="#"
                         class="block rounded px-4 py-[10px] text-base font-medium text-body-color hover:text-green-800">
                         新手上路
                       </a>
-                      <a href="customer-service.html"
+                      <a href="#"
                         class="block rounded px-4 py-[10px] text-base font-medium text-body-color hover:text-green-800 ">
                         線上申請
                       </a>
-                      <a href="customer-service.html"
+                      <a href="#"
                         class="block rounded px-4 py-[10px] text-base font-medium text-body-color hover:text-green-800 ">
                         訂閱中心
                       </a>
-                      <a href="customer-service.html"
+                      <a href="#"
                         class="block rounded px-4 py-[10px] text-sm font-medium text-body-color hover:text-green-800">
                         影音專區
                       </a>
-                      <a href="customer-service.html"
+                      <a 
+                        href="faq.html"
                         class="block rounded px-4 py-[10px] text-base font-medium text-body-color hover:text-green-800">
                         常見問題
-                      </a>
+                    </a>
                     </div>
                   </li>
 
@@ -187,7 +188,7 @@
     <div aria-labelledby="customer-service-and-customer-complaint-mailbox-form-tab" class=" p-4 rounded-lg"
       id="styled-customer-service-and-customer-complaint-mailbox-form" role="tabpanel"
       data-tabs-toggle="#default-styled-tab-content_">
-      <section class="flex flex-col justify-center items-start pt-10 pb-16 rounded-lg">
+      <section class="flex flex-col justify-center items-start rounded-lg">
         <header class="flex flex-col whitespace-nowrap max-md:max-w-full">
           <p class="mt-2 text-base tracking-wide text-[#2A2A2A] max-md:max-w-full">親愛的客戶，您好：</p>
           <p class="mt-2 text-base tracking-wide text-[#2A2A2A] max-md:max-w-full">若您有相關意見反應或建議，歡迎您填寫下列表單後送出，客服人員將儘速回覆。
@@ -197,12 +198,12 @@
           <p class="mt-2 text-base tracking-wide text-[#2A2A2A] max-md:max-w-full">請選擇身分別</p>
         </header>
 
-        <form class="w-full">
+        <form class="w-full" id="feedbackForm">
           <fieldset class="flex flex-col mt-5 text-base tracking-wide">
             <div class="flex gap-8 items-center mt-2 whitespace-nowrap text-[#2A2A2A]">
               <label class="flex gap-2 items-center">
                 <input type="radio" name="contactTime"
-                  class="w-5 h-5 bg-white border border-solid border-stone-300 rounded-full" value="morning">
+                  class="w-5 h-5 bg-white border border-solid border-stone-300 rounded-full" value="morning" checked>
                 <span>本公司客戶</span>
               </label>
               <label class="flex gap-2 items-center">
@@ -210,7 +211,12 @@
                   class="w-5 h-5 bg-white border border-solid border-stone-300 rounded-full" value="afternoon">
                 <span>非本公司客戶</span>
               </label>
+
             </div>
+            <button type="button"
+              class="px-3 py-2 my-2 bg-[#AEE7D9] bg-opacity-20 rounded text-center text-[#2A2A2A] w-48">
+              <span>身分別 | 本公司客戶</span>
+            </button>
           </fieldset>
 
           <div class="flex flex-wrap gap-6 items-start mt-5 text-base tracking-wide max-md:max-w-full">
@@ -238,19 +244,18 @@
             </div>
           </div>
 
-          <div class="flex flex-col min-w-[240px] w-full">
+          <div class="flex flex-col min-w-[240px] mt-5 w-full">
             <label for="opinion" class="text-black mb-2">上傳附件</label>
             <div class="flex items-center space-x-4">
               <!-- File Selection Button -->
               <div class="relative flex items-center">
                 <!-- Invisible File Input -->
-                <input id="opinion" type="file" 
-                  class="absolute inset-0 opacity-0 z-10 w-full h-full cursor-pointer" 
+                <input id="opinion" type="file" class="absolute inset-0 opacity-0 z-10 w-full h-full cursor-pointer"
                   required>
                 <!-- Custom Button with Icon -->
-                <button type="button" 
+                <button type="button"
                   class="flex items-center px-3 py-2 bg-[#AEE7D9] rounded-lg   text-[#2A2A2A] text-opacity-60">
-                  <img src="assets/images/svg/file.svg" class="mr-2"/>
+                  <img src="assets/images/svg/file.svg" class="mr-2" />
                   選擇檔案
                 </button>
               </div>
@@ -266,40 +271,27 @@
 
           <div class="flex flex-wrap gap-6 items-start mt-5 text-base tracking-wide max-md:max-w-full">
             <div class="flex flex-col min-w-[240px] w-full">
-              <label for="opinion" class="text-black">請寫下您寶貴的意見或建議 <span class="text-red-500">＊最多500字</span></label>
+              <label for="opinion" class="text-black mb-2">請寫下您寶貴的意見或建議 <span
+                  class="text-red-500">＊最多500字</span></label>
               <textarea id="opinion"
                 class="w-full border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                placeholder="請輸入您的意見"
-                rows="4"></textarea>
-
+                placeholder="請輸入您的意見" rows="4"></textarea>
             </div>
-
           </div>
+          <div
+            class="flex flex-wrap gap-4 justify-center items-center self-stretch my-5 w-full text-base font-medium tracking-wide text-center whitespace-nowrap max-md:max-w-full">
+            
 
-          <!-- <div
-            class="flex flex-wrap gap-4 justify-center items-center self-stretch mt-5 w-full text-base font-medium tracking-wide text-center whitespace-nowrap max-md:max-w-full">
-            <button type="reset"
+            <a type="reset" href="customer-service-and-customer-complaint-mailbox.html"
               class="flex justify-center items-center self-stretch my-auto text-[#2A2A2A] w-[180px] gap-2.5 px-6 py-3 bg-white rounded-3xl border border-solid border-stone-300 max-md:px-5">
               清除重填
-            </button>
+            </a>
+
             <button type="submit"
               class="gap-2.5 self-stretch px-6 py-3 my-auto text-white bg-[#008061] rounded-3xl w-[180px] max-md:px-5">
               確認送出
             </button>
-          </div> -->
-
-            <!-- Nút Reset và Submit -->
-  <div
-  class="flex flex-wrap gap-4 justify-center items-center self-stretch mt-5 w-full text-base font-medium tracking-wide text-center whitespace-nowrap max-md:max-w-full">
-  <button type="reset"
-    class="flex justify-center items-center self-stretch my-auto text-[#2A2A2A] w-[180px] gap-2.5 px-6 py-3 bg-white rounded-3xl border border-solid border-stone-300 max-md:px-5">
-    清除重填
-  </button>
-  <button type="submit"
-    class="gap-2.5 self-stretch px-6 py-3 my-auto text-white bg-[#008061] rounded-3xl w-[180px] max-md:px-5">
-    確認送出
-  </button>
-</div>
+          </div>
         </form>
       </section>
     </div>
@@ -319,7 +311,9 @@
               <div class="pb-2 w-full text-sm tracking-wide text-white max-md:max-w-full">
                 公平待客專區｜金融機構間資料共享業務暨共同行銷專區｜投資人資通安全手冊｜隱私權保護聲明｜個人資料保護政策聲明
                 <br>
-                個人資料保護聲明｜電子化金融服務｜投資人個人資料查詢｜機構投資人盡職治理｜客服暨客訴信箱｜電子交易無法運作應對措施｜網站導覽
+                個人資料保護聲明｜電子化金融服務｜投資人個人資料查詢｜機構投資人盡職治理｜
+                <a href="customer-service-and-customer-complaint-mailbox.html" class="hover:underline">客服暨客訴信箱</a>
+                ｜電子交易無法運作應對措施｜網站導覽
               </div>
               <div
                 class="mt-3 w-full border border-solid border-zinc-100 border-opacity-10 min-h-[1px] max-md:max-w-full">
@@ -386,7 +380,7 @@
           <a href="#" class="hover:underline">電子化金融服務</a>｜
           <a href="#" class="hover:underline">投資人個人資料查詢</a>｜
           <a href="#" class="hover:underline">機構投資人盡職治理</a>｜
-          <a href="#" class="hover:underline">客服暨客訴信箱</a>｜
+          <a href="customer-service-and-customer-complaint-mailbox.html" class="hover:underline">客服暨客訴信箱</a>｜
           <a href="#" class="hover:underline">電子交易無法運作應對措施</a>｜
           <a href="#" class="hover:underline">網站導覽</a>
         </nav>
@@ -444,49 +438,61 @@
 
   <script src="assets/js/swiper-bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
-<script>
-  const input = document.getElementById('opinion');
-  const fileNameDisplay = document.getElementById('file-name');
+  <script>
+    const input = document.getElementById('opinion');
+    const fileNameDisplay = document.getElementById('file-name');
 
-  input.addEventListener('change', (event) => {
-    const fileName = event.target.files[0]?.name || "尚未選擇檔案";
-    fileNameDisplay.textContent = fileName;
-  });
-
-
-
-  document.getElementById('feedbackForm').addEventListener('submit', function (e) {
-    e.preventDefault(); // Ngăn chặn form submit mặc định
-
-    // Lấy giá trị các trường
-    const contactTime = document.querySelector('input[name="contactTime"]:checked');
-    const idNumber = document.getElementById('idNumber').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const phone = document.getElementById('phone').value.trim();
-    const opinion = document.getElementById('opinion').value.trim();
-    const fileInput = document.getElementById('opinion').files[0];
-
-    // Kiểm tra các điều kiện
-    let errors = [];
-    if (!contactTime) errors.push("請選擇您的身分。");
-    if (!idNumber) errors.push("請輸入帳號或身分證字號。");
-    if (!email && !phone) errors.push("Email或電話至少填寫一項。");
-    if (opinion.length > 500) errors.push("意見或建議不可超過500字。");
-    if (fileInput && fileInput.size > 5 * 1024 * 1024) errors.push("附件大小需在5MB以內。");
-
-    // Hiển thị thông báo nếu có lỗi
-    if (errors.length > 0) {
-      alert("表單驗證失敗：\n" + errors.join("\n"));
-      return;
-    }
-
-    // Nếu không có lỗi, hiển thị thông báo thành công
-    alert("表單已成功提交！");
-    this.reset(); // Reset form sau khi thành công
-  });
+    input.addEventListener('change', (event) => {
+      const fileName = event.target.files[0]?.name || "尚未選擇檔案";
+      fileNameDisplay.textContent = fileName;
+    });
 
 
-</script>
+
+    document.getElementById('feedbackForm').addEventListener('submit', function (e) {
+      e.preventDefault(); // Ngăn chặn form submit mặc định
+
+      // Lấy giá trị các trường
+      const contactTime = document.querySelector('input[name="contactTime"]:checked');
+      const idNumber = document.getElementById('idNumber').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const opinion = document.getElementById('opinion').value.trim();
+      const fileInput = document.getElementById('opinion').files[0];
+
+      // Kiểm tra các điều kiện
+      let errors = [];
+      if (!contactTime) errors.push("請選擇您的身分。");
+      if (!idNumber) errors.push("請輸入帳號或身分證字號。");
+      if (!email && !phone) errors.push("Email或電話至少填寫一項。");
+      if (opinion.length > 500) errors.push("意見或建議不可超過500字。");
+      if (fileInput && fileInput.size > 5 * 1024 * 1024) errors.push("附件大小需在5MB以內。");
+
+      // Hiển thị thông báo nếu có lỗi
+      if (errors.length > 0) {
+        alert("表單驗證失敗：\n" + errors.join("\n"));
+        return;
+      }
+
+      // Nếu thành công, hiển thị dữ liệu đã nhập
+      const formData = {
+        contactTime,
+        idNumber,
+        email,
+        phone,
+        opinion,
+        fileInput,
+        "帳號或身分證字號": idNumber
+      };
+
+      // Nếu không có lỗi, hiển thị thông báo thành công
+      alert("表單提交成功！\n" + JSON.stringify(formData, null, 2));
+
+      this.reset(); // Reset form sau khi thành công
+    });
+
+
+  </script>
 
 
   <script>
