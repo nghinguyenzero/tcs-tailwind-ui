@@ -494,7 +494,6 @@
       if (uploadFile.length > 500) errors.push("意見或建議不可超過500字。");
       if (fileInput && fileInput.size > 5 * 1024 * 1024) errors.push("附件大小需在5MB以內。");
 
-      debugger
       if (errors.length > 0) {
         alert("表單驗證失敗：\n" + errors.join("\n"));
         return;

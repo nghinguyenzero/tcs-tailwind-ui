@@ -743,7 +743,6 @@
         <!-- ooooooooooooooooooooooooooooooooooo -->
       </div>
 
-
       <div aria-labelledby="appointment-open-an-account-tab" class="hidden p-4 rounded-lg"
         id="styled-appointment-open-an-account" role="tabpanel">
         <section class="flex flex-col justify-center items-start pt-10 pb-16 rounded-lg">
@@ -881,7 +880,100 @@
 
       <div aria-labelledby="reservation-service-tab" class="hidden p-4 rounded-lg" id="styled-reservation-service"
         role="tabpanel">
-        <div>reservation-service</div>
+        <section class="flex flex-col justify-center items-start pt-10 pb-16 rounded-lg">
+          <header class="flex flex-col max-md:max-w-full">
+            <h2 class="text-xl font-medium tracking-wide text-emerald-700">預約服務資料填寫</h2>
+            <p class="mt-2 text-base tracking-wide text-zinc-800 max-md:max-w-full">資料填寫送出後，將由專人與您聯繫</p>
+          </header>
+
+          <form class="w-full" id="appointment-open-an-account">
+            <fieldset class="flex flex-col mt-5 text-base tracking-wide">
+              <legend class="text-black">服務申請</legend>
+              <div class="flex gap-8 items-center mt-2 text-zinc-800">
+                <label class="flex gap-2 items-center">
+                  <input type="checkbox" class="w-5 h-5 rounded-sm border border-solid border-stone-300" value="證券" aria-label="證券">
+                  <span>不限用途款項借貸申請/開戶</span>
+                </label>
+              </div>
+            </fieldset>
+            <div class="flex gap-6 items-start mt-5 max-md:max-w-full">
+              <div class="flex flex-col min-w-[240px] max-md:max-w-full">
+                <label for="branch" class="text-base tracking-wide text-black">開戶分公司</label>
+                <div class="flex flex-wrap gap-6 items-center mt-2 max-md:max-w-full">
+                  <select id="branch" class="flex gap-10 justify-between items-center self-stretch px-3 py-4 my-auto text-base tracking-wide bg-white rounded-lg border border-solid border-stone-300 min-w-[240px] text-zinc-800 w-[340px] appearance-none">
+                    <option value="">請選擇</option>
+                  </select>
+                  <a href="#" class="flex gap-2 items-center self-stretch my-auto" aria-label="前往服務據點">
+                    <span class="flex flex-col justify-center items-center self-stretch my-auto w-8 h-8 bg-[#AEE7D9] rounded-2xl min-h-[32px]">
+                      <img src="assets/images/svg/point-location.svg" alt="" class="object-contain w-4 aspect-[0.8]">
+                    </span>
+                    <span class="self-stretch my-auto text-base font-medium tracking-wide text-emerald-700">前往服務據點</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-6 items-start mt-5 text-base tracking-wide max-md:max-w-full">
+              <div class="flex flex-col min-w-[240px] w-[340px]">
+                <label for="idNumber" class="text-black">身分證字號 <span class="text-red-500">＊</span></label>
+                <input id="idNumber" type="text" class="flex-1 shrink self-stretch px-3 py-4 mt-2 max-w-full bg-white rounded-lg border border-solid border-stone-300 text-zinc-800 text-opacity-60 w-[340px]" placeholder="請輸入身分證字號" required="">
+              </div>
+              <div class="flex flex-col min-w-[240px] w-[340px]">
+                <label for="chineseName" class="text-black">中文姓名 <span class="text-red-500">＊</span></label>
+                <input id="chineseName" type="text" class="flex-1 shrink self-stretch px-3 py-4 mt-2 max-w-full bg-white rounded-lg border border-solid border-stone-300 text-zinc-800 text-opacity-60 w-[340px]" placeholder="請輸入中文姓名" required="">
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-6 items-start mt-5 text-base tracking-wide max-md:max-w-full">
+              <!-- <div class="flex flex-col min-w-[240px] w-[340px]">
+                <label for="email" class="text-black">E-mail <span class="text-red-500">＊</span></label>
+                <input id="email" type="email" class="flex-1 shrink self-stretch px-3 py-4 mt-2 max-w-full bg-white rounded-lg border border-solid border-stone-300 text-zinc-800 text-opacity-60 w-[340px]" placeholder="請輸入E-mail" required="">
+              </div> -->
+              <div class="flex flex-col min-w-[240px] w-[340px]">
+                <label for="phone" class="text-black">聯絡電話 <span class="text-red-500">＊ ＊手機或市話請擇一填寫</span></label>
+                <input id="phone" type="tel" class="flex-1 shrink self-stretch px-3 py-4 mt-2 max-w-full bg-white rounded-lg border border-solid border-stone-300 text-zinc-800 text-opacity-60 w-[340px]" placeholder="填寫家用電話或行動電話" required="">
+              </div>
+            </div>
+
+
+
+            <fieldset class="flex flex-col mt-5 text-base tracking-wide max-md:max-w-full">
+              <legend class="text-black">可聯絡時間 <span class="text-red-500">＊不可複選</span></legend>
+              <div class="flex flex-wrap gap-8 items-center mt-2 text-zinc-800 max-md:max-w-full">
+                <label class="flex gap-2 items-center">
+                  <input type="radio" name="contactTime" class="w-5 h-5 bg-white border border-solid border-stone-300 rounded-full" value="上午10:00-12:00" checked="">
+                  <span>上午10:00-12:00</span>
+                </label>
+                <label class="flex gap-2 items-center">
+                  <input type="radio" name="contactTime" class="w-5 h-5 bg-white border border-solid border-stone-300 rounded-full" value="下午12:00-16:00">
+                  <span>下午12:00-16:00</span>
+                </label>
+                <label class="flex gap-2 items-center">
+                  <input type="radio" name="contactTime" class="w-5 h-5 bg-white border border-solid border-stone-300 rounded-full" value="傍晚16:00-18:00">
+                  <span>傍晚16:00-18:00</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="flex flex-wrap gap-2 items-center self-stretch p-3 mt-5 w-full text-base tracking-wide rounded bg-neutral-100 bg-opacity-60 text-zinc-800 max-md:max-w-full">
+              <label class="flex items-center">
+                <input type="checkbox" class="w-5 h-5 bg-white rounded-sm border border-solid border-stone-300" required="">
+                <span class="ml-2">
+                  我已同意、瞭解並接受合作金庫證券
+                  <a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$LinkButton_Accept','')" class="text-emerald-700 underline" target="_blank">個人資料蒐集、處理、利用聲明告知事項</a>
+                </span>
+              </label>
+            </div>
+
+            <div class="flex flex-wrap gap-4 justify-center items-center self-stretch mt-5 w-full text-base font-medium tracking-wide text-center max-md:max-w-full">
+              <button type="reset" class="flex justify-center items-center self-stretch my-auto text-zinc-800 w-[180px] gap-2.5 px-6 py-3 bg-white rounded-3xl border border-solid border-stone-300 max-md:px-5">
+                清除重填
+              </button>
+              <button type="submit" class="gap-2.5 self-stretch px-6 py-3 my-auto text-white bg-emerald-700 rounded-3xl w-[180px] max-md:px-5">
+                確認送出
+              </button>
+            </div>
+          </form>
+        </section>
       </div>
 
     </div>
