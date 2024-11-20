@@ -751,7 +751,7 @@
             <p class="mt-2 text-base tracking-wide text-zinc-800 max-md:max-w-full">請填寫您的基本資料以便進行開戶申請。所有資料將受到嚴格保密。</p>
           </header>
 
-          <form class="w-full" id="appointment-open-an-account">
+          <form class="w-full" id="appointment-open-an-account" method="POST" action="/submit">
             <fieldset class="flex flex-col mt-5 text-base tracking-wide">
               <legend class="text-black">開立帳戶 <span class="text-red-500">＊可複選</span></legend>
               <div class="flex gap-8 items-center mt-2 text-zinc-800">
@@ -812,9 +812,14 @@
               <div class="flex flex-col min-w-[240px] max-md:max-w-full">
                 <label for="branch" class="text-base tracking-wide text-black">開戶分公司</label>
                 <div class="flex flex-wrap gap-6 items-center mt-2 max-md:max-w-full">
+
                   <select id="branch"
-                    class="flex gap-10 justify-between items-center self-stretch px-3 py-4 my-auto text-base tracking-wide bg-white rounded-lg border border-solid border-stone-300 min-w-[240px] text-zinc-800 w-[340px] appearance-none">
+                    class="flex gap-10 justify-between items-center self-stretch px-3 py-4 my-auto text-base tracking-wide bg-white rounded-lg border border-solid border-stone-300 min-w-[240px] text-zinc-800 w-[340px] appearance-none"
+                    style="-webkit-appearance: none; -moz-appearance: none; appearance: none; background-image: url('assets/images/svg/triangular-down.svg'); 
+                  background-repeat: no-repeat; background-position: 300px center; padding-right: 10px; margin-right: 10px;">
                     <option value="">請選擇</option>
+                    <option value="branch1">分公司 1</option>
+                    <option value="branch2">分公司 2</option>
                   </select>
                   <a href="#" class="flex gap-2 items-center self-stretch my-auto" aria-label="前往服務據點">
                     <span
@@ -886,89 +891,109 @@
             <p class="mt-2 text-base tracking-wide text-zinc-800 max-md:max-w-full">資料填寫送出後，將由專人與您聯繫</p>
           </header>
 
-          <form class="w-full" id="appointment-open-an-account">
+          <form class="w-full" id="reservation-service" method="POST" action="/submit">
             <fieldset class="flex flex-col mt-5 text-base tracking-wide">
               <legend class="text-black">服務申請</legend>
               <div class="flex gap-8 items-center mt-2 text-zinc-800">
                 <label class="flex gap-2 items-center">
-                  <input type="checkbox" class="w-5 h-5 rounded-sm border border-solid border-stone-300" value="證券" aria-label="證券">
+                  <input type="checkbox" class="w-5 h-5 rounded-sm border border-solid border-stone-300" value="證券"
+                    aria-label="證券">
                   <span>不限用途款項借貸申請/開戶</span>
                 </label>
               </div>
             </fieldset>
             <div class="flex gap-6 items-start mt-5 max-md:max-w-full">
               <div class="flex flex-col min-w-[240px] max-md:max-w-full">
-                <label for="branch" class="text-base tracking-wide text-black">開戶分公司</label>
+                <label for="accountOpeningBranch" class="text-base tracking-wide text-black">開戶分公司</label>
                 <div class="flex flex-wrap gap-6 items-center mt-2 max-md:max-w-full">
-                  <select id="branch" class="flex gap-10 justify-between items-center self-stretch px-3 py-4 my-auto text-base tracking-wide bg-white rounded-lg border border-solid border-stone-300 min-w-[240px] text-zinc-800 w-[340px] appearance-none">
+                  <select id="accountOpeningBranch"
+                    class="flex gap-10 justify-between items-center self-stretch px-3 py-4 my-auto text-base tracking-wide bg-white rounded-lg border border-solid border-stone-300 min-w-[240px] text-zinc-800 w-[340px] appearance-none"
+                    style="-webkit-appearance: none; -moz-appearance: none; appearance: none; background-image: url('assets/images/svg/triangular-down.svg'); 
+                  background-repeat: no-repeat; background-position: 300px center; padding-right: 10px; margin-right: 10px;">
                     <option value="">請選擇</option>
+                    <option value="branch1">分公司 1</option>
+                    <option value="branch2">分公司 2</option>
                   </select>
+
                   <a href="#" class="flex gap-2 items-center self-stretch my-auto" aria-label="前往服務據點">
-                    <span class="flex flex-col justify-center items-center self-stretch my-auto w-8 h-8 bg-[#AEE7D9] rounded-2xl min-h-[32px]">
+                    <span
+                      class="flex flex-col justify-center items-center self-stretch my-auto w-8 h-8 bg-[#AEE7D9] rounded-2xl min-h-[32px]">
                       <img src="assets/images/svg/point-location.svg" alt="" class="object-contain w-4 aspect-[0.8]">
                     </span>
-                    <span class="self-stretch my-auto text-base font-medium tracking-wide text-emerald-700">前往服務據點</span>
+                    <span
+                      class="self-stretch my-auto text-base font-medium tracking-wide text-emerald-700">前往服務據點</span>
                   </a>
                 </div>
               </div>
             </div>
             <div class="flex flex-wrap gap-6 items-start mt-5 text-base tracking-wide max-md:max-w-full">
               <div class="flex flex-col min-w-[240px] w-[340px]">
-                <label for="idNumber" class="text-black">身分證字號 <span class="text-red-500">＊</span></label>
-                <input id="idNumber" type="text" class="flex-1 shrink self-stretch px-3 py-4 mt-2 max-w-full bg-white rounded-lg border border-solid border-stone-300 text-zinc-800 text-opacity-60 w-[340px]" placeholder="請輸入身分證字號" required="">
+                <label for="cIdNumber" class="text-black">身分證字號 <span class="text-red-500">＊</span></label>
+                <input id="cIdNumber" type="text"
+                  class="flex-1 shrink self-stretch px-3 py-4 mt-2 max-w-full bg-white rounded-lg border border-solid border-stone-300 text-zinc-800 text-opacity-60 w-[340px]"
+                  placeholder="請輸入身分證字號" required="">
               </div>
               <div class="flex flex-col min-w-[240px] w-[340px]">
-                <label for="chineseName" class="text-black">中文姓名 <span class="text-red-500">＊</span></label>
-                <input id="chineseName" type="text" class="flex-1 shrink self-stretch px-3 py-4 mt-2 max-w-full bg-white rounded-lg border border-solid border-stone-300 text-zinc-800 text-opacity-60 w-[340px]" placeholder="請輸入中文姓名" required="">
+                <label for="cName" class="text-black">中文姓名 <span class="text-red-500">＊</span></label>
+                <input id="cName" type="text"
+                  class="flex-1 shrink self-stretch px-3 py-4 mt-2 max-w-full bg-white rounded-lg border border-solid border-stone-300 text-zinc-800 text-opacity-60 w-[340px]"
+                  placeholder="請輸入中文姓名" required="">
               </div>
             </div>
 
             <div class="flex flex-wrap gap-6 items-start mt-5 text-base tracking-wide max-md:max-w-full">
-              <!-- <div class="flex flex-col min-w-[240px] w-[340px]">
-                <label for="email" class="text-black">E-mail <span class="text-red-500">＊</span></label>
-                <input id="email" type="email" class="flex-1 shrink self-stretch px-3 py-4 mt-2 max-w-full bg-white rounded-lg border border-solid border-stone-300 text-zinc-800 text-opacity-60 w-[340px]" placeholder="請輸入E-mail" required="">
-              </div> -->
               <div class="flex flex-col min-w-[240px] w-[340px]">
-                <label for="phone" class="text-black">聯絡電話 <span class="text-red-500">＊ ＊手機或市話請擇一填寫</span></label>
-                <input id="phone" type="tel" class="flex-1 shrink self-stretch px-3 py-4 mt-2 max-w-full bg-white rounded-lg border border-solid border-stone-300 text-zinc-800 text-opacity-60 w-[340px]" placeholder="填寫家用電話或行動電話" required="">
+                <label for="contactNumber" class="text-black">聯絡電話 <span class="text-red-500">＊
+                    手機或市話請擇一填寫</span></label>
+                <input id="contactNumber" type="tel"
+                  class="flex-1 shrink self-stretch px-3 py-4 mt-2 max-w-full bg-white rounded-lg border border-solid border-stone-300 text-zinc-800 text-opacity-60 w-[340px]"
+                  placeholder="填寫家用電話或行動電話" required="">
               </div>
             </div>
-
-
 
             <fieldset class="flex flex-col mt-5 text-base tracking-wide max-md:max-w-full">
               <legend class="text-black">可聯絡時間 <span class="text-red-500">＊不可複選</span></legend>
               <div class="flex flex-wrap gap-8 items-center mt-2 text-zinc-800 max-md:max-w-full">
                 <label class="flex gap-2 items-center">
-                  <input type="radio" name="contactTime" class="w-5 h-5 bg-white border border-solid border-stone-300 rounded-full" value="上午10:00-12:00" checked="">
+                  <input type="radio" name="contactTimeReservation"
+                    class="w-5 h-5 bg-white border border-solid border-stone-300 rounded-full" value="上午10:00-12:00"
+                    checked="">
                   <span>上午10:00-12:00</span>
                 </label>
                 <label class="flex gap-2 items-center">
-                  <input type="radio" name="contactTime" class="w-5 h-5 bg-white border border-solid border-stone-300 rounded-full" value="下午12:00-16:00">
+                  <input type="radio" name="contactTimeReservation"
+                    class="w-5 h-5 bg-white border border-solid border-stone-300 rounded-full" value="下午12:00-16:00">
                   <span>下午12:00-16:00</span>
                 </label>
                 <label class="flex gap-2 items-center">
-                  <input type="radio" name="contactTime" class="w-5 h-5 bg-white border border-solid border-stone-300 rounded-full" value="傍晚16:00-18:00">
+                  <input type="radio" name="contactTimeReservation"
+                    class="w-5 h-5 bg-white border border-solid border-stone-300 rounded-full" value="傍晚16:00-18:00">
                   <span>傍晚16:00-18:00</span>
                 </label>
               </div>
             </fieldset>
 
-            <div class="flex flex-wrap gap-2 items-center self-stretch p-3 mt-5 w-full text-base tracking-wide rounded bg-neutral-100 bg-opacity-60 text-zinc-800 max-md:max-w-full">
+            <div
+              class="flex flex-wrap gap-2 items-center self-stretch p-3 mt-5 w-full text-base tracking-wide rounded bg-neutral-100 bg-opacity-60 text-zinc-800 max-md:max-w-full">
               <label class="flex items-center">
-                <input type="checkbox" class="w-5 h-5 bg-white rounded-sm border border-solid border-stone-300" required="">
+                <input type="checkbox" class="w-5 h-5 bg-white rounded-sm border border-solid border-stone-300"
+                  required="">
                 <span class="ml-2">
                   我已同意、瞭解並接受合作金庫證券
-                  <a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$LinkButton_Accept','')" class="text-emerald-700 underline" target="_blank">個人資料蒐集、處理、利用聲明告知事項</a>
+                  <a href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$LinkButton_Accept','')"
+                    class="text-emerald-700 underline" target="_blank">個人資料蒐集、處理、利用聲明告知事項</a>
                 </span>
               </label>
             </div>
 
-            <div class="flex flex-wrap gap-4 justify-center items-center self-stretch mt-5 w-full text-base font-medium tracking-wide text-center max-md:max-w-full">
-              <button type="reset" class="flex justify-center items-center self-stretch my-auto text-zinc-800 w-[180px] gap-2.5 px-6 py-3 bg-white rounded-3xl border border-solid border-stone-300 max-md:px-5">
+            <div
+              class="flex flex-wrap gap-4 justify-center items-center self-stretch mt-5 w-full text-base font-medium tracking-wide text-center max-md:max-w-full">
+              <button type="reset"
+                class="flex justify-center items-center self-stretch my-auto text-zinc-800 w-[180px] gap-2.5 px-6 py-3 bg-white rounded-3xl border border-solid border-stone-300 max-md:px-5">
                 清除重填
               </button>
-              <button type="submit" class="gap-2.5 self-stretch px-6 py-3 my-auto text-white bg-emerald-700 rounded-3xl w-[180px] max-md:px-5">
+              <button type="submit"
+                class="gap-2.5 self-stretch px-6 py-3 my-auto text-white bg-emerald-700 rounded-3xl w-[180px] max-md:px-5">
                 確認送出
               </button>
             </div>
@@ -979,31 +1004,31 @@
     </div>
   </div>
 
- <!-- ====== Application Start -->
- <div class="bg-[#2F3535] w-full">
-  <div class="container">
-    <div class="accordion w-full">
-      <div class="tab">
-        <input type="checkbox" name="accordion-1" id="cb1">
-        <label for="cb1" class="tab__label relative">
-          <span class="hidden max-lg:block">
-            集團成員
-          </span>
-          <span class="block max-lg:hidden">
-            合庫金控 &nbsp; 合作金庫銀行 &nbsp; 合作金庫人壽 &nbsp; 合庫資產管理 &nbsp; 合作金庫票券 &nbsp; 合作金庫創投 &nbsp; 合作金庫投信 &nbsp; 合作金庫投顧
-            &nbsp; 元大期貨
-          </span>
-          <span class="absolute right-8 top-3">更多相關連結</span>
-        </label>
+  <!-- ====== Application Start -->
+  <div class="bg-[#2F3535] w-full">
+    <div class="container">
+      <div class="accordion w-full">
+        <div class="tab">
+          <input type="checkbox" name="accordion-1" id="cb1">
+          <label for="cb1" class="tab__label relative">
+            <span class="hidden max-lg:block">
+              集團成員
+            </span>
+            <span class="block max-lg:hidden">
+              合庫金控 &nbsp; 合作金庫銀行 &nbsp; 合作金庫人壽 &nbsp; 合庫資產管理 &nbsp; 合作金庫票券 &nbsp; 合作金庫創投 &nbsp; 合作金庫投信 &nbsp; 合作金庫投顧
+              &nbsp; 元大期貨
+            </span>
+            <span class="absolute right-8 top-3">更多相關連結</span>
+          </label>
 
-        <div class="tab__content">
-          <p class="text-white">台灣證券交易所&nbsp; 證券櫃檯買賣中心&nbsp; 台灣期貨交易所&nbsp; 證券暨期貨市場基金會&nbsp; 金管會證期局&nbsp; 公開資訊觀測站</p>
+          <div class="tab__content">
+            <p class="text-white">台灣證券交易所&nbsp; 證券櫃檯買賣中心&nbsp; 台灣期貨交易所&nbsp; 證券暨期貨市場基金會&nbsp; 金管會證期局&nbsp; 公開資訊觀測站</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<!-- ====== Application End -->
+  <!-- ====== Application End -->
   <!-- ====== Footer Start -->
   <footer class="footer-desktop max-sm:hidden wow fadeInUp relative z-10 bg-[#383C3B]" data-wow-delay=".15s">
 
@@ -1139,41 +1164,32 @@
 
 
   <!-- ====== All Scripts -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
 
   <script src="assets/js/swiper-bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
+
   <script>
     document.getElementById('appointment-open-an-account').addEventListener('submit', function (e) {
-      e.preventDefault(); // Ngăn chặn submit mặc định
-
-      // Lấy giá trị từ các input
+      e.preventDefault();
       const idNumber = document.getElementById('idNumber').value.trim();
       const chineseName = document.getElementById('chineseName').value.trim();
       const email = document.getElementById('email').value.trim();
       const phone = document.getElementById('phone').value.trim();
       const branch = document.getElementById('branch').value;
       const agreeTerms = document.querySelector('div input[type="checkbox"]:checked');
-
-      // Lấy dữ liệu từ các trường
       const checkboxes = document.querySelectorAll('fieldset input[type="checkbox"]');
       const selectedCheckboxes = Array.from(checkboxes).filter(cb => cb.checked).map(cb => cb.value);
-
       const contactTime = document.querySelector('input[name="contactTime"]:checked');
-      // Kiểm tra checkbox "開立帳戶"
+      let errors = [];
+
       if (selectedCheckboxes.length === 0) {
         errors.push("請至少選擇一項開立帳戶選項。");
       }
 
-      // Kiểm tra radio "可聯絡時間"
       if (!contactTime) {
         errors.push("請選擇一個可聯絡時間。");
       }
 
-      // Khởi tạo lỗi
-      let errors = [];
-
-      // Bắt đầu validate
       if (!idNumber) errors.push("請輸入身分證字號。");
       if (!chineseName) errors.push("請輸入中文姓名。");
       if (!email) errors.push("請輸入有效的E-mail。");
@@ -1182,13 +1198,11 @@
       if (!contactTime) errors.push("請選擇可聯絡時間。");
       if (!agreeTerms) errors.push("您必須同意合作金庫證券的個人資料蒐集、處理、利用聲明告知事項。");
 
-      // Nếu có lỗi, hiển thị thông báo
       if (errors.length > 0) {
         alert("表單驗證失敗：\n" + errors.join("\n"));
         return;
       }
 
-      // Nếu thành công, hiển thị dữ liệu đã nhập
       const formData = {
         "身分證字號": idNumber,
         "中文姓名": chineseName,
@@ -1200,8 +1214,57 @@
       };
 
       alert("表單提交成功！\n" + JSON.stringify(formData, null, 2));
-      this.reset(); // Reset form sau khi gửi thành công
+
+      this.reset();
     });
+  </script>
+
+  <script>
+    document.getElementById("reservation-service").addEventListener("submit", function (event) {
+      event.preventDefault();
+      const form = event.target;
+      let isValid = true;
+      let formData = {};
+
+      const idNumber = form.querySelector("#cIdNumber");
+      const name = form.querySelector("#cName");
+      const contactNumber = form.querySelector("#contactNumber");
+      const accountOpeningBranch = form.querySelector("#accountOpeningBranch");
+
+      if (!idNumber.value.trim()) {
+        showError(idNumber, "請輸入身分證字號");
+        isValid = false;
+      }
+
+      if (!name.value.trim()) {
+        showError(name, "請輸入中文姓名");
+        isValid = false;
+      }
+
+      if (!contactNumber.value.trim()) {
+        showError(contactNumber, "請填寫家用電話或行動電話");
+        isValid = false;
+      }
+
+      const agreement = form.querySelector("input[type='checkbox']:required");
+      if (!agreement.checked) {
+        showError(agreement, "請同意相關條款");
+        isValid = false;
+      }
+
+      if (isValid) {
+        formData = {
+          身分證字號: idNumber.value.trim(),
+          中文姓名: name.value.trim(),
+          聯絡電話: contactNumber.value.trim(),
+          開戶分公司: accountOpeningBranch.value.trim(),
+          可聯絡時間: form.querySelector("input[name='contactTimeReservation']:checked").value,
+        };
+
+        alert("提交成功! 表單數據: " + JSON.stringify(formData, null, 2));
+      }
+    });
+
   </script>
 
   <script>
