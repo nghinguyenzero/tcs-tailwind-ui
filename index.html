@@ -45,10 +45,10 @@
         <div class="w-full">
           <div class="relative -mx-4 max-md: flex items-center justify-between">
             <div class="sm:w-[400px] w-[500px] max-w-full px-4">
-              <a href="index.html" class="navbar-logo block w-full max-md:my-4 max-md:!ml-12">
+              <button  class="navbar-logo block w-full max-md:my-4 max-md:!ml-12" data-modal-target="default-modal" data-modal-toggle="default-modal">
 
                 <img src="assets/images/logo/logo-white.png" alt="logo" class="header-logo w-full" />
-              </a>
+              </button>
             </div>
             <div class="flex w-full items-center justify-end px-4">
               <button id="navbarToggler"
@@ -161,6 +161,159 @@
     </div>
   </header>
   <!-- ====== Header End -->
+
+        <!-- Main modal start -->
+        <div id="default-modal" tabindex="-1" aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative p-4 w-full max-w-3xl max-h-full">
+          <div class="relative bg-white rounded-lg shadow ">
+            <div class="flex items-center justify-between p-4 md:p-5">
+              <h1 class="flex gap-2 items-center mt-2 text-2xl font-medium tracking-widest text-[#008061] m-auto">
+                <img loading="lazy" src="assets/images/svg/noti-icon.svg" alt=""
+                  class="object-contain shrink-0 self-stretch my-auto w-8 aspect-square">
+                <span>最新公告</span>
+              </h1>
+              <button type="button"
+                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                data-modal-hide="default-modal">
+                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 14 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                </svg>
+                <span class="sr-only">Close modal</span>
+              </button>
+            </div>
+            <div class="px-4 md:px-5 space-y-4">
+              <section class="flex flex-col rounded-lg text-[#2A2A2A]">
+                <div class="flex flex-col w-full rounded-lg max-md:max-w-full">
+  
+                  <section class="flex flex-col pb-2 rounded-lg">
+                    <article class="mt-3">
+                      <div class="flex flex-col w-full max-md:max-w-full">
+                        <h2 class="flex gap-1 items-start self-start text-xl font-medium tracking-wide text-[#008061]">
+                          <span>因應盤中零股交易新制，金庫贏家作業系統最低需求為WIN7說明</span>
+                        </h2>
+                        <p class="mt-2 text-sm tracking-wide text-zinc-800 max-md:max-w-full">
+                          <span>親愛的客戶您好：</span>
+                        </p>
+                        <p class="mt-2 text-sm tracking-wide text-zinc-800 max-md:max-w-full">
+                          <span>因應交易所盤中零股交易新制上線，為求更好的服務及系統支援，自110年10月23日起「金庫贏家」於”5.67版”開始，電腦作業系統最低需求為Windows
+                            7(含)以上，才可支援更新或安裝：
+                          </span>
+                        </p>
+                        <p class="mt-2 text-sm tracking-wide text-zinc-800 max-md:max-w-full">
+                          <span>
+                            (1)若您的作業系統為Windows XP，將不支援盤中零股版本5.67版及其之後版本，安裝後會無法登入。
+                          </span>
+                        </p>
+                        <p class="mt-2 text-sm tracking-wide text-zinc-800 max-md:max-w-full">
+                          <span>
+                            (2)若您的金庫贏家已升級造成無法登入，請重新安裝金庫贏家舊版5.45版，但此版本不支援盤中零股交易功能，請您盡速升級您的電腦設備。
+                          </span>
+                        </p>
+                        <h4
+                          class="flex gap-1 items-start self-start text-md font-medium tracking-wide mt-2 text-[#008061] underline">
+                          <span>XP系統客戶請按此下載5.45版(不支援盤中零股交易)</span>
+                        </h4>
+                      </div>
+                    </article>
+  
+                </div>
+                <nav
+                  class="flex flex-wrap gap-4 justify-center items-center mt-3 w-full text-base tracking-wide text-center whitespace-nowrap max-md:max-w-full">
+                  <button
+                    class="flex gap-2.5 justify-center items-center self-stretch px-3 py-1 my-auto rounded-3xl min-h-[31px]"
+                    aria-label="Previous article">
+                    <img loading="lazy" src="assets/images/svg/triangular_2.svg"
+                      class="object-contain shrink-0 self-stretch my-auto w-2 aspect-[0.57]" alt="">
+                    <span class="self-stretch my-auto">上一篇</span>
+                  </button>
+                  <a href="#" class="self-stretch px-6 py-2.5 my-auto rounded-3xl min-h-[40px] max-md:px-5">
+                    <span class="text-[#008061]">02</span><span>/</span><span>05</span>
+                  </a>
+                  <button
+                    class="flex gap-2.5 justify-center items-center self-stretch px-3 py-1 my-auto rounded-3xl min-h-[31px]"
+                    aria-label="Next article">
+                    <span class="self-stretch my-auto">下一篇</span>
+                    <img loading="lazy" src="assets/images/svg/triangular_1.svg"
+                      class="object-contain shrink-0 self-stretch my-auto w-2 aspect-[0.57]" alt="">
+                  </button>
+                </nav>
+              </section>
+            </div>
+  
+            <div class="flex items-center pb-5 dark:border-gray-600">
+              <div
+                class="flex flex-wrap gap-4 justify-center items-center self-stretch w-full text-base font-medium tracking-wide text-center whitespace-nowrap max-md:max-w-full">
+                <button data-modal-hide="default-modal" href="customer-service-and-customer-complaint-mailbox-form.html"
+                  type="submit"
+                  class="gap-2.5 self-stretch px-6 py-2 my-2 text-white bg-[#008061] rounded-3xl w-[140px] max-md:px-5">
+                  確認
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="border-b border-gray-200  container " style="background-image: url('assets/images/svg/bg-1.svg')">
+        <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-styled-tab"
+          data-tabs-toggle="#default-styled-tab-content"
+          data-tabs-active-classes="text-purple-600 hover:text-purple-600 dark:text-purple-500 dark:hover:text-purple-500 border-purple-600 dark:border-purple-500"
+          data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 "
+          role="tablist">
+          <li class="me-2" role="presentation">
+            <button id="latest-news-styled-tab" data-tabs-target="#styled-latest-news" type="button" role="tab"
+              aria-controls="latest-news" aria-selected="false"
+              class="inline-block p-4 border-b-2 rounded-t-lg aria-selected:text-[#008061] aria-selected:border-[#FDC885] text-lg">最新消息</button>
+          </li>
+  
+          <li role="presentation">
+            <button id="announcements-styled-tab" data-tabs-target="#styled-announcements" type="button" role="tab"
+              aria-controls="announcements" aria-selected="false"
+              class="inline-block p-4 border-b-2 rounded-t-lg aria-selected:text-[#008061] aria-selected:border-[#FDC885]  text-lg hover:text-gray-600 hover:border-gray-300 ">
+              公告事項
+            </button>
+          </li>
+  
+  
+          <li class="me-2" role="presentation">
+            <button id="promotions-styled-tab" data-tabs-target="#styled-promotions" type="button" role="tab"
+              aria-controls="promotions" aria-selected="false"
+              class="inline-block p-4 border-b-2 rounded-t-lg aria-selected:text-[#008061] aria-selected:border-[#FDC885] text-lg hover:text-gray-600 hover:border-gray-300 ">
+              優惠活動
+            </button>
+          </li>
+  
+          <li class="me-2" role="presentation">
+            <button id="investor-protection-center-styled-tab" data-tabs-target="#styled-investor-protection-center"
+              type="button" role="tab" aria-controls="investor-protection-center" aria-selected="false"
+              class="inline-block p-4 border-b-2 rounded-t-lg aria-selected:text-[#008061] aria-selected:border-[#FDC885]  text-lg hover:text-gray-600 hover:border-gray-300 ">
+              投資人保護中心
+            </button>
+          </li>
+  
+          <li class="me-2" role="presentation">
+            <button id="money-laundering-prevention-act-styled-tab"
+              data-tabs-target="#styled-money-laundering-prevention-act" type="button" role="tab"
+              aria-controls="money-laundering-prevention-act" aria-selected="false"
+              class="inline-block p-4 border-b-2 rounded-t-lg aria-selected:text-[#008061] aria-selected:border-[#FDC885]  text-lg hover:text-gray-600 hover:border-gray-300 ">
+              洗錢防制法
+            </button>
+          </li>
+  
+          <li class="me-2" role="presentation">
+            <button id="procurement-bidding-styled-tab" data-tabs-target="#styled-procurement-bidding" type="button"
+              role="tab" aria-controls="procurement-bidding" aria-selected="false"
+              class="inline-block p-4 border-b-2 rounded-t-lg aria-selected:text-[#008061] aria-selected:border-[#FDC885]  text-lg hover:text-gray-600 hover:border-gray-300 ">
+              採購招標</button>
+          </li>
+  
+        </ul>
+      </div>
+    </section>
+      <!-- Main modal end -->
 
   <!-- ====== Banner Start -->
   <div class="w-full sm:relative">
@@ -284,7 +437,7 @@
           <div
             class="flex relative w-auto flex-col self-stretch px-6 py-7 my-auto bg-white rounded-lg border border-solid border-zinc-100 min-h-[160px] min-w-[240px] max-md:px-5">
             <div class="flex z-0 flex-col self-center max-w-full w-[234px]">
-              <div class="text-2xl font-bold tracking-wide text-emerald-700">
+              <div class="text-2xl font-bold tracking-wide text-[#008061]">
                 金庫e證券
               </div>
               <div class="mt-4 text-base font-medium tracking-wide text-zinc-800">
@@ -302,7 +455,7 @@
           <div
             class="flex relative flex-col justify-center self-stretch px-6 py-7 my-auto bg-white rounded-lg border border-solid border-zinc-100 min-h-[160px] min-w-[240px] w-auto max-md:px-5">
             <div class="flex z-0 flex-col self-center max-w-full w-[234px]">
-              <div class="text-2xl font-bold tracking-wide text-emerald-700">
+              <div class="text-2xl font-bold tracking-wide text-[#008061]">
                 Smart金庫贏家
               </div>
               <div class="mt-4 font-medium  tracking-wide text-zinc-800">
@@ -320,7 +473,7 @@
           <div
             class="flex relative flex-col justify-center self-stretch px-6 py-7 my-auto bg-white rounded-lg border border-solid border-zinc-100 min-h-[160px] min-w-[240px] w-auto max-md:px-5">
             <div class="flex z-0 flex-col self-center max-w-full w-[234px]">
-              <div class="text-2xl font-bold tracking-wide text-emerald-700">
+              <div class="text-2xl font-bold tracking-wide text-[#008061]">
                 網路下單
               </div>
               <div class="mt-4 font-medium tracking-wide text-zinc-800">
@@ -339,7 +492,7 @@
           <div
             class="flex relative flex-col justify-center self-stretch px-6 py-7 my-auto bg-white rounded-lg border border-solid border-zinc-100 min-h-[160px] min-w-[240px] w-auto max-md:px-5">
             <div class="flex z-0 flex-col self-center max-w-full w-[234px]">
-              <div class="text-2xl font-bold tracking-wide text-emerald-700">
+              <div class="text-2xl font-bold tracking-wide text-[#008061]">
                 語音下單
               </div>
               <div class="mt-4 font-medium tracking-wide text-zinc-800">
@@ -498,7 +651,7 @@
                         </div>
                       </div>
                       <div
-                        class="flex flex-col items-end pt-1 mt-3 w-full text-base text-right text-emerald-700 max-md:max-w-full">
+                        class="flex flex-col items-end pt-1 mt-3 w-full text-base text-right text-[#008061] max-md:max-w-full">
                         <div class="flex gap-2 justify-center items-center px-1 rounded-2xl">
                           <div class="self-stretch my-auto font-normal">更多公告消息</div>
                           <img loading="lazy" src="assets/images/svg/triangular_1.svg"
@@ -594,7 +747,7 @@
                         </div>
                       </div>
                       <div
-                        class="flex flex-col items-end pt-1 mt-3 w-full text-base text-right text-emerald-700 max-md:max-w-full">
+                        class="flex flex-col items-end pt-1 mt-3 w-full text-base text-right text-[#008061] max-md:max-w-full">
                         <div class="flex gap-2 justify-center items-center px-1 rounded-2xl">
                           <div class="self-stretch my-auto font-normal">更多公告消息</div>
                           <img loading="lazy" src="assets/images/svg/triangular_1.svg"
